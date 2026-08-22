@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Monitoring | Real-time Construction Tracking | MAKAAN WALEY</title>
+    <meta name="description" content="Track your home construction in real-time with MAKAAN WALEY E-Monitoring. Live updates, quality reports, and stage-wise progress." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="alternate icon" href="images/favicon.ico" />
+</head>
+<body class="font-sans text-gray-600 antialiased bg-gray-50 relative overflow-x-hidden">
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-out">
+        <nav class="mx-auto flex max-w-[90rem] items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6 lg:px-8">
+            <div class="flex min-w-0 items-center">
+                <a href="index.html" class="relative flex h-14 shrink-0 items-center gap-2">
+                    <div class="flex items-end justify-start gap-[1px] h-full min-h-10" id="header-logo" style="padding-bottom: 4px;">
+                        <img src="images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
+                        <img src="images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
+                    </div>
+                    <img id="header-logo-white" src="images/makaanwaley-logo-whiteorange.svg" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
+                </a>
+            </div>
+            <div id="nav-desktop" class="hidden items-center gap-5 lg:flex lg:gap-6 xl:gap-7">
+                <div id="nav-city-wrap" class="relative flex h-10 shrink-0 items-center">
+                    <select id="nav-city" name="city" class="sr-only" tabindex="-1" aria-hidden="true">
+                        <option value="">City</option>
+                            <option value="Amaravati">Amaravati</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Other">Other</option>
+                    </select>
+                    <button type="button" id="nav-city-trigger" class="inline-flex h-full max-w-[7.25rem] items-center gap-1 wh-label-sm leading-none text-dark transition-colors hover:text-white sm:max-w-[9rem]" aria-haspopup="listbox" aria-expanded="false" aria-controls="nav-city-menu">
+                        <svg class="h-3.5 w-3.5 shrink-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                        <span id="nav-city-label" class="truncate">City</span>
+                        <svg class="h-3.5 w-3.5 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div id="nav-city-menu" class="nav-city-menu hidden absolute left-0 top-full z-[60] mt-2 w-44 max-h-64 overflow-y-auto rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl" role="listbox" aria-label="Select your city">
+                        <button type="button" role="option" data-nav-city-value="" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Select city</button>
+                        <button type="button" role="option" data-nav-city-value="Amaravati" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Amaravati</button>
+                        <button type="button" role="option" data-nav-city-value="Hyderabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Hyderabad</button>
+                        <button type="button" role="option" data-nav-city-value="Ahmedabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Ahmedabad</button>
+                        <button type="button" role="option" data-nav-city-value="Chandigarh" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Chandigarh</button>
+                        <button type="button" role="option" data-nav-city-value="Chennai" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Chennai</button>
+                        <button type="button" role="option" data-nav-city-value="Bengaluru" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Bengaluru</button>
+                        <button type="button" role="option" data-nav-city-value="Jaipur" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Jaipur</button>
+                        <button type="button" role="option" data-nav-city-value="Pune" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Pune</button>
+                        <button type="button" role="option" data-nav-city-value="Lucknow" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Lucknow</button>
+                        <button type="button" role="option" data-nav-city-value="Vijayawada" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Vijayawada</button>
+                        <button type="button" role="option" data-nav-city-value="Other" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Other</button>
+                    </div>
+                </div>
+                <a href="index.html" id="nav-desktop-home" class="wh-label-sm text-dark hover:text-white transition-colors">Home</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-white transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-services-menu">
+                        Services
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-services-menu" class="invisible absolute left-0 top-full z-50 w-72 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="service/residential-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.55 5.45 21 6 21H9M19 10L21 12M19 10V20C19 20.55 18.55 21 18 21H15M9 21V15H15V21M9 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Home Construction
+                        </a>
+                        <a href="service/commercial-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 21H21M3 7H21M6 21V7a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Commercial Construction
+                        </a>
+                        <a href="service/architecture-structural.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M2 20H22M4 20V10M20 20V10M12 4L4 10H20L12 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Architecture & Structure
+                        </a>
+                        <a href="service/interior-designing.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21V12H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Interiors & Smart Homes
+                        </a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="wh-label-sm text-dark hover:text-white transition-colors">Projects</a>
+                <a id="nav-packages-link" href="packages.html" class="wh-label-sm text-dark hover:text-white transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="wh-label-sm text-dark hover:text-white transition-colors">Quality Assurance</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-white transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-more-menu">
+                        More
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-more-menu" class="invisible absolute right-0 top-full z-50 w-56 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="how-it-works.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">How it Works</a>
+                        <a href="faqs.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">FAQs</a>
+                        <a href="glossary.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Glossary</a>
+                        <a href="emonitoring.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">E-Monitoring</a>
+                        <a href="testimonials.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Testimonials</a>
+                        <a href="why-choose-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Why Choose Us</a>
+                        <a href="blog.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Blogs</a>
+                        <a href="media.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Media</a>
+                        <a href="become-a-professional.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Careers</a>
+                        <a href="company/about-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">About Us</a>
+                        <a id="nav-cost-calculator-link" href="planner.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Cost Calculator</a>
+                        <a href="contact-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Contact Us</a>
+                    </div>
+                </div>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="rounded-xl bg-bg0 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:shadow-bg0/25">Let's Build</button>
+            </div>
+            <button id="nav-toggle" type="button" class="inline-flex shrink-0 touch-manipulation items-center justify-center rounded-md p-2 text-dark hover:bg-gray-100 lg:hidden" aria-label="Toggle menu" aria-controls="nav-mobile" aria-expanded="false">
+                <svg id="nav-icon-open" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="nav-icon-close" class="hidden h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </nav>
+        <div id="nav-mobile" class="hidden border-t border-white/10 bg-black lg:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
+            <div class="flex flex-col gap-1 px-4 py-4">
+                <div id="nav-city-mobile-slot" class="px-1 py-1"></div>
+                <a href="index.html" id="nav-mobile-home" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Home</a>
+                <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                        Services
+                        <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
+                        <a href="service/residential-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Home Construction</a>
+                        <a href="service/commercial-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Commercial Construction</a>
+                        <a href="service/architecture-structural.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Architecture & Structure</a>
+                        <a href="service/interior-designing.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Interiors & Smart Homes</a>
+                    </div>
+                </details>
+                <a href="portfolio.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Projects</a>
+                <a id="nav-packages-link-mobile" href="packages.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Quality Assurance</a>
+                <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                        More
+                        <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
+                        <a href="how-it-works.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">How it Works</a>
+                        <a href="faqs.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">FAQs</a>
+                        <a href="glossary.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Glossary</a>
+                        <a href="emonitoring.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">E-Monitoring</a>
+                        <a href="testimonials.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Testimonials</a>
+                        <a href="why-choose-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Why Choose Us</a>
+                        <a href="blog.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Blogs</a>
+                        <a href="media.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Media</a>
+                        <a href="become-a-professional.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Careers</a>
+                        <a href="company/about-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">About Us</a>
+                        <a id="nav-cost-calculator-link-mobile" href="planner.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Cost Calculator</a>
+                        <a href="contact-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Contact Us</a>
+                    </div>
+                </details>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="mt-2 rounded-xl bg-bg0 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-hover">Let's Build</button>
+            </div>
+        </div>
+    </header>
+
+<main id="main-content">
+    <div class="wh-home bg-gray-50 overflow-x-hidden">
+
+        
+<div class="bg-gray-50">
+    <section class="relative overflow-hidden pt-24 pb-12 md:pt-28 md:pb-16 bg-white bg-[url('/images/header-bg-white.webp')] bg-center bg-cover border-b border-gray-900/[0.08]">
+        <div class="absolute inset-0 pointer-events-none bg-[linear-gradient(180deg,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.76)_100%),radial-gradient(circle_at_15%_20%,rgba(13,71,161,0.12),transparent_52%),radial-gradient(circle_at_88%_18%,rgba(13,71,161,0.1),transparent_48%)]" aria-hidden="true"></div>
+        <div class="mx-auto max-w-6xl px-6 relative z-10">
+            <div class="grid gap-10 items-center lg:grid-cols-[1fr_1.05fr]">
+                <div>
+                    <span class="wh-eyebrow-chip">Smart Construction Intelligence</span>
+                    <h1 class="wh-heading-hero mt-3 text-dark">E-Monitoring — Your Construction Site in Your Pocket, 24 Hours a Day</h1>
+                    <p class="wh-body-lg mt-4 max-w-xl text-gray-600">While your home is being built, you are in complete control. Real-time updates. CCTV access. Cost tracking. Quality reports. All in one dashboard.</p>
+                    <div class="mt-6 rounded-xl border border-green-200 bg-green-50 px-4 py-3">
+                        <p class="text-sm font-semibold text-green-800">E-Monitoring is Included in Every Project — Not an Add-On. Free.</p>
+                    </div>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <button type="button" data-lead-popup-trigger data-lead-popup-title="Build with MAKAAN WALEY" data-lead-popup-lede="E-Monitoring included from Day 1" class="wh-btn-primary">Get a Free Estimate</button>
+                        <a href="how-it-works.html" class="wh-btn-secondary">How it works</a>
+                    </div>
+                    <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                        <div class="rounded-xl border border-gray-900/[0.08] bg-white/90 text-gray-700 text-center text-xs font-semibold py-2.5 px-2">Real-Time Updates</div>
+                        <div class="rounded-xl border border-gray-900/[0.08] bg-white/90 text-gray-700 text-center text-xs font-semibold py-2.5 px-2">24x7 CCTV</div>
+                        <div class="rounded-xl border border-gray-900/[0.08] bg-white/90 text-gray-700 text-center text-xs font-semibold py-2.5 px-2">Quality Checks</div>
+                        <div class="rounded-xl border border-gray-900/[0.08] bg-white/90 text-gray-700 text-center text-xs font-semibold py-2.5 px-2">Cost Transparency</div>
+                    </div>
+                </div>
+                <div class="overflow-visible">
+                    <img class="w-full h-auto min-h-[240px] object-contain block" src="images/e-monitoringfb66.webp?v=RviPyQ35Eba5_3PrXSiiiCSG7i_drp0ZZ_3DM_KjPDI" alt="E-Monitoring dashboard preview" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 md:py-16 lg:py-20">
+        <div class="mx-auto max-w-6xl px-6">
+            <div class="text-center max-w-4xl mx-auto mb-4">
+                <span class="wh-eyebrow-chip">Your One-Stop Partner For</span>
+                <h2 class="wh-heading-lg text-dark mt-2">End-to-End Construction</h2>
+                <p class="wh-body-base mt-4 text-gray-600">MAKAAN WALEY is transforming how India builds homes with a full-stack solution covering approvals, design, execution, interiors, and real-time monitoring.</p>
+            </div>
+
+            <div class="mt-10 rounded-[1.25rem] border border-gray-900/[0.08] bg-gradient-to-b from-white to-white/85 shadow-[0_14px_34px_rgba(15,23,42,0.06)] p-[1.1rem] grid gap-4 lg:grid-cols-[0.92fr_1.08fr] lg:gap-5 lg:p-5">
+                <div class="p-4">
+                    <span class="wh-eyebrow-chip">Built on trust. Powered by technology.</span>
+                    <h3 class="wh-heading-lg mt-3 text-dark">Smart Construction.<br />Stronger Homes.</h3>
+                    <p class="wh-body-base mt-4 text-gray-600">Our platform brings speed, transparency, and peace of mind to homeowners. Live tracking, photo and video logs, and detailed reports keep every milestone visible from anywhere.</p>
+                    <p class="wh-body-base mt-4 text-gray-600">Built on Technology, Quality, Price, and Timelines, we deliver every project with clarity and trust.</p>
+
+                    <div class="mt-8 grid grid-cols-2 gap-2.5">
+                        <article class="rounded-[0.8rem] border border-gray-900/10 bg-gray-50 p-3 text-center"><p class="text-xl md:text-2xl font-extrabold text-primary leading-tight">500+</p><p class="mt-0.5 text-xs text-gray-600">Projects</p></article>
+                        <article class="rounded-[0.8rem] border border-gray-900/10 bg-gray-50 p-3 text-center"><p class="text-xl md:text-2xl font-extrabold text-primary leading-tight">10+</p><p class="mt-0.5 text-xs text-gray-600">Cities</p></article>
+                        <article class="rounded-[0.8rem] border border-gray-900/10 bg-gray-50 p-3 text-center"><p class="text-xl md:text-2xl font-extrabold text-primary leading-tight">98%</p><p class="mt-0.5 text-xs text-gray-600">On-Time Delivery</p></article>
+                        <article class="rounded-[0.8rem] border border-gray-900/10 bg-gray-50 p-3 text-center"><p class="text-xl md:text-2xl font-extrabold text-primary leading-tight">4.8/5</p><p class="mt-0.5 text-xs text-gray-600">Customer Rating</p></article>
+                    </div>
+                </div>
+
+                <div class="p-4">
+                    <h3 class="wh-heading-md text-dark">Digitally track your home construction progress with a tech-enabled monitoring system</h3>
+                    <div class="mt-6 grid gap-2.5 grid-cols-1 lg:grid-cols-2">
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">DP</span><div><p class="wh-heading-sm text-dark">Daily Progress Reports</p><p class="wh-body-md text-gray-600">With completed work summaries</p></div></article>
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">TT</span><div><p class="wh-heading-sm text-dark">Timeline Tracking</p><p class="wh-body-md text-gray-600">Completed, ongoing and pending tasks</p></div></article>
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">MR</span><div><p class="wh-heading-sm text-dark">Material Reports</p><p class="wh-body-md text-gray-600">Procurement, consumption and stock levels</p></div></article>
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">WP</span><div><p class="wh-heading-sm text-dark">Workforce Productivity</p><p class="wh-body-md text-gray-600">Daily labor deployment and output</p></div></article>
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">CV</span><div><p class="wh-heading-sm text-dark">24x7 CCTV Monitoring</p><p class="wh-body-md text-gray-600">Continuous site visibility and security</p></div></article>
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">CT</span><div><p class="wh-heading-sm text-dark">Transparent Cost Tracking</p><p class="wh-body-md text-gray-600">Itemized expenses, payments and variance</p></div></article>
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">PV</span><div><p class="wh-heading-sm text-dark">Photo and Video Updates</p><p class="wh-body-md text-gray-600">Documenting construction milestones</p></div></article>
+                        <article class="flex items-start gap-3 rounded-[0.8rem] border border-gray-900/[0.08] bg-white py-3 px-3.5"><span class="w-7 h-7 rounded-full bg-primary-light/10 text-primary-hover text-xs font-bold inline-flex items-center justify-center shrink-0 mt-0.5">QI</span><div><p class="wh-heading-sm text-dark">Quality Inspection Reports</p><p class="wh-body-md text-gray-600">Compliance and snag resolutions</p></div></article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wh-section bg-white border-t border-gray-200">
+        <div class="mx-auto max-w-4xl px-6 text-center">
+            <span class="wh-eyebrow-chip">Video Walkthrough</span>
+            <h2 class="wh-heading-lg text-dark mt-3">See E-Monitoring in action</h2>
+            <p class="mt-3 text-gray-600">Watch how the mobile app keeps you in control — from problem to solution.</p>
+            <div class="mt-8 aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-lg bg-gray-100">
+                <a href="https://www.youtube.com/@MAKAAN WALEY" target="_blank" rel="noopener noreferrer" class="flex h-full items-center justify-center group bg-dark/5 hover:bg-dark/10 transition-colors">
+                    <span class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg group-hover:scale-105 transition-transform">
+                        <svg class="h-7 w-7 ml-1" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+
+    
+    </div>
+</main>
+
+<footer id="site-footer" class="bg-black text-gray-400 relative overflow-hidden">
+    <div class="wh-dark-dot-grid absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute -top-40 -right-40 w-[650px] h-[650px] bg-black/6 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-black/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="relative z-10 mx-auto max-w-6xl xl:max-w-6xl 2xl:max-w-[90rem] px-4 py-16">
+        <div class="flex flex-col items-center gap-8 md:flex-row md:justify-between md:items-start">
+            <div class="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
+                <a href="/" class="flex items-end gap-[1px]" aria-label="MAKAAN WALEY home">
+                    <img src="images/header-left.png" alt="" class="h-10 w-auto" width="40" height="40" decoding="async" />
+                    <img src="images/header-right.png" alt="MAKAAN WALEY" class="h-7 w-auto" width="28" height="28" decoding="async" />
+                </a>
+                <p class="wh-meta text-white/60">India&apos;s No.1 Tech-Powered Home Construction Platform</p>
+            </div>
+            <nav class="flex flex-col items-center gap-6 md:flex-row md:gap-8" aria-label="Footer navigation">
+                <a href="/packages.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Packages</a>
+                <a href="/why-choose-us.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Why MAKAAN WALEY</a>
+                <a href="/glossary.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Glossary</a>
+                <a href="/become-a-professional.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Careers</a>
+                <a href="/company/about-us.html" class="wh-body-base text-white/70 hover:text-white transition-colors">About Us</a>
+                <a href="/planner.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Planner</a>
+            </nav>
+            <div class="flex flex-col items-center gap-4 md:flex-row md:items-end md:justify-between">
+                <p class="wh-meta text-white/50">&copy; 2026 MAKAAN WALEY. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://twitter.com" class="text-white/60 hover:text-white transition-colors" aria-label="Twitter" target="_blank" rel="noopener">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 001.27 5.477 4.108 4.108 0 01-1.85-.5v.05A4.106 4.106 0 006.102 17a8.217 8.217 0 01-5.534 1.55c-.36 0-.71-.02-1.05-.06a11.618 11.618 0 006.29 1.84" /></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.39-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://instagram.com" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.024.047 1.507.206 2.011.413.9.371 1.43.754 1.699 1.07.385.452.54.992.54 1.712 0 2.722-.003 3.285-.012 3.53 0 .755-.34 1.437-.885 1.81-1.644 1.118-2.914 1.414-3.248 1.414-.076 0-.372-.022-.7-.055-2.206-.23-2.778-.724-3.036-1.053-.258-.33-.566-.683-.85-1.053-1.644-1.118-2.914-1.414-3.248-1.414-.325 0-.91.03-1.393.078C5.315 2.013 4.961 2 2.43 2c-2.43 0-2.784.013-3.808.06-1.024.047-1.507.206-2.011.413-.9.371-1.43.754-1.699 1.07-.385.452-.54.992-.54 1.712 0 2.722.003 3.285.012 3.53 0 .755.34 1.437.885 1.81 1.644 1.118 2.914 1.414 3.248 1.414.076 0 .372.022.7.055 2.206.23 2.778.724 3.036 1.053.258.33.566.683.85 1.053 1.644 1.118 2.914 1.414 3.248 1.414.325 0 .91-.03 1.393-.078zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.801a3.334 3.334 0 100 6.668 3.334 3.334 0 000-6.668zm5.337-4.355a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- External Scripts -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-2HPW0KC1F0" async></script>
+    <script src="js/privyr-utm3740.js"></script>
+    <script src="js/lead-otp27e8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/sited3b9.js"></script>
+    <script src="js/hero-enquiry2f00.js"></script>
+    <script src="js/faqs-page4227.js"></script>
+    <script src="js/packages9ef2.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+            if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+            gsap.registerPlugin(ScrollTrigger);
+        });
+    </script>
+</body>
+</html>

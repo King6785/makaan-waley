@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About MAKAAN WALEY | India's No.1 Tech-Powered Home Construction Company</title>
+    <meta name="description" content="MAKAAN WALEY — India's No.1 tech-powered home construction company. 400+ projects, 8 cities, 500+ families. Fixed price, committed date, full transparency." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="alternate icon" href="images/favicon.ico" />
+</head>
+<body class="font-sans text-gray-600 antialiased bg-gray-50 relative overflow-x-hidden">
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-out">
+        <nav class="mx-auto flex max-w-[90rem] items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6 lg:px-8">
+            <div class="flex min-w-0 items-center">
+                <a href="index.html" class="relative flex h-14 shrink-0 items-center gap-2">
+                    <div class="flex items-end justify-start gap-[1px] h-full min-h-10" id="header-logo" style="padding-bottom: 4px;">
+                        <img src="images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
+                        <img src="images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
+                    </div>
+                    <img id="header-logo-white" src="images/makaanwaley-logo-whiteorange.svg" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
+                </a>
+            </div>
+            <div id="nav-desktop" class="hidden items-center gap-5 lg:flex lg:gap-6 xl:gap-7">
+                <div id="nav-city-wrap" class="relative flex h-10 shrink-0 items-center">
+                    <select id="nav-city" name="city" class="sr-only" tabindex="-1" aria-hidden="true">
+                        <option value="">City</option>
+                            <option value="Amaravati">Amaravati</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Other">Other</option>
+                    </select>
+                    <button type="button" id="nav-city-trigger" class="inline-flex h-full max-w-[7.25rem] items-center gap-1 wh-label-sm leading-none text-dark transition-colors hover:text-white sm:max-w-[9rem]" aria-haspopup="listbox" aria-expanded="false" aria-controls="nav-city-menu">
+                        <svg class="h-3.5 w-3.5 shrink-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                        <span id="nav-city-label" class="truncate">City</span>
+                        <svg class="h-3.5 w-3.5 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div id="nav-city-menu" class="nav-city-menu hidden absolute left-0 top-full z-[60] mt-2 w-44 max-h-64 overflow-y-auto rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl" role="listbox" aria-label="Select your city">
+                        <button type="button" role="option" data-nav-city-value="" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Select city</button>
+                        <button type="button" role="option" data-nav-city-value="Amaravati" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Amaravati</button>
+                        <button type="button" role="option" data-nav-city-value="Hyderabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Hyderabad</button>
+                        <button type="button" role="option" data-nav-city-value="Ahmedabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Ahmedabad</button>
+                        <button type="button" role="option" data-nav-city-value="Chandigarh" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Chandigarh</button>
+                        <button type="button" role="option" data-nav-city-value="Chennai" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Chennai</button>
+                        <button type="button" role="option" data-nav-city-value="Bengaluru" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Bengaluru</button>
+                        <button type="button" role="option" data-nav-city-value="Jaipur" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Jaipur</button>
+                        <button type="button" role="option" data-nav-city-value="Pune" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Pune</button>
+                        <button type="button" role="option" data-nav-city-value="Lucknow" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Lucknow</button>
+                        <button type="button" role="option" data-nav-city-value="Vijayawada" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Vijayawada</button>
+                        <button type="button" role="option" data-nav-city-value="Other" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Other</button>
+                    </div>
+                </div>
+                <a href="index.html" id="nav-desktop-home" class="wh-label-sm text-dark hover:text-white transition-colors">Home</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-white transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-services-menu">
+                        Services
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-services-menu" class="invisible absolute left-0 top-full z-50 w-72 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="service/residential-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.55 5.45 21 6 21H9M19 10L21 12M19 10V20C19 20.55 18.55 21 18 21H15M9 21V15H15V21M9 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Home Construction
+                        </a>
+                        <a href="service/commercial-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 21H21M3 7H21M6 21V7a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Commercial Construction
+                        </a>
+                        <a href="service/architecture-structural.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M2 20H22M4 20V10M20 20V10M12 4L4 10H20L12 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Architecture & Structure
+                        </a>
+                        <a href="service/interior-designing.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21V12H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Interiors & Smart Homes
+                        </a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="wh-label-sm text-dark hover:text-white transition-colors">Projects</a>
+                <a id="nav-packages-link" href="packages.html" class="wh-label-sm text-dark hover:text-white transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="wh-label-sm text-dark hover:text-white transition-colors">Quality Assurance</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-white transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-more-menu">
+                        More
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-more-menu" class="invisible absolute right-0 top-full z-50 w-56 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="how-it-works.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">How it Works</a>
+                        <a href="faqs.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">FAQs</a>
+                        <a href="glossary.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Glossary</a>
+                        <a href="emonitoring.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">E-Monitoring</a>
+                        <a href="testimonials.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Testimonials</a>
+                        <a href="why-choose-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Why Choose Us</a>
+                        <a href="blog.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Blogs</a>
+                        <a href="media.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Media</a>
+                        <a href="become-a-professional.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Careers</a>
+                        <a href="company/about-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">About Us</a>
+                        <a id="nav-cost-calculator-link" href="planner.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Cost Calculator</a>
+                        <a href="contact-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Contact Us</a>
+                    </div>
+                </div>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="rounded-xl bg-bg0 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:shadow-bg0/25">Let's Build</button>
+            </div>
+            <button id="nav-toggle" type="button" class="inline-flex shrink-0 touch-manipulation items-center justify-center rounded-md p-2 text-dark hover:bg-gray-100 lg:hidden" aria-label="Toggle menu" aria-controls="nav-mobile" aria-expanded="false">
+                <svg id="nav-icon-open" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="nav-icon-close" class="hidden h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </nav>
+        <div id="nav-mobile" class="hidden border-t border-white/10 bg-black lg:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
+            <div class="flex flex-col gap-1 px-4 py-4">
+                <div id="nav-city-mobile-slot" class="px-1 py-1"></div>
+                <a href="index.html" id="nav-mobile-home" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Home</a>
+                <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                        Services
+                        <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
+                        <a href="service/residential-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Home Construction</a>
+                        <a href="service/commercial-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Commercial Construction</a>
+                        <a href="service/architecture-structural.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Architecture & Structure</a>
+                        <a href="service/interior-designing.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Interiors & Smart Homes</a>
+                    </div>
+                </details>
+                <a href="portfolio.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Projects</a>
+                <a id="nav-packages-link-mobile" href="packages.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Quality Assurance</a>
+                <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                        More
+                        <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
+                        <a href="how-it-works.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">How it Works</a>
+                        <a href="faqs.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">FAQs</a>
+                        <a href="glossary.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Glossary</a>
+                        <a href="emonitoring.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">E-Monitoring</a>
+                        <a href="testimonials.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Testimonials</a>
+                        <a href="why-choose-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Why Choose Us</a>
+                        <a href="blog.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Blogs</a>
+                        <a href="media.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Media</a>
+                        <a href="become-a-professional.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Careers</a>
+                        <a href="company/about-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">About Us</a>
+                        <a id="nav-cost-calculator-link-mobile" href="planner.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Cost Calculator</a>
+                        <a href="contact-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Contact Us</a>
+                    </div>
+                </details>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="mt-2 rounded-xl bg-bg0 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-hover">Let's Build</button>
+            </div>
+        </div>
+    </header>
+
+<main id="main-content">
+    <div class="wh-home bg-gray-50 overflow-x-hidden">
+
+        
+<section class="wh-dark-top-hero relative bg-dark py-20 sm:py-28 bg-cover bg-center bg-no-repeat bg-[url('/images/header-bg.webp')]">
+    <div class="mx-auto max-w-6xl px-6 text-center">
+        <span class="wh-eyebrow-chip">About MAKAAN WALEY</span>
+        <h1 class="wh-heading-xl text-white">About Us</h1>
+        <p class="mt-4 wh-body-lg text-white/90 max-w-2xl mx-auto font-bold">Trusted by 500+ Families Across India</p>
+    </div>
+</section>
+
+<section class="bg-gray-50 py-16 border-t border-gray-200">
+    <div class="mx-auto max-w-5xl px-6 flex flex-col gap-8">
+        <div class="rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-white">
+            <img src="../images/framer/about-us/Team%20Picture.webp" alt="MAKAAN WALEY team" class="w-full h-auto object-contain object-top bg-white" />
+        </div>
+        <div class="space-y-4 text-gray-700 leading-relaxed">
+            <p class="wh-body-lg text-gray-800">
+                Founded in <strong>2017</strong>, MAKAAN WALEY has delivered <strong>400+ projects</strong> across <strong>8 cities</strong> — more than <strong>25 lakh sq.ft.</strong> for <strong>500+ families and businesses</strong>. Recognised by ET, Inc42, Moneycontrol, The Hindu BusinessLine, and CNBC-TV18. Backed by <strong>₹50 Cr+</strong> raised and a <strong>₹250 Cr+</strong> order book. Building a home can — and should — be a great experience.
+            </p>
+            <p class="wh-body-lg text-gray-800">
+                We don't just construct buildings. We deliver homes people return to every evening — at a <strong>fixed price</strong>, on a <strong>committed date</strong>, with every stage visible on your phone.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="bg-dark text-white py-7 border-y border-white/[0.08]" aria-label="MAKAAN WALEY at a glance">
+    <div class="mx-auto max-w-6xl px-6">
+        <ul class="m-0 grid list-none grid-cols-1 gap-x-4 gap-y-5 p-0 sm:grid-cols-2 lg:grid-cols-5 lg:gap-4">
+            <li class="text-center">
+                <p class="wh-stat-md text-primary-light">400+</p>
+                <p class="mt-1 wh-meta uppercase tracking-widest text-white/65">Projects Delivered</p>
+            </li>
+            <li class="text-center">
+                <p class="wh-stat-md text-primary-light">25L+ SFT</p>
+                <p class="mt-1 wh-meta uppercase tracking-widest text-white/65">Built</p>
+            </li>
+            <li class="text-center">
+                <p class="wh-stat-md text-primary-light">8 Cities</p>
+                <p class="mt-1 wh-meta uppercase tracking-widest text-white/65">Pan India</p>
+            </li>
+            <li class="text-center">
+                <p class="wh-stat-md text-primary-light">₹50 Cr+</p>
+                <p class="mt-1 wh-meta uppercase tracking-widest text-white/65">Raised</p>
+            </li>
+            <li class="text-center">
+                <p class="wh-stat-md text-primary-light">₹250 Cr+</p>
+                <p class="mt-1 wh-meta uppercase tracking-widest text-white/65">Order Book</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="wh-section bg-white border-t border-gray-200">
+    <div class="mx-auto max-w-5xl px-6">
+        <div class="wh-section-head">
+            <span class="wh-eyebrow-chip">Our Story</span>
+            <h2 class="wh-heading-lg text-dark">Built to Change What Home Construction Looks Like.</h2>
+        </div>
+        <div class="space-y-4 text-gray-600 wh-body-lg">
+            <p>In 2017, Sripad Nandiraj returned to India and co-founded MAKAAN WALEY with Rohan Vinayak Reddy — to make the home-building experience worthy of the home itself. One contract. One fixed price. One project manager per site. A live dashboard so every client sees every milestone, material delivery, and quality checkpoint — without visiting the site.</p>
+            <p>What started in Hyderabad now spans <strong class="text-dark">8 cities</strong>, with a <strong class="text-dark">₹250 Cr+ order book</strong>, <strong class="text-dark">₹50 Cr+ raised</strong>, and <strong class="text-dark">500+ families</strong> who trusted us with the biggest financial decision of their lives. That trust shapes every decision we make.</p>
+            <blockquote class="mt-6 m-0 border-l-2 border-primary-light pl-4">
+                <p class="text-dark italic">“We believed there was a better way to build homes. Eight years and 400+ projects later, we’re still proving it.”</p>
+                <cite class="mt-2 block wh-meta text-gray-500 not-italic">— Sripad Nandiraj, Co-Founder &amp; CEO</cite>
+            </blockquote>
+        </div>
+    </div>
+</section>
+
+<section class="wh-section wh-section-alt relative overflow-hidden" aria-labelledby="about-values-heading">
+    <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div class="absolute -top-28 right-0 h-[28rem] w-[28rem] translate-x-1/4 rounded-full bg-primary-lighter/50 blur-3xl"></div>
+        <div class="absolute -bottom-20 left-0 h-80 w-80 -translate-x-1/4 rounded-full bg-primary-lighter/80 blur-3xl"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-6xl px-6">
+        <div class="wh-section-head">
+            <span class="wh-eyebrow-chip">Our Values</span>
+            <h2 id="about-values-heading" class="wh-heading-lg text-dark">What We Stand For. Every Project, Every Day.</h2>
+            <p class="wh-section-head__lede">Five principles that shape every quote, every site, and every home we hand over.</p>
+        </div>
+
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-6">
+                <article class="wh-card wh-card--soft wh-card--interactive group relative flex h-full flex-col overflow-hidden p-6 lg:col-span-3 sm:p-7">
+                    <span class="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-primary/80 to-transparent opacity-70 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+                    <div class="mb-4 flex items-start justify-between gap-3">
+                        <span class="wh-icon-tile wh-icon-tile--lg" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7z"/><circle cx="12" cy="12" r="3"/></svg>
+                        </span>
+                        <span class="wh-meta font-semibold tracking-wider text-primary-hover">01</span>
+                    </div>
+                    <h3 class="wh-heading-md text-dark">Transparency</h3>
+                    <p class="mt-2 flex-1 wh-body-md text-gray-600">Pricing, process, and progress &#x2014; visible to every client, always. Traceable quotes, documented materials, real-time milestones. No fine print. No surprises.</p>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive group relative flex h-full flex-col overflow-hidden p-6 lg:col-span-3 sm:p-7">
+                    <span class="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-primary/80 to-transparent opacity-70 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+                    <div class="mb-4 flex items-start justify-between gap-3">
+                        <span class="wh-icon-tile wh-icon-tile--lg" aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
+                        </span>
+                        <span class="wh-meta font-semibold tracking-wider text-primary-hover">02</span>
+                    </div>
+                    <h3 class="wh-heading-md text-dark">Accountability</h3>
+                    <p class="mt-2 flex-1 wh-body-md text-gray-600">When something needs fixing, we fix it. The 10-year structural warranty has a claims process. The rent-back clause is in your contract &#x2014; not just the conversation.</p>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive group relative flex h-full flex-col overflow-hidden p-6 lg:col-span-2 ">
+                    <span class="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-primary/80 to-transparent opacity-70 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+                    <div class="mb-4 flex items-start justify-between gap-3">
+                        <span class="wh-icon-tile " aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><path d="M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/></svg>
+                        </span>
+                        <span class="wh-meta font-semibold tracking-wider text-primary-hover">03</span>
+                    </div>
+                    <h3 class="wh-heading-md text-dark">Precision</h3>
+                    <p class="mt-2 flex-1 wh-body-md text-gray-600">24 milestones. 250&#x2B; quality checkpoints. Licensed inspections at every critical stage. Homes built to last 50 years.</p>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive group relative flex h-full flex-col overflow-hidden p-6 lg:col-span-2 ">
+                    <span class="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-primary/80 to-transparent opacity-70 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+                    <div class="mb-4 flex items-start justify-between gap-3">
+                        <span class="wh-icon-tile " aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+                        </span>
+                        <span class="wh-meta font-semibold tracking-wider text-primary-hover">04</span>
+                    </div>
+                    <h3 class="wh-heading-md text-dark">Technology-First</h3>
+                    <p class="mt-2 flex-1 wh-body-md text-gray-600">Every improvement starts with one question: how do we give the client more visibility and control? E-Monitoring, milestone dashboards, live CCTV, and material logs &#x2014; technology in service of trust.</p>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive group relative flex h-full flex-col overflow-hidden p-6 sm:col-span-2 lg:col-span-2 ">
+                    <span class="pointer-events-none absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-transparent via-primary/80 to-transparent opacity-70 transition-opacity group-hover:opacity-100" aria-hidden="true"></span>
+                    <div class="mb-4 flex items-start justify-between gap-3">
+                        <span class="wh-icon-tile " aria-hidden="true">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 11a4 4 0 10-8 0"/><path d="M4 20a6 6 0 0116 0"/><circle cx="12" cy="8" r="3"/></svg>
+                        </span>
+                        <span class="wh-meta font-semibold tracking-wider text-primary-hover">05</span>
+                    </div>
+                    <h3 class="wh-heading-md text-dark">The People Behind the Platform</h3>
+                    <p class="mt-2 flex-1 wh-body-md text-gray-600">Our 2,000&#x2B; partner workforce &#x2014; engineers, site managers, and skilled tradespeople &#x2014; build the homes. We invest in their training, safety, and fair payment. Delivery quality is inseparable from how we treat the people delivering it.</p>
+                </article>
+        </div>
+    </div>
+</section>
+
+<section class="wh-about-media relative overflow-hidden border-t border-white/10 bg-dark py-20 sm:py-24" aria-labelledby="about-media-heading">
+    <div class="wh-dark-dot-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -top-40 -right-40 h-[600px] w-[600px] rounded-full bg-primary/5 blur-[120px]" aria-hidden="true"></div>
+    <div class="pointer-events-none absolute -bottom-40 -left-40 h-[500px] w-[500px] rounded-full bg-white/4 blur-[100px]" aria-hidden="true"></div>
+
+    <div class="relative mx-auto max-w-6xl px-6">
+        <p class="text-center wh-meta font-semibold uppercase tracking-[0.2em] text-primary-light">Press &amp; Media</p>
+        <h2 id="about-media-heading" class="wh-heading-lg mt-3 text-center text-white">Covered by the Press. Backed by Investors. Trusted by Families.</h2>
+        <p class="mx-auto mt-4 max-w-2xl text-center text-sm text-neutral-400 sm:text-base">Covered by The Economic Times, The Hindu BusinessLine, Inc42, Moneycontrol, CNBC-TV18, Entrepreneur India, Construction Week, Edex Live, Andhra Jyothy, and Eenadu — for E-Monitoring, investor funding, and the standard we’ve set for home construction in India.</p>
+
+        <div class="mx-auto mt-12 max-w-3xl space-y-5 text-pretty wh-body-lg text-gray-400">
+            <p>
+                <strong class="font-semibold text-white">MAKAAN WALEY</strong> is India’s No.1 tech-powered home construction company, headquartered in Hyderabad. Architecture, structure, construction, interiors, and real-time monitoring — one contract, a fixed price, a committed date, and full transparency. E-Monitoring gives clients live CCTV, material tracking, milestone updates, and quality reports — from anywhere.
+            </p>
+        </div>
+
+        <div id="wh-media-stories-root" class="relative mx-auto mt-14 max-w-6xl">
+            <p class="text-center wh-meta font-semibold uppercase tracking-[0.18em] text-primary-light/95">Fresh Stories</p>
+            <h3 class="mt-2 text-center wh-heading-md text-white">Media That Matters</h3>
+            <p class="mx-auto mt-3 max-w-xl text-center text-sm text-neutral-500">Read coverage of MAKAAN WALEY in the press — open any card for the full article. Every story was earned.</p>
+
+            <div class="relative mt-8 pb-14 sm:pb-12">
+                <div class="pointer-events-none absolute inset-y-0 left-0 z-10 w-10 bg-gradient-to-r from-dark to-transparent sm:w-14" aria-hidden="true"></div>
+                <div class="pointer-events-none absolute inset-y-0 right-0 z-10 w-10 bg-gradient-to-l from-dark to-transparent sm:w-14" aria-hidden="true"></div>
+
+                <ul id="wh-media-stories-track"
+                    class="wh-media-stories__track scrollbar-hide flex list-none gap-2.5 overflow-x-auto overflow-y-hidden scroll-smooth scroll-ps-6 pb-2 sm:gap-3"
+                    data-wh-media-stories-track
+                    role="list"
+                    aria-label="Press articles carousel"
+                    tabindex="0">
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="1 of 10">
+                            <a href="https://www.edexlive.com/happening/2020/nov/11/building-a-house-has-never-been-easier-thanks-to-hocomoco-heres-what-they-do-15759.html"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-1-cover260f.webp?v=1BDqIIzWEiTZDJBsbq1GB11VNiAZFpA6R6BovSHGyjA" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-1-logo0560.webp?v=TkP93Ad00UWOpq-z6ND6cqx-qUbDdwte15lIxAU104A" alt="" class="max-h-9 w-auto max-w-full object-cover object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">Building a house has never been easier thanks to Hocomoco. Here&#x27;s what they do</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="2 of 10">
+                            <a href="https://www.andhrajyothy.com/2020/business/hoko-moko-startup-to-build-homes-on-contract-192061.html"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-2-cover00da.webp?v=vrSGgBEEg-PkLc16FBPy5lnhzD80QhBBgO73SZkl1wg" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-2-logod5cb.webp?v=OG_Iq2ap7IFBUjZpRXsV2M4kW4mOrnbsZiPNzw4esZo" alt="" class="max-h-9 w-auto max-w-full object-contain object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">&#xC2A;&#xC46;&#xC33;&#xC4D;&#xC32;&#xC3F; &#xC1A;&#xC47;&#xC38;&#xC3F; &#xC1A;&#xC42;&#xC21;&#xC41;.. &#xC07;&#xC32;&#xC4D;&#xC32;&#xC41; &#xC15;&#xC1F;&#xC4D;&#xC1F;&#xC3F; &#xC1A;&#xC42;&#xC21;&#xC41; &#xC05;&#xC28;&#xC4D;&#xC28;&#xC3E;&#xC30;&#xC41; &#xC2A;&#xC46;&#xC26;&#xC4D;&#xC26;&#xC32;&#xC41;. &#xC2A;&#xC46;&#xC33;&#xC4D;&#xC32;&#xC3F; &#xC35;&#xC3F;&#xC37;&#xC2F;&#xC02; &#xC2A;&#xC15;&#xC4D;&#xC15;&#xC28; &#xC2A;&#xC46;&#xC21;&#xC3F;&#xC24;&#xC47;.. &#xC07;&#xC32;&#xC4D;&#xC32;&#xC41; &#xC15;&#xC1F;&#xC4D;&#xC1F;&#xC21;&#xC02;&#xC32;&#xC4B; &#xC07;&#xC2C;&#xC4D;&#xC2C;&#xC02;&#xC26;&#xC41;&#xC32;&#xC41;&#x2026;</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="3 of 10">
+                            <a href="https://www.newindianexpress.com/cities/hyderabad/2020/Aug/26/this-hyderabad-based-start-up-helps-you-build-your-dream-house-2188200.html"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-3-covera13b.webp?v=HOfHJtV4KkoxNd6B4UY5_y3v8n1h51JWpObRlLOoBM0" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-3-logo28f3.webp?v=-wPxnpLtRqskLe2XDYMZGjDgylKgzju7dk6GQFWIx1Q" alt="" class="max-h-9 w-auto max-w-full object-cover object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">This Hyderabad based start-up helps you build your dream house</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="4 of 10">
+                            <a href="https://www.constructionweekonline.in/people/15286-e-monitoring-enables-customers-to-digitally-track-the-progress-of-construction-work"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-4-coverba51.webp?v=Pny9Frxk1lRCAU8B07uBpKE0eOFvt8M4NewnKFCMPUU" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-4-logo472c.webp?v=q01zKFPXRQ43peIegnB-6rXuBSiJJbrPQ67xpD7K8NU" alt="" class="max-h-9 w-auto max-w-full object-cover object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">E-monitoring enables customers to digitally track the progress of construction work</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="5 of 10">
+                            <a href="https://www.thehindubusinessline.com/info-tech/makaan-waley-raises-1-m-in-pre-series-a-round-from-anthill-ventures/article65418797.ece"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-5-cover48b0.webp?v=m_x3rEFQD7T7EqxuG6j6CeLZBa8GpK_c5bzKRmuwkbI" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-5-logo1948.webp?v=e_avZWwqa0F1qBhB9KZ1QckauTtT8aoR7Fyk1IT1gB8" alt="" class="max-h-9 w-auto max-w-full object-cover object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">Wehouse raises $1 m in Pre-Series A round from Anthill Ventures</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="6 of 10">
+                            <a href="https://www.bwdisrupt.com/article/hocomoco-raises-1-m-in-pre-series-a-round-rebrands-to-makaan-waley-428951"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-6-cover5b69.webp?v=_hLCh_J_xm9lgID5OGvzjbu2NgS_aqiisF5zjrHmrWM" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-6-logo4395.webp?v=ehAUQVMk42C2XxNhM8VBao0sSK_wXrfcCWNwMrD6vcE" alt="" class="max-h-9 w-auto max-w-full object-cover object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">Hocomoco Raises $ 1 M In Pre-Series A Round, Rebrands to Wehouse</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="7 of 10">
+                            <a href="https://inc42.com/buzz/exclusive-makaan-waley-nets-inr-25-cr-to-streamline-home-construction/"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-7-cover0c0f.webp?v=RzqZQ3ugUA9yGVbXtndgWAibE2QxzZi_lGo6mEyNbX8" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1 wh-media-story-logo-bar--inc42">
+                                    <img src="../images/media-stories/story-7-logoef25.svg?v=sr5pc_MrX5sQQC_8uO1hih-ycW-TrfgJZ_h_v5OSLYo" alt="" class="max-h-9 w-auto max-w-full object-contain object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">Exclusive: MAKAAN WALEY Nets INR 25 Cr To Streamline Home Construction</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="8 of 10">
+                            <a href="https://www.thehindubusinessline.com/companies/makaan-waley-raises-25-crore-in-series-a-funding/article70036975.ece/amp/"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-8-cover7330.webp?v=sJ3eL3TrdQ3wRzFx6WPOpGbUMJp_Jr3Bv4JTzu1Zmj0" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-8-logob199.svg?v=k_QdNYLugSZ99K-qDe8YJHKsBNjGPdUc2aaYX9Ptuvw" alt="" class="max-h-9 w-auto max-w-full object-contain object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">MAKAAN WALEY raises &#x20B9;25 crore in Series A funding&#x2026;.</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="9 of 10">
+                            <a href="https://www.newsbytesapp.com/news/business/makaan-waley-raises-rs25-crore-to-enhance-tech-and-operations/tldr"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-9-cover6295.webp?v=XC4ddUiXmdwYoQvq2Frkdq02nra7gSf_hv-7jk03eRY" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-9-logo7483.webp?v=QYISoMRfkGcoS5KWBZ4xZxH9UD1AtD6L5RL03JNfdkQ" alt="" class="max-h-9 w-auto max-w-full object-cover object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">MAKAAN WALEY raises &#x20B9;25 crore to enhance tech and operations</h4>
+                            </a>
+                        </li>
+                        <li class="wh-media-stories__slide shrink-0 snap-center snap-always"
+                            data-wh-media-story-slide
+                            aria-label="10 of 10">
+                            <a href="https://www.constructionweekonline.in/people/15286-e-monitoring-enables-customers-to-digitally-track-the-progress-of-construction-work"
+                               class="wh-media-stories__card group flex h-full w-[min(85vw,21.75rem)] flex-col overflow-hidden rounded-[0.875rem] bg-white p-2.5 shadow-lg shadow-black/30 ring-1 ring-white/10 transition duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/10 hover:ring-primary-light/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-[21.75rem]"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                <div class="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-neutral-100">
+                                    <img src="../images/media-stories/story-4-coverba51.webp?v=Pny9Frxk1lRCAU8B07uBpKE0eOFvt8M4NewnKFCMPUU" alt="" class="h-full w-full object-cover object-center transition duration-300 group-hover:scale-[1.02]" width="800" height="600" loading="lazy" decoding="async" />
+                                </div>
+                                <div class="mt-2.5 flex min-h-[2.75rem] items-center justify-start rounded-lg px-1">
+                                    <img src="../images/media-stories/story-4-logo472c.webp?v=q01zKFPXRQ43peIegnB-6rXuBSiJJbrPQ67xpD7K8NU" alt="" class="max-h-9 w-auto max-w-full object-cover object-center" loading="lazy" decoding="async" />
+                                </div>
+                                <h4 class="mt-2 line-clamp-4 text-left wh-heading-md text-neutral-900">E-monitoring enables customers to digitally track the progress of construction work</h4>
+                            </a>
+                        </li>
+                </ul>
+
+                <div class="pointer-events-none absolute inset-0 z-20 flex items-center justify-between gap-2 px-0 sm:px-1">
+                    <button type="button"
+                            data-wh-media-stories-prev
+                            class="wh-media-stories__btn-prev pointer-events-auto ml-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-neutral-950 text-white shadow-md ring-1 ring-white/10 transition hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary disabled:pointer-events-none disabled:opacity-0 sm:ml-0"
+                            aria-label="Previous article">
+                        <svg class="h-5 w-5 -translate-x-px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </button>
+                    <button type="button"
+                            data-wh-media-stories-next
+                            class="wh-media-stories__btn-next pointer-events-auto mr-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-neutral-950 text-white shadow-md ring-1 ring-white/10 transition hover:bg-neutral-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:mr-0"
+                            aria-label="Next article">
+                        <svg class="h-5 w-5 translate-x-px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                    </button>
+                </div>
+
+                <div data-wh-media-stories-dots
+                     class="absolute bottom-1 left-1/2 z-20 flex -translate-x-1/2 gap-0.5 rounded-full bg-black/25 px-2 py-2 backdrop-blur-sm sm:bottom-2"
+                     role="tablist"
+                     aria-label="Carousel pages"></div>
+            </div>
+        </div>
+
+        <div class="h-px w-full max-w-md mx-auto mt-14 bg-gradient-to-r from-transparent via-white/20 to-transparent" aria-hidden="true"></div>
+
+        <div class="wh-marquee wh-marquee--slow relative left-1/2 mt-10 w-screen max-w-none -translate-x-1/2 py-3 sm:py-4 overflow-hidden">
+            <div class="pointer-events-none absolute inset-y-0 left-0 z-20 w-12 bg-gradient-to-r from-dark to-transparent sm:w-20" aria-hidden="true"></div>
+            <div class="pointer-events-none absolute inset-y-0 right-0 z-20 w-12 bg-gradient-to-l from-dark to-transparent sm:w-20" aria-hidden="true"></div>
+
+            <div class="wh-marquee__track flex gap-3 sm:gap-4">
+                    <a href="https://www.newindianexpress.com/cities/hyderabad/2020/aug/26/this-hyderabad-based-start-up-helps-you-build-your-dream-house-2188200.html" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media902b.webp?v=D1nKs2-eCU_l2DEqh_e43BtyVC_bZj4NS5yNj9tlHIg" alt="The New Indian Express &#x2014; MAKAAN WALEY coverage" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.constructionweekonline.in/people/15286-e-monitoring-enables-customers-to-digitally-track-the-progress-of-construction-work" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media1c12e.webp?v=TViFzYJH8Fa5DUJ-I71Xz74GE7WGtvZuBVXZltg1-3A" alt="Construction Week &#x2014; E-monitoring article" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.edexlive.com/happening/2020/nov/11/building-a-house-has-never-been-easier-thanks-to-hocomoco-heres-what-they-do-15759.html" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media26050.webp?v=UdT8Mav1teK2uEDkY6epdnDUjyqVFY2ClwVYhk1VT5I" alt="Edex Live &#x2014; Hocomoco / MAKAAN WALEY" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://telugu.webdunia.com/article/business-news/hocomoco-a-tech-based-construction-start-up-ropes-in-tharun-bhascker-dhaassyam-as-the-brand-ambassador-120111200035_1.html" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media3c740.webp?v=A9i3-kK_E-gTQuE0-XSNSNQ20dm9mU1biurvtqFcaa4" alt="Webdunia Telugu &#x2014; Hocomoco" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/hocomoco-unveils-e-monitoring-service-on-construction-work/articleshow/78277956.cms" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media5cf49.webp?v=1yS_nP8J0nQtd3f-4lPBhp7m_ASt9VQ66-vVabcjsPk" alt="The Economic Times &#x2014; E-monitoring" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.andhrajyothy.com/telugunews/hoko-moko-startup-to-build-homes-on-contract-2020120112444679" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media6e3d0.webp?v=PRmeQlMh5T6OMOb3SINLGLnYybhsyELBuCRvGyCC58k" alt="Andhra Jyothy &#x2014; MAKAAN WALEY" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.cxooutlook.com/hocomoco-rebrands-to-makaan-waley-raises-usd-1-million-in-pre-series-a-round/" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media73136.webp?v=7ALHYTLWE_6hbr0e5a4Y6EAECCdlim4JJQXTstBM63A" alt="CXO Outlook &#x2014; MAKAAN WALEY funding" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://bwdisrupt.businessworld.in/article/Hocomoco-Raises-1-M-In-Pre-Series-A-Round-Rebrands-to-Wehouse/16-05-2022-428951/" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media87fdf.webp?v=n5l8bGsqVHXqkOBciBr9BSgbBACy--uUTzQmOnbqbKA" alt="BW Disrupt &#x2014; MAKAAN WALEY rebrand" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.thehindubusinessline.com/info-tech/makaan-waley-raises-1-m-in-pre-series-a-round-from-anthill-ventures/article65418797.ece" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media9fe69.webp?v=T5gTJeqy3zxJy3XedYsAKKnfyUE2Wtp92_tWKiiNZlc" alt="The Hindu BusinessLine &#x2014; MAKAAN WALEY" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.moneycontrol.com/news/business/real-estate/hocomoco-raises-1-million-in-pre-series-a-round-funding-rebrands-as-makaan-waley-8517831.html" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media10a828.webp?v=tYZm6dLd_jxpHFeOBb4IWahJY4FtxYdujgd_JkMN6Qw" alt="Moneycontrol &#x2014; MAKAAN WALEY" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.cnbctv18.com/startup/startup-digest-mamaearth-parent-buys-majority-stake-in-dr-sheth-firstcry-halts-ipo-plans-report-lenskarts-subsidiary-neso-brands-raises-100-million-13504332.htm" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media11150e.webp?v=mArxqiwFR8FEyv4ss-w2u16ePcB-kZ90lKtX7J8w1C8" alt="CNBC-TV18" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.entrepreneur.com/article/427648" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media128069.webp?v=G_tSu4oHkkQhvjRzwPtfPUC_f7j_A3KAJ4tyKamk1d4" alt="Entrepreneur &#x2014; MAKAAN WALEY" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://epaper.ntnews.com/Home/ShareArticle?OrgId=45f92100&amp;imageview=1" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media13b0ed.webp?v=RpYCngVYZWn4w8ktbXJKwLj4pp_bN1JrReKnA4M3aUw" alt="Namasthe Telangana &#x2014; epaper" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.eenadu.net/telugu-news/business/general/0150/522003776" class="group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media145185.webp?v=QWyJtHLfpLRwfPfFgDX7JHwmY0SMg9hP3GkY85USkgk" alt="Eenadu &#x2014; MAKAAN WALEY" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.newindianexpress.com/cities/hyderabad/2020/aug/26/this-hyderabad-based-start-up-helps-you-build-your-dream-house-2188200.html" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media902b.webp?v=D1nKs2-eCU_l2DEqh_e43BtyVC_bZj4NS5yNj9tlHIg" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.constructionweekonline.in/people/15286-e-monitoring-enables-customers-to-digitally-track-the-progress-of-construction-work" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media1c12e.webp?v=TViFzYJH8Fa5DUJ-I71Xz74GE7WGtvZuBVXZltg1-3A" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.edexlive.com/happening/2020/nov/11/building-a-house-has-never-been-easier-thanks-to-hocomoco-heres-what-they-do-15759.html" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media26050.webp?v=UdT8Mav1teK2uEDkY6epdnDUjyqVFY2ClwVYhk1VT5I" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://telugu.webdunia.com/article/business-news/hocomoco-a-tech-based-construction-start-up-ropes-in-tharun-bhascker-dhaassyam-as-the-brand-ambassador-120111200035_1.html" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media3c740.webp?v=A9i3-kK_E-gTQuE0-XSNSNQ20dm9mU1biurvtqFcaa4" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://economictimes.indiatimes.com/small-biz/startups/newsbuzz/hocomoco-unveils-e-monitoring-service-on-construction-work/articleshow/78277956.cms" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media5cf49.webp?v=1yS_nP8J0nQtd3f-4lPBhp7m_ASt9VQ66-vVabcjsPk" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.andhrajyothy.com/telugunews/hoko-moko-startup-to-build-homes-on-contract-2020120112444679" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media6e3d0.webp?v=PRmeQlMh5T6OMOb3SINLGLnYybhsyELBuCRvGyCC58k" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.cxooutlook.com/hocomoco-rebrands-to-makaan-waley-raises-usd-1-million-in-pre-series-a-round/" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media73136.webp?v=7ALHYTLWE_6hbr0e5a4Y6EAECCdlim4JJQXTstBM63A" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://bwdisrupt.businessworld.in/article/Hocomoco-Raises-1-M-In-Pre-Series-A-Round-Rebrands-to-Wehouse/16-05-2022-428951/" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media87fdf.webp?v=n5l8bGsqVHXqkOBciBr9BSgbBACy--uUTzQmOnbqbKA" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.thehindubusinessline.com/info-tech/makaan-waley-raises-1-m-in-pre-series-a-round-from-anthill-ventures/article65418797.ece" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media9fe69.webp?v=T5gTJeqy3zxJy3XedYsAKKnfyUE2Wtp92_tWKiiNZlc" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.moneycontrol.com/news/business/real-estate/hocomoco-raises-1-million-in-pre-series-a-round-funding-rebrands-as-makaan-waley-8517831.html" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media10a828.webp?v=tYZm6dLd_jxpHFeOBb4IWahJY4FtxYdujgd_JkMN6Qw" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.cnbctv18.com/startup/startup-digest-mamaearth-parent-buys-majority-stake-in-dr-sheth-firstcry-halts-ipo-plans-report-lenskarts-subsidiary-neso-brands-raises-100-million-13504332.htm" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media11150e.webp?v=mArxqiwFR8FEyv4ss-w2u16ePcB-kZ90lKtX7J8w1C8" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.entrepreneur.com/article/427648" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media128069.webp?v=G_tSu4oHkkQhvjRzwPtfPUC_f7j_A3KAJ4tyKamk1d4" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://epaper.ntnews.com/Home/ShareArticle?OrgId=45f92100&amp;imageview=1" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media13b0ed.webp?v=RpYCngVYZWn4w8ktbXJKwLj4pp_bN1JrReKnA4M3aUw" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+                    <a href="https://www.eenadu.net/telugu-news/business/general/0150/522003776" class="wh-about-media-clone group relative flex h-[6.25rem] w-[9.5rem] shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-white/95 p-4 shadow-lg shadow-black/25 ring-1 ring-white/10 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-white hover:shadow-xl hover:shadow-primary/15 hover:ring-primary-light/30 focus-visible:z-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary sm:w-40" target="_blank" rel="noopener noreferrer" aria-hidden="true" tabindex="-1">
+                        <span class="absolute inset-x-4 top-0 h-px bg-gradient-to-r from-transparent via-primary-light/0 to-transparent opacity-0 transition duration-300 group-hover:via-primary-light/50 group-hover:opacity-100" aria-hidden="true"></span>
+                        <img src="../images/media-mentions/media145185.webp?v=QWyJtHLfpLRwfPfFgDX7JHwmY0SMg9hP3GkY85USkgk" alt="" class="relative z-[1] max-h-12 w-full max-w-[10rem] object-contain object-center transition duration-300 group-hover:scale-[1.03] sm:max-h-14" loading="lazy" decoding="async" />
+                    </a>
+            </div>
+        </div>
+
+        <div class="h-px w-full max-w-md mx-auto mt-10 bg-gradient-to-r from-transparent via-white/20 to-transparent" aria-hidden="true"></div>
+    </div>
+</section>
+
+
+    
+    </div>
+</main>
+<footer id="site-footer" class="bg-black text-gray-400 relative overflow-hidden">
+        <div class="wh-dark-dot-grid absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+        <!-- gradient blobs -->
+        <div class="absolute -top-40 -right-40 w-[650px] h-[650px] bg-black/6 rounded-full blur-[120px] pointer-events-none"></div>
+        <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-black/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <!-- Lottie background on right - plays once when footer enters viewport -->
+        <div class="absolute top-0 right-0 bottom-0 w-full max-w-md pointer-events-none overflow-hidden" aria-hidden="true">
+            <dotlottie-player id="footer-lottie" src="images/Prohouse%20Intro%20Animation.zip" loop="false" mode="normal" class="absolute top-1/2 right-0 -translate-y-1/2 opacity-40 w-full min-w-0 max-w-full h-full min-h-[300px] sm:min-w-[400px]"></dotlottie-player>
+            <!-- Gradient overlay to blend Lottie into footer bg -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black from-0% via-transparent via-70% to-transparent"></div>
+        </div>
+        <div class="relative z-10 mx-auto max-w-6xl xl:max-w-6xl 2xl:max-w-[90rem] px-4 py-12 sm:px-6 lg:px-8">
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <img src="images/makaan-waley-logo.svg" alt="MAKAAN WALEY" class="h-10 w-auto brightness-0 invert" loading="lazy" decoding="async" />
+                    <p class="mt-4 text-sm text-gray-300/70">Building excellence since day one. Quality construction for residential and commercial projects.</p>
+                </div>
+                <div>
+                    <h3 class="wh-eyebrow text-primary">Quick Links</h3>
+                    <ul class="mt-4 grid grid-cols-2 gap-x-4 gap-y-2">
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="index.html">Home</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="company/about-us.html">About</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="service.html">Services</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="portfolio.html">Projects</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="packages.html">Packages</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="quality-assurance.html">Quality Assurance</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="testimonials.html">Testimonials</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="faqs.html">FAQs</a></li>
+                        <li><a href="glossary.html" class="text-gray-300/70 hover:text-gray-300 transition-colors">Glossary</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="wh-eyebrow text-primary">Contact</h3>
+                    <ul class="mt-4 space-y-2 text-sm text-gray-300/70">
+                        <li>8-2-293/82/1/238, A/C, Road No 12, MLA Colony, Banjara Hills, Hyderabad, 500034</li>
+                        <li>Ground Floor, Magna Lake View Apartments, Hitex Road, Hyderabad, 500084</li>
+                        <li><a href="tel:+916305504248" class="hover:text-gray-300 transition-colors">+91 63055 04248</a></li>
+                        <li><a href="mailto:info@makaan-waley.in" class="hover:text-gray-300 transition-colors">info@makaan-waley.in</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="wh-eyebrow text-primary">Follow Us</h3>
+                    <div class="mt-4 flex gap-4">
+                        <a href="https://www.facebook.com/makaan-waley.homeconstruction" class="text-gray-300/70 hover:text-gray-300 transition-colors" aria-label="Facebook"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://www.linkedin.com/company/makaan-waleyhomeconstruction" class="text-gray-300/70 hover:text-gray-300 transition-colors" aria-label="LinkedIn"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+                        <a href="https://instagram.com/makaan-waley.in" class="text-gray-300/70 hover:text-gray-300 transition-colors" aria-label="Instagram"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+                        <a href="https://www.youtube.com/@MAKAAN WALEY" class="text-gray-300/70 hover:text-gray-300 transition-colors" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                        <a href="https://twitter.com/makaan-waley_in" class="text-gray-300/70 hover:text-gray-300 transition-colors" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-white/10 pt-8 text-center text-xs text-gray-500 space-y-2">
+                <p>Powered by <span class="text-gray-400 font-semibold tracking-wide">TIMESHELL</span></p>
+                <p>&copy; 2026 MAKAAN WALEY. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- External Scripts -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-2HPW0KC1F0" async></script>
+    <script src="js/privyr-utm3740.js"></script>
+    <script src="js/lead-otp27e8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/sited3b9.js"></script>
+    <script src="js/hero-enquiry2f00.js"></script>
+    <script src="js/faqs-page4227.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+            if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+            gsap.registerPlugin(ScrollTrigger);
+        });
+    </script>
+</body>
+</html>

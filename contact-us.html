@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact MAKAAN WALEY | Get a Free Build Estimate</title>
+    <meta name="description" content="Contact MAKAAN WALEY for a free build estimate. Our team is ready to help you plan your dream home with fixed prices and transparent timelines." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+    <link rel="alternate icon" href="images/favicon.ico" />
+</head>
+<body class="font-sans text-gray-600 antialiased bg-gray-50 relative overflow-x-hidden">
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-out">
+        <nav class="mx-auto flex max-w-[90rem] items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6 lg:px-8">
+            <div class="flex min-w-0 items-center">
+                <a href="index.html" class="relative flex h-14 shrink-0 items-center gap-2">
+                    <div class="flex items-end justify-start gap-[1px] h-full min-h-10" id="header-logo" style="padding-bottom: 4px;">
+                        <img src="images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
+                        <img src="images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
+                    </div>
+                    <img id="header-logo-white" src="images/makaanwaley-logo-whiteorange.svg" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
+                </a>
+            </div>
+            <div id="nav-desktop" class="hidden items-center gap-5 lg:flex lg:gap-6 xl:gap-7">
+                <div id="nav-city-wrap" class="relative flex h-10 shrink-0 items-center">
+                    <select id="nav-city" name="city" class="sr-only" tabindex="-1" aria-hidden="true">
+                        <option value="">City</option>
+                            <option value="Amaravati">Amaravati</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Other">Other</option>
+                    </select>
+                    <button type="button" id="nav-city-trigger" class="inline-flex h-full max-w-[7.25rem] items-center gap-1 wh-label-sm leading-none text-dark transition-colors hover:text-white sm:max-w-[9rem]" aria-haspopup="listbox" aria-expanded="false" aria-controls="nav-city-menu">
+                        <svg class="h-3.5 w-3.5 shrink-0 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/></svg>
+                        <span id="nav-city-label" class="truncate">City</span>
+                        <svg class="h-3.5 w-3.5 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div id="nav-city-menu" class="nav-city-menu hidden absolute left-0 top-full z-[60] mt-2 w-44 max-h-64 overflow-y-auto rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl" role="listbox" aria-label="Select your city">
+                        <button type="button" role="option" data-nav-city-value="" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Select city</button>
+                        <button type="button" role="option" data-nav-city-value="Amaravati" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Amaravati</button>
+                        <button type="button" role="option" data-nav-city-value="Hyderabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Hyderabad</button>
+                        <button type="button" role="option" data-nav-city-value="Ahmedabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Ahmedabad</button>
+                        <button type="button" role="option" data-nav-city-value="Chandigarh" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Chandigarh</button>
+                        <button type="button" role="option" data-nav-city-value="Chennai" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Chennai</button>
+                        <button type="button" role="option" data-nav-city-value="Bengaluru" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Bengaluru</button>
+                        <button type="button" role="option" data-nav-city-value="Jaipur" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Jaipur</button>
+                        <button type="button" role="option" data-nav-city-value="Pune" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Pune</button>
+                        <button type="button" role="option" data-nav-city-value="Lucknow" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Lucknow</button>
+                        <button type="button" role="option" data-nav-city-value="Vijayawada" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Vijayawada</button>
+                        <button type="button" role="option" data-nav-city-value="Other" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Other</button>
+                    </div>
+                </div>
+                <a href="index.html" id="nav-desktop-home" class="wh-label-sm text-dark hover:text-white transition-colors">Home</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-white transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-services-menu">
+                        Services
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-services-menu" class="invisible absolute left-0 top-full z-50 w-72 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="service/residential-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.55 5.45 21 6 21H9M19 10L21 12M19 10V20C19 20.55 18.55 21 18 21H15M9 21V15H15V21M9 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Home Construction
+                        </a>
+                        <a href="service/commercial-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 21H21M3 7H21M6 21V7a2 2 0 00-2-2H5a2 2 0 00-2 2v14a2 2 0 002 2h2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Commercial Construction
+                        </a>
+                        <a href="service/architecture-structural.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M2 20H22M4 20V10M20 20V10M12 4L4 10H20L12 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Architecture & Structure
+                        </a>
+                        <a href="service/interior-designing.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-bg text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21V12H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Interiors & Smart Homes
+                        </a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="wh-label-sm text-dark hover:text-white transition-colors">Projects</a>
+                <a id="nav-packages-link" href="packages.html" class="wh-label-sm text-dark hover:text-white transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="wh-label-sm text-dark hover:text-white transition-colors">Quality Assurance</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-white transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-more-menu">
+                        More
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-more-menu" class="invisible absolute right-0 top-full z-50 w-56 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="how-it-works.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">How it Works</a>
+                        <a href="faqs.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">FAQs</a>
+                        <a href="glossary.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Glossary</a>
+                        <a href="emonitoring.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">E-Monitoring</a>
+                        <a href="testimonials.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Testimonials</a>
+                        <a href="why-choose-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Why Choose Us</a>
+                        <a href="blog.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Blogs</a>
+                        <a href="media.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Media</a>
+                        <a href="become-a-professional.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Careers</a>
+                        <a href="company/about-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">About Us</a>
+                        <a id="nav-cost-calculator-link" href="planner.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Cost Calculator</a>
+                        <a href="contact-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-bg hover:text-white/80-hover">Contact Us</a>
+                    </div>
+                </div>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="rounded-xl bg-bg0 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-hover transition-all duration-300 hover:shadow-lg hover:shadow-bg0/25">Let's Build</button>
+            </div>
+            <button id="nav-toggle" type="button" class="inline-flex shrink-0 touch-manipulation items-center justify-center rounded-md p-2 text-dark hover:bg-gray-100 lg:hidden" aria-label="Toggle menu" aria-controls="nav-mobile" aria-expanded="false">
+                <svg id="nav-icon-open" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="nav-icon-close" class="hidden h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </nav>
+        <div id="nav-mobile" class="hidden border-t border-white/10 bg-black lg:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
+            <div class="flex flex-col gap-1 px-4 py-4">
+                <div id="nav-city-mobile-slot" class="px-1 py-1"></div>
+                <a href="index.html" id="nav-mobile-home" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Home</a>
+                <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                        Services
+                        <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
+                        <a href="service/residential-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Home Construction</a>
+                        <a href="service/commercial-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Commercial Construction</a>
+                        <a href="service/architecture-structural.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Architecture & Structure</a>
+                        <a href="service/interior-designing.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Interiors & Smart Homes</a>
+                    </div>
+                </details>
+                <a href="portfolio.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Projects</a>
+                <a id="nav-packages-link-mobile" href="packages.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Quality Assurance</a>
+                <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                        More
+                        <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </summary>
+                    <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
+                        <a href="how-it-works.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">How it Works</a>
+                        <a href="faqs.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">FAQs</a>
+                        <a href="glossary.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Glossary</a>
+                        <a href="emonitoring.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">E-Monitoring</a>
+                        <a href="testimonials.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Testimonials</a>
+                        <a href="why-choose-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Why Choose Us</a>
+                        <a href="blog.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Blogs</a>
+                        <a href="media.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Media</a>
+                        <a href="become-a-professional.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Careers</a>
+                        <a href="company/about-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">About Us</a>
+                        <a id="nav-cost-calculator-link-mobile" href="planner.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Cost Calculator</a>
+                        <a href="contact-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Contact Us</a>
+                    </div>
+                </details>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="mt-2 rounded-xl bg-bg0 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-hover">Let's Build</button>
+            </div>
+        </div>
+    </header>
+
+<main id="main-content">
+    <div class="wh-home bg-gray-50 overflow-x-hidden">
+
+        
+<section class="wh-dark-top-hero relative bg-dark py-20 sm:py-28 bg-cover bg-center bg-no-repeat bg-[url('/images/header-bg.webp')]">
+    <div class="mx-auto max-w-4xl px-6 text-center">
+        <span class="wh-eyebrow-chip">Contact</span>
+        <h1 class="wh-heading-xl text-white">Talk to Us — We Respond Within 4 Hours on Working Days</h1>
+        <p class="mt-4 wh-body-lg text-white/80 max-w-2xl mx-auto">A real construction consultant will speak with you — not a bot, not a call centre. We take the time to understand your project before offering anything.</p>
+    </div>
+</section>
+
+<section class="bg-gray-50 py-16 border-t border-gray-200">
+    <div class="mx-auto max-w-6xl px-6 grid gap-12 lg:grid-cols-2">
+        <div>
+            <h2 class="wh-heading-lg text-dark">Send your enquiry</h2>
+            <form id="contact-form" class="mt-6 flex flex-col gap-4" novalidate data-privyr-api="/api/privyr-lead" data-thank-you-url="/thank-you" data-total-steps="3">
+                <div class="flex items-center gap-1.5" aria-hidden="true">
+                    <span class="size-2 scale-125 rounded-full bg-primary" data-contact-step-dot="1"></span>
+                    <span class="h-0.5 flex-1 rounded-full bg-gray-200"></span>
+                    <span class="size-2 rounded-full bg-gray-200" data-contact-step-dot="2"></span>
+                    <span class="h-0.5 flex-1 rounded-full bg-gray-200"></span>
+                    <span class="size-2 rounded-full bg-gray-200" data-contact-step-dot="3"></span>
+                </div>
+                <p class="text-sm font-semibold text-gray-500" data-contact-step-label>Step 1 of 3 — Contact details</p>
+
+                <div class="min-h-44 space-y-4" data-contact-step="1" data-contact-step-title="Contact details">
+                    <div>
+                        <label class="wh-field-label" for="contact-name">Full Name</label>
+                        <input id="contact-name" name="name" type="text" autocomplete="name" required data-contact-field data-contact-required placeholder="E.g. Rohan Sharma" class="wh-field-input" />
+                    </div>
+                    <div>
+                        <label class="wh-field-label" for="contact-email">Email</label>
+                        <input id="contact-email" name="email" type="email" autocomplete="email" required data-contact-field data-contact-required placeholder="you@example.com" class="wh-field-input" />
+                    </div>
+                    <div>
+                        <label class="wh-field-label" for="contact-phone">Mobile Number</label>
+                        <input id="contact-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required data-contact-field data-contact-required placeholder="10-digit mobile" class="wh-field-input" />
+                    </div>
+                </div>
+
+                <div class="hidden min-h-44 space-y-4" data-contact-step="2" data-contact-step-title="Project details">
+                    <div>
+                        <label class="wh-field-label" for="contact-city">City</label>
+                        <select id="contact-city" name="city" required data-contact-field data-contact-required class="wh-field-input">
+                            <option value="">Select city…</option>
+                                <option value="Hyderabad">Hyderabad</option>
+                                <option value="Vijayawada">Vijayawada</option>
+                                <option value="Chennai">Chennai</option>
+                                <option value="Pune">Pune</option>
+                                <option value="Chandigarh">Chandigarh</option>
+                                <option value="Jaipur">Jaipur</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="wh-field-label" for="contact-service">Service Interest</label>
+                        <select id="contact-service" name="serviceInterest" required data-contact-field data-contact-required class="wh-field-input">
+                            <option value="">Select service…</option>
+                            <option value="Residential Construction">Residential Construction</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Architecture">Architecture</option>
+                            <option value="Interiors">Interiors</option>
+                            <option value="Partnership">Partnership</option>
+                            <option value="General Enquiry">General Enquiry</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="wh-field-label" for="contact-sft">Approximate Plot SFT <span class="font-normal text-gray-500">(optional)</span></label>
+                        <input id="contact-sft" name="plotSft" type="text" data-contact-field placeholder="e.g. 2400" class="wh-field-input" />
+                    </div>
+                    <div>
+                        <label class="wh-field-label" for="contact-message">Tell us about your project</label>
+                        <textarea id="contact-message" name="message" rows="4" required data-contact-field data-contact-required placeholder="Plot size, floors, timeline…" class="wh-field-input"></textarea>
+                    </div>
+                </div>
+
+                <div class="hidden min-h-44 space-y-4" data-contact-step="3" data-contact-step-title="Verify &amp; submit">
+                    <p class="text-sm font-semibold text-gray-800">Verify your mobile number</p>
+                    <div id="contact-otp-card" class="rounded-xl border border-primary-light/80 bg-gradient-to-b from-primary-lighter/70 to-white p-3 space-y-2" data-lead-otp-block>
+    <p id="contact-otp-phone-hint" class="wh-meta text-gray-600" data-otp-phone-hint></p>
+    <div class="flex flex-wrap items-center gap-2">
+        <button type="button" id="contact-send-otp" data-label="Send OTP" data-otp-send class="inline-flex items-center justify-center rounded-md border border-primary bg-white px-3 py-1.5 wh-label-sm text-primary hover:bg-primary-lighter">Send OTP</button>
+        <span id="contact-otp-status" class="hidden" aria-live="polite" data-otp-status><span class="inline-flex items-center gap-1 wh-label-sm text-green-700"><span class="text-green-600" aria-hidden="true">✓</span> Mobile verified</span></span>
+    </div>
+    <div id="contact-otp-fields" class="space-y-1.5" data-otp-fields>
+        <label for="contact-otp" class="wh-label-sm text-gray-700">Enter OTP from SMS</label>
+        <div class="flex gap-2">
+            <input id="contact-otp" name="otp" type="text" inputmode="numeric" maxlength="8" autocomplete="one-time-code" class="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm" placeholder="6-digit OTP" data-otp-input />
+            <button type="button" id="contact-verify-otp" data-otp-verify class="shrink-0 rounded-lg bg-primary px-3 py-2 wh-label-sm text-white hover:bg-primary-hover">Verify</button>
+        </div>
+    </div>
+</div>
+<input type="text" name="hp_website" value="" tabindex="-1" autocomplete="off" class="sr-only absolute -left-[9999px] w-0 h-0 opacity-0" aria-hidden="true" />
+
+                    <p id="contact-submit-hint" class="wh-label-sm font-medium text-primary-hover/85">Verify your mobile with OTP, then submit.</p>
+                </div>
+
+                <div class="flex items-center gap-2 pt-1">
+                    <button type="button" class="wh-btn-secondary wh-btn--sm hidden" data-contact-back aria-label="Previous step">
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+                        Back
+                    </button>
+                    <button type="button" class="wh-btn-primary wh-btn--sm flex-1" data-contact-next>
+                        Next
+                        <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </button>
+                    <button id="contact-submit" type="submit" class="wh-btn-primary wh-btn--block wh-btn--lg hidden flex-1" disabled aria-disabled="true">Send My Enquiry →</button>
+                </div>
+                <p class="wh-meta text-gray-500 text-center">We will call you back within 4 working hours. Your information is never shared.</p>
+                <p id="contact-form-error" class="hidden text-sm text-red-600"></p>
+                <p id="contact-form-success" class="hidden text-sm text-green-700">Thanks! Your message has been sent.</p>
+            </form>
+        </div>
+
+        <div class="space-y-8">
+            <div>
+                <h2 class="wh-heading-lg text-dark">Direct contact</h2>
+                <div class="mt-4 space-y-4">
+                    <a href="https://wa.me/916305504248" target="_blank" rel="noopener noreferrer" class="wh-card flex items-center gap-4 p-5 transition-colors hover:border-green-300 block">
+                        <span class="wh-icon-tile wh-icon-tile--lg shrink-0 border-green-100 bg-green-50 text-green-600">WA</span>
+                        <div class="min-w-0">
+                            <p class="font-semibold text-dark">Chat with us on WhatsApp</p>
+                            <p class="text-sm text-gray-600 break-words">&#x2B;91 63055 04248 — responses typically within 2 hours, 9am–7pm IST</p>
+                        </div>
+                    </a>
+                    <p class="text-sm text-gray-600"><strong class="text-dark">Phone:</strong> <a href="tel:+916305504248" class="text-primary hover:underline">&#x2B;91 63055 04248</a></p>
+                    <p class="text-sm text-gray-600"><strong class="text-dark">Email:</strong> <a href="mailto:info@makaan-waley.in" class="text-primary hover:underline">info@makaan-waley.in</a></p>
+                </div>
+            </div>
+            <div class="wh-card p-5 bg-primary-lighter/50 border-primary-light">
+                <h3 class="wh-heading-md text-dark">What happens after you contact us</h3>
+                <ol class="mt-3 space-y-2 text-sm text-gray-600 list-decimal list-inside">
+                    <li>A MAKAAN WALEY construction consultant will contact you within 4 working hours.</li>
+                    <li>We will schedule a free site visit at your convenience.</li>
+                    <li>After the site visit, we prepare a detailed proposal — architectural concept, fixed-price estimate, and timeline — within 7 working days. No commitment needed until you are satisfied.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wh-section wh-section-alt relative overflow-hidden" aria-labelledby="contact-offices-heading">
+    <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+        <div class="absolute -top-24 right-0 h-72 w-72 translate-x-1/4 rounded-full bg-primary-lighter/50 blur-3xl"></div>
+        <div class="absolute -bottom-16 left-0 h-64 w-64 -translate-x-1/4 rounded-full bg-primary-lighter/80 blur-3xl"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-6xl px-6">
+        <div class="wh-section-head">
+            <span class="wh-eyebrow-chip">Visit us</span>
+            <h2 id="contact-offices-heading" class="wh-heading-lg text-dark">Our Offices</h2>
+            <p class="wh-section-head__lede">Walk in Monday–Saturday. Same hours, same number, in every city we build.</p>
+        </div>
+
+        <div class="grid gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
+                <article class="wh-card wh-card--soft wh-card--interactive flex h-full flex-col p-6">
+                    <div class="flex min-w-0 items-center gap-3">
+                        <span class="wh-icon-tile shrink-0" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        </span>
+                        <div class="min-w-0">
+                            <h3 class="wh-heading-md text-dark">Hyderabad</h3>
+                                <p class="mt-0.5 wh-meta font-semibold uppercase tracking-wider text-primary-hover">Head office</p>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 flex-1 wh-body-md text-gray-600">252/A, Road No. 12, MLA Colony, Banjara Hills, Hyderabad, Telangana 500034</p>
+
+                    <dl class="mt-5 space-y-2.5">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                <dt class="sr-only">Phone</dt>
+                                <dd class="m-0">
+                                    <a href="tel:+916305504248" class="wh-label-sm text-gray-800 hover:text-primary-hover">&#x2B;91 63055 04248</a>
+                                </dd>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                <dt class="sr-only">Hours</dt>
+                                <dd class="m-0 wh-meta text-gray-500">Mon&#x2013;Sat, 9:00 AM &#x2013; 7:00 PM IST</dd>
+                            </div>
+                    </dl>
+
+                    <a href="https://maps.google.com/?q=MAKAAN WALEY+Banjara+Hills+Hyderabad"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="wh-btn-tertiary wh-btn--sm mt-5 justify-start px-0">
+                        Get directions
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive flex h-full flex-col p-6">
+                    <div class="flex min-w-0 items-center gap-3">
+                        <span class="wh-icon-tile shrink-0" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        </span>
+                        <div class="min-w-0">
+                            <h3 class="wh-heading-md text-dark">Vijayawada</h3>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 flex-1 wh-body-md text-gray-600">FLAT NO : 405 5th floor, Anjanadri Musunuri Apartment, Ippatam Road, Mangalagiri, Vijayawada, Andhra Pradesh 522302</p>
+
+                    <dl class="mt-5 space-y-2.5">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                <dt class="sr-only">Phone</dt>
+                                <dd class="m-0">
+                                    <a href="tel:+916305504248" class="wh-label-sm text-gray-800 hover:text-primary-hover">&#x2B;91 63055 04248</a>
+                                </dd>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                <dt class="sr-only">Hours</dt>
+                                <dd class="m-0 wh-meta text-gray-500">Mon&#x2013;Sat, 9:00 AM &#x2013; 7:00 PM IST</dd>
+                            </div>
+                    </dl>
+
+                    <a href="https://maps.google.com/?q=MAKAAN WALEY+Mangalagiri+Vijayawada"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="wh-btn-tertiary wh-btn--sm mt-5 justify-start px-0">
+                        Get directions
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive flex h-full flex-col p-6">
+                    <div class="flex min-w-0 items-center gap-3">
+                        <span class="wh-icon-tile shrink-0" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        </span>
+                        <div class="min-w-0">
+                            <h3 class="wh-heading-md text-dark">Chennai</h3>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 flex-1 wh-body-md text-gray-600">3rd &amp; 4th Floor, 74, 5th Ave, V Block, Anna Nagar, Chennai, Greater Chennai, Tamil Nadu 600040</p>
+
+                    <dl class="mt-5 space-y-2.5">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                <dt class="sr-only">Phone</dt>
+                                <dd class="m-0">
+                                    <a href="tel:+916305504248" class="wh-label-sm text-gray-800 hover:text-primary-hover">&#x2B;91 63055 04248</a>
+                                </dd>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                <dt class="sr-only">Hours</dt>
+                                <dd class="m-0 wh-meta text-gray-500">Mon&#x2013;Sat, 9:00 AM &#x2013; 7:00 PM IST</dd>
+                            </div>
+                    </dl>
+
+                    <a href="https://maps.google.com/?q=MAKAAN WALEY+Anna+Nagar+Chennai"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="wh-btn-tertiary wh-btn--sm mt-5 justify-start px-0">
+                        Get directions
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive flex h-full flex-col p-6">
+                    <div class="flex min-w-0 items-center gap-3">
+                        <span class="wh-icon-tile shrink-0" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        </span>
+                        <div class="min-w-0">
+                            <h3 class="wh-heading-md text-dark">Pune</h3>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 flex-1 wh-body-md text-gray-600">401, Trimurti Honey Gold, Ashok Nagar, Range Hill Rd, above Axis Bank, Shivajinagar, Pune, Maharashtra 411016</p>
+
+                    <dl class="mt-5 space-y-2.5">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                <dt class="sr-only">Phone</dt>
+                                <dd class="m-0">
+                                    <a href="tel:+916305504248" class="wh-label-sm text-gray-800 hover:text-primary-hover">&#x2B;91 63055 04248</a>
+                                </dd>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                <dt class="sr-only">Hours</dt>
+                                <dd class="m-0 wh-meta text-gray-500">Mon&#x2013;Sat, 9:00 AM &#x2013; 7:00 PM IST</dd>
+                            </div>
+                    </dl>
+
+                    <a href="https://maps.google.com/?q=MAKAAN WALEY+Shivajinagar+Pune"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="wh-btn-tertiary wh-btn--sm mt-5 justify-start px-0">
+                        Get directions
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive flex h-full flex-col p-6">
+                    <div class="flex min-w-0 items-center gap-3">
+                        <span class="wh-icon-tile shrink-0" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        </span>
+                        <div class="min-w-0">
+                            <h3 class="wh-heading-md text-dark">Chandigarh</h3>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 flex-1 wh-body-md text-gray-600">199, 1st Floor, SCO No. 198, Shopping Plaza, 17C, Sector 17, Chandigarh, 160002</p>
+
+                    <dl class="mt-5 space-y-2.5">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                <dt class="sr-only">Phone</dt>
+                                <dd class="m-0">
+                                    <a href="tel:+916305504248" class="wh-label-sm text-gray-800 hover:text-primary-hover">&#x2B;91 63055 04248</a>
+                                </dd>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                <dt class="sr-only">Hours</dt>
+                                <dd class="m-0 wh-meta text-gray-500">Mon&#x2013;Sat, 9:00 AM &#x2013; 7:00 PM IST</dd>
+                            </div>
+                    </dl>
+
+                    <a href="https://maps.google.com/?q=MAKAAN WALEY+Sector+17+Chandigarh"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="wh-btn-tertiary wh-btn--sm mt-5 justify-start px-0">
+                        Get directions
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
+                <article class="wh-card wh-card--soft wh-card--interactive flex h-full flex-col p-6">
+                    <div class="flex min-w-0 items-center gap-3">
+                        <span class="wh-icon-tile shrink-0" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.4 7-11a7 7 0 10-14 0c0 5.6 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        </span>
+                        <div class="min-w-0">
+                            <h3 class="wh-heading-md text-dark">Jaipur</h3>
+                        </div>
+                    </div>
+
+                    <p class="mt-4 flex-1 wh-body-md text-gray-600">CCWVN (Plot No. 100, Vaishali Marg, Nemi Nagar Extension, Block A, Vaishali Nagar, Jaipur, Rajasthan)</p>
+
+                    <dl class="mt-5 space-y-2.5">
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+                                <dt class="sr-only">Phone</dt>
+                                <dd class="m-0">
+                                    <a href="tel:+916305504248" class="wh-label-sm text-gray-800 hover:text-primary-hover">&#x2B;91 63055 04248</a>
+                                </dd>
+                            </div>
+                            <div class="flex items-center gap-2.5">
+                                <svg class="h-4 w-4 shrink-0 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+                                <dt class="sr-only">Hours</dt>
+                                <dd class="m-0 wh-meta text-gray-500">Mon&#x2013;Sat, 9:00 AM &#x2013; 7:00 PM IST</dd>
+                            </div>
+                    </dl>
+
+                    <a href="https://maps.google.com/?q=MAKAAN WALEY+Vaishali+Nagar+Jaipur"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="wh-btn-tertiary wh-btn--sm mt-5 justify-start px-0">
+                        Get directions
+                        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                </article>
+        </div>
+    </div>
+</section>
+
+    
+    </div>
+</main>
+
+<footer id="site-footer" class="bg-black text-gray-400 relative overflow-hidden">
+    <div class="wh-dark-dot-grid absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+    <div class="absolute -top-40 -right-40 w-[650px] h-[650px] bg-black/6 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-black/5 rounded-full blur-[100px] pointer-events-none"></div>
+    <div class="relative z-10 mx-auto max-w-6xl xl:max-w-6xl 2xl:max-w-[90rem] px-4 py-16">
+        <div class="flex flex-col items-center gap-8 md:flex-row md:justify-between md:items-start">
+            <div class="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
+                <a href="/" class="flex items-end gap-[1px]" aria-label="MAKAAN WALEY home">
+                    <img src="images/header-left.png" alt="" class="h-10 w-auto" width="40" height="40" decoding="async" />
+                    <img src="images/header-right.png" alt="MAKAAN WALEY" class="h-7 w-auto" width="28" height="28" decoding="async" />
+                </a>
+                <p class="wh-meta text-white/60">India&apos;s No.1 Tech-Powered Home Construction Platform</p>
+            </div>
+            <nav class="flex flex-col items-center gap-6 md:flex-row md:gap-8" aria-label="Footer navigation">
+                <a href="/packages.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Packages</a>
+                <a href="/why-choose-us.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Why MAKAAN WALEY</a>
+                <a href="/glossary.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Glossary</a>
+                <a href="/become-a-professional.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Careers</a>
+                <a href="/company/about-us.html" class="wh-body-base text-white/70 hover:text-white transition-colors">About Us</a>
+                <a href="/planner.html" class="wh-body-base text-white/70 hover:text-white transition-colors">Planner</a>
+            </nav>
+            <div class="flex flex-col items-center gap-4 md:flex-row md:items-end md:justify-between">
+                <p class="wh-meta text-white/50">&copy; 2026 MAKAAN WALEY. All rights reserved.</p>
+                <div class="flex items-center gap-4">
+                    <a href="https://twitter.com" class="text-white/60 hover:text-white transition-colors" aria-label="Twitter" target="_blank" rel="noopener">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 001.27 5.477 4.108 4.108 0 01-1.85-.5v.05A4.106 4.106 0 006.102 17a8.217 8.217 0 01-5.534 1.55c-.36 0-.71-.02-1.05-.06a11.618 11.618 0 006.29 1.84" /></svg>
+                    </a>
+                    <a href="https://linkedin.com" class="text-white/60 hover:text-white transition-colors" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.39-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd" /></svg>
+                    </a>
+                    <a href="https://instagram.com" class="text-white/60 hover:text-white transition-colors" aria-label="Instagram" target="_blank" rel="noopener">
+                        <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.024.047 1.507.206 2.011.413.9.371 1.43.754 1.699 1.07.385.452.54.992.54 1.712 0 2.722-.003 3.285-.012 3.53 0 .755-.34 1.437-.885 1.81-1.644 1.118-2.914 1.414-3.248 1.414-.076 0-.372-.022-.7-.055-2.206-.23-2.778-.724-3.036-1.053-.258-.33-.566-.683-.85-1.053-1.644-1.118-2.914-1.414-3.248-1.414-.325 0-.91.03-1.393.078C5.315 2.013 4.961 2 2.43 2c-2.43 0-2.784.013-3.808.06-1.024.047-1.507.206-2.011.413-.9.371-1.43.754-1.699 1.07-.385.452-.54.992-.54 1.712 0 2.722.003 3.285.012 3.53 0 .755.34 1.437.885 1.81 1.644 1.118 2.914 1.414 3.248 1.414.076 0 .372.022.7.055 2.206.23 2.778.724 3.036 1.053.258.33.566.683.85 1.053 1.644 1.118 2.914 1.414 3.248 1.414.325 0 .91-.03 1.393-.078zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.801a3.334 3.334 0 100 6.668 3.334 3.334 0 000-6.668zm5.337-4.355a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- External Scripts -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-2HPW0KC1F0" async></script>
+    <script src="js/privyr-utm3740.js"></script>
+    <script src="js/lead-otp27e8.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="js/sited3b9.js"></script>
+    <script src="js/hero-enquiry2f00.js"></script>
+    <script src="js/faqs-page4227.js"></script>
+    <script src="js/packages9ef2.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+            if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+            gsap.registerPlugin(ScrollTrigger);
+        });
+    </script>
+</body>
+</html>

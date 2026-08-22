@@ -1,0 +1,390 @@
+---
+// Exact WeHouse Hero — Full-screen video background with 6 videos
+---
+
+<!-- Scroll progress bar -->
+<div id="scroll-progress" class="fixed top-0 left-0 right-0 h-0.5 bg-primary/30 z-[100] origin-left scale-x-0 transition-transform duration-300 ease-out" aria-hidden="true"></div>
+
+<!-- Cursor following blob -->
+<div id="cursor-blob" class="fixed pointer-events-none w-96 h-96 rounded-full bg-primary/10 blur-3xl transition-opacity duration-500 opacity-0 z-[5]" aria-hidden="true"></div>
+
+<!-- Full-screen video background -->
+<div class="absolute inset-0 z-0" aria-hidden="true">
+    <video class="hero-bg-video is-active" autoplay muted loop playsinline width="1920" height="1080">
+        <source src="/images/hero-video/1.mp4" type="video/mp4" />
+    </video>
+    <video class="hero-bg-video" autoplay muted loop playsinline width="1920" height="1080">
+        <source src="/images/hero-video/2.mp4" type="video/mp4" />
+    </video>
+    <video class="hero-bg-video" autoplay muted loop playsinline width="1920" height="1080">
+        <source src="/images/hero-video/3.mp4" type="video/mp4" />
+    </video>
+    <video class="hero-bg-video" autoplay muted loop playsinline width="1920" height="1080">
+        <source src="/images/hero-video/4.mp4" type="video/mp4" />
+    </video>
+    <video class="hero-bg-video" autoplay muted loop playsinline width="1920" height="1080">
+        <source src="/images/hero-video/5.mp4" type="video/mp4" />
+    </video>
+    <video class="hero-bg-video" autoplay muted loop playsinline width="1920" height="1080">
+        <source src="/images/hero-video/6.mp4" type="video/mp4" />
+    </video>
+</div>
+
+<!-- Gradient overlay for text readability -->
+<div class="absolute inset-0 z-10 pointer-events-none" aria-hidden="true">
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+    <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-primary/20 blur-3xl"></div>
+    <div class="absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-primary-light/20 blur-3xl"></div>
+</div>
+
+<!-- Scroll progress bar -->
+<div id="scroll-progress" class="fixed top-0 left-0 right-0 h-0.5 bg-primary/30 z-[100] origin-left scale-x-0 transition-transform duration-300 ease-out" aria-hidden="true"></div>
+
+<!-- Cursor following blob -->
+<div id="cursor-blob" class="fixed pointer-events-none w-96 h-96 rounded-full bg-primary/10 blur-3xl transition-opacity duration-500 opacity-0 z-[5]" aria-hidden="true"></div>
+
+<!-- Main Content -->
+<div class="relative z-10 max-w-6xl xl:max-w-6xl 2xl:max-w-[90rem] mx-auto px-4 flex-1 flex flex-col justify-center w-full">
+    <div class="flex flex-col justify-start gap-8 py-4 lg:flex-row lg:items-center lg:justify-between lg:gap-12 xl:gap-16 lg:py-6">
+        
+        <!-- Left: Messaging -->
+        <div class="flex-1 min-w-0 max-w-[46rem] lg:max-w-none">
+            <div class="relative flex flex-col items-center text-center md:items-start md:text-left [&>*]:relative [&>*]:z-[1]">
+                
+                <!-- Hero Kicker -->
+                <div class="hero-kicker hero-tagline opacity-0 translate-y-6 mb-5 sm:mb-6 inline-flex w-fit max-w-full items-center gap-2 self-center rounded-full border border-primary/30 bg-gradient-to-r from-primary/10 to-primary-light/10 px-3 py-1.5 sm:gap-2.5 sm:px-4 sm:py-2 md:self-start wh-meta font-bold text-primary shadow-lg shadow-primary/20 ring-1 ring-primary/30">
+                    <!-- Pulse live dot -->
+                    <span class="relative flex h-2 w-2 shrink-0">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <span class="text-left leading-tight tracking-wider uppercase sm:tracking-widest">India's No.1 Tech Powered<br class="sm:hidden" /> Home Construction</span>
+                </div>
+
+                <!-- Hero Headline -->
+                <h1 class="hero-headline wh-heading-hero opacity-0 translate-y-6 mb-4 md:mb-5 text-dark">
+                    Build Your Dream House <span class="hero-headline-with">with</span> 
+                    <span class="text-primary relative inline-block hero-dreams-underline">MAKAAN WALEY<svg class="absolute -bottom-1 left-0 w-full" viewBox="0 0 260 8" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true"><path d="M2 5.5C60 2 130 1 258 5.5" stroke="#0D47A1" stroke-width="3" stroke-linecap="round"/></svg></span>
+                </h1>
+
+                <!-- Hero Subheadline -->
+                <p class="hero-subheadline wh-body-lg opacity-0 translate-y-6 mb-6 max-w-md text-gray-600 md:mb-8">
+                    Share your plot and vision with us and watch it turn into reality. Transparent. Timely. Tech‑Powered.
+                </p>
+
+                <!-- Hero CTAs -->
+                <div class="hero-cta opacity-0 translate-y-6 flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-none sm:flex-row sm:items-center md:items-start">
+                    <a href="#" id="hero-cta-primary" data-lead-popup-trigger class="wh-btn-primary wh-btn--lg hero-cta-magnetic group w-full sm:w-auto">
+                        <span>Get a Free Build Estimate</span>
+                        <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                    <a href="/portfolio.html" class="wh-btn-secondary wh-btn--lg group w-full sm:w-auto">
+                        <svg class="w-4 h-4 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+                        Check our Portfolio
+                    </a>
+                </div>
+
+                <!-- Hero Stats -->
+                <div class="hero-stats opacity-0 translate-y-6 mt-7 w-full md:w-auto">
+                    <div class="hero-stats-bar grid grid-cols-2 overflow-hidden rounded-2xl border border-gray-100 bg-white/80 shadow-md shadow-gray-100/80 backdrop-blur-sm md:flex md:items-center">
+                        <div class="flex items-center gap-2 border-b border-r border-gray-100 px-3 py-2.5 md:border-b-0">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                            </span>
+                            <div class="flex min-w-0 flex-col">
+                                <span class="wh-stat-sm text-dark">500+</span>
+                                <span class="wh-meta mt-0.5 font-medium text-gray-400">Projects</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 border-b border-gray-100 px-3 py-2.5 md:border-b-0 md:border-l">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 13l4.553 2.276A1 1 0 0021 21.382V10.618a1 1 0 00-.553-.894L15 7m0 13V7m0 0L9 4"/></svg>
+                            </span>
+                            <div class="flex min-w-0 flex-col">
+                                <span class="wh-stat-sm text-dark">25L+</span>
+                                <span class="wh-meta mt-0.5 font-medium text-gray-400">Sq. Ft. Built</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 border-r border-gray-100 px-3 py-2.5 md:border-r-0 md:border-l">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/></svg>
+                            </span>
+                            <div class="flex min-w-0 flex-col">
+                                <span class="wh-stat-sm text-dark">4.9★</span>
+                                <span class="wh-meta mt-0.5 font-medium text-gray-400">Avg. Rating</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 px-3 py-2.5 md:border-l md:border-gray-100">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v3m0 12v3M3 12h3m12 0h3M5.6 5.6l2.1 2.1m8.6 8.6l2.1 2.1M5.6 18.4l2.1-2.1m8.6-8.6l2.1-2.1"/><circle cx="12" cy="12" r="3"/></svg>
+                            </span>
+                            <div class="flex min-w-0 flex-col">
+                                <span class="wh-stat-sm text-dark">100%</span>
+                                <span class="wh-meta mt-0.5 font-medium text-gray-400">Vasthu</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Dynamic quick enquiry form -->
+        <div class="relative w-full max-w-md mx-auto shrink-0 pt-10 md:pt-6 lg:max-w-none lg:w-[320px] xl:w-[340px] lg:self-start">
+            <img src="/images/500plusprojects.png" alt="500+ projects" width="104" height="104" class="hero-stamp pointer-events-none absolute z-20 left-0 right-0 mx-auto top-0 w-16 md:left-auto md:right-auto md:mx-0 md:w-[6rem] opacity-0 translate-y-6" loading="eager" decoding="async" />
+            <div class="wh-form-card relative hero-form reveal-right p-5 pt-12 md:p-6">
+                <div class="mb-3">
+                    <h3 class="wh-heading-md text-dark text-center md:text-right">Start Your Dream Home Journey</h3>
+                </div>
+
+                <div id="hero-form-steps-wrap">
+                    <!-- Step indicator -->
+                    <span id="hero-step-label" class="sr-only">Step 1 of 3</span>
+
+                    <form id="hero-enquiry-form" class="space-y-3" novalidate data-privyr-api="/api/privyr-lead" data-thank-you-url="/thank-you" data-lead-source="Homepage hero">
+                        <!-- Step 1: Name, Email, Timeframe -->
+                        <div class="hero-step min-h-[200px]" data-hero-step="1">
+                            <div class="space-y-3">
+                                <div>
+                                    <label for="hero-name" class="wh-field-label">Full Name</label>
+                                    <input id="hero-name" name="name" type="text" autocomplete="name" data-hero-required data-hero-step="1" class="wh-field-input" placeholder="E.g. Rohan Sharma" />
+                                </div>
+                                <div>
+                                    <label for="hero-email" class="wh-field-label">Email</label>
+                                    <input id="hero-email" name="email" type="email" autocomplete="email" data-hero-required data-hero-step="1" class="wh-field-input" placeholder="you@example.com" />
+                                </div>
+                                <div>
+                                    <label for="hero-timeframe" class="wh-field-label">When do you plan to start?</label>
+                                    <select id="hero-timeframe" name="timeframe" data-hero-required data-hero-step="1" class="wh-field-input">
+                                        <option value="">Select timeframe</option>
+                                        <option value="0-3">Within 3 months</option>
+                                        <option value="3-6">3–6 months</option>
+                                        <option value="6-12">6–12 months</option>
+                                        <option value="12+">More than 12 months</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: City + Phone -->
+                        <div class="hero-step hidden min-h-[200px]" data-hero-step="2">
+                            <div class="space-y-3">
+                                <div>
+                                    <label for="hero-city" class="wh-field-label">City</label>
+                                    <select id="hero-city" name="city" data-hero-required data-hero-step="2" class="wh-field-input">
+                                        <option value="">Select your city</option>
+                                            <option value="Amaravati">Amaravati</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Ahmedabad">Ahmedabad</option>
+                                            <option value="Chandigarh">Chandigarh</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Bengaluru">Bengaluru</option>
+                                            <option value="Jaipur">Jaipur</option>
+                                            <option value="Pune">Pune</option>
+                                            <option value="Lucknow">Lucknow</option>
+                                            <option value="Vijayawada">Vijayawada</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="hero-phone" class="wh-field-label">Phone Number</label>
+                                    <input id="hero-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" data-hero-required data-hero-step="2" class="wh-field-input" placeholder="Mobile number" />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Plot Size + Submit -->
+                        <div class="hero-step hidden min-h-[140px] space-y-4" data-hero-step="3">
+                            <div id="hero-plot-size-group">
+                                <label for="hero-plot-size" class="wh-field-label">Plot Size (approx)</label>
+                                <div class="flex items-center gap-2">
+                                    <input id="hero-plot-size" name="plotSize" type="number" min="100" max="20000" step="50" data-hero-required data-hero-step="3" class="wh-field-input [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" placeholder="E.g. 1500" />
+                                    <span class="wh-meta font-semibold text-gray-500 px-2 py-1 rounded-lg bg-gray-50 border border-gray-200">SFT</span>
+                                </div>
+                            </div>
+                            <div id="hero-otp-wrap" class="space-y-2">
+                                <p class="wh-label-sm text-gray-800">Verify your mobile number</p>
+                                <div id="hero-otp-card" class="rounded-xl border border-primary-lighter/80 bg-gradient-to-b from-bg/70 to-white p-3 space-y-2" data-lead-otp-block>
+    <p id="hero-otp-phone-hint" class="wh-meta text-gray-600" data-otp-phone-hint></p>
+    <div class="flex flex-wrap items-center gap-2">
+        <button type="button" id="hero-send-otp" data-label="Send OTP" data-otp-send class="inline-flex items-center justify-center rounded-md border border-primary-lighter bg-white px-3 py-1.5 wh-label-sm text-primary hover:bg-bg">Send OTP</button>
+        <span id="hero-otp-status" class="hidden" aria-live="polite" data-otp-status><span class="inline-flex items-center gap-1 wh-label-sm text-green-700"><span class="text-green-600" aria-hidden="true">✓</span> Mobile verified</span></span>
+    </div>
+</div>
+                                <div class="flex gap-2">
+                                    <input type="text" name="otp" id="hero-otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code" class="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm" placeholder="6-digit OTP" data-otp-input />
+                                    <button type="button" id="hero-verify-otp" data-otp-verify class="shrink-0 rounded-lg bg-primary-hover px-3 py-2 wh-label-sm text-white hover:bg-primary">Verify</button>
+                                </div>
+                            </div>
+                            <div class="pt-2">
+                                <button type="submit" id="hero-submit-btn" class="wh-btn-primary wh-btn--lg w-full">
+                                    <span>Get My Smart Plan</span>
+                                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Magnetic CTA: subtle pull toward cursor when in hero (fine pointer only) -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Hero Animations - Staggered entrance
+        var heroTl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+        gsap.set(".hero-stamp", { scale: 0.72, rotation: -22, transformOrigin: "50% 50%" });
+
+        heroTl.to(".hero-headline", {
+            y: 0,
+            opacity: 1,
+            duration: 1
+        })
+        .to(".hero-tagline", {
+            y: 0,
+            opacity: 1,
+            duration: 0.75
+        }, "-=0.45")
+        .to(".hero-subheadline", {
+            y: 0,
+            opacity: 1,
+            duration: 0.8
+        }, "-=0.5")
+        .to(".hero-cta", {
+            y: 0,
+            opacity: 1,
+            duration: 0.8
+        }, "-=0.4")
+        .to(".hero-stats", {
+            y: 0,
+            opacity: 1,
+            duration: 0.7
+        }, "-=0.3")
+        .to(".hero-stamp", {
+            opacity: 1,
+            scale: 1,
+            rotation: -10,
+            duration: 0.85,
+            ease: "back.out(1.6)"
+        }, "-=0.35");
+
+        // Soft-rotate faded Indian family overlays in hero background
+        (function initHeroFamilyFades() {
+            var fades = Array.prototype.slice.call(document.querySelectorAll(".hero-video-fade"));
+            if (fades.length < 2) return;
+            var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+            var coarsePointer = window.matchMedia("(pointer: coarse)").matches;
+            if (prefersReducedMotion || coarsePointer) return;
+            var index = fades.findIndex(function(el) { return el.classList.contains("is-active"); });
+            if (index < 0) index = 0;
+            window.setInterval(function() {
+                fades[index].classList.remove("is-active");
+                index = (index + 1) % fades.length;
+                fades[index].classList.add("is-active");
+            }, 5200);
+        })();
+
+        var isInHero = false;
+
+        // Scroll progress bar
+        var scrollProgress = document.getElementById("scroll-progress");
+        if (scrollProgress) {
+            function updateScrollProgress() {
+                var scrollTop = window.scrollY;
+                var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                var pct = docHeight > 0 ? Math.min(scrollTop / docHeight, 1) : 0;
+                scrollProgress.style.transform = "scaleX(" + pct + ")";
+            }
+            window.addEventListener("scroll", updateScrollProgress, { passive: true });
+            updateScrollProgress();
+        }
+
+        // Magnetic CTA: subtle pull toward cursor when in hero (fine pointer only)
+        var heroSectionEl = document.getElementById("hero");
+        var heroCta = document.getElementById("hero-cta-primary");
+        var ctaMagX = 0, ctaMagY = 0;
+        var ctaTargetX = 0, ctaTargetY = 0;
+        var canHoverFine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        if (heroCta && heroSectionEl && canHoverFine) {
+            document.addEventListener("mousemove", function(e) {
+                if (!heroCta || !heroSectionEl) return;
+                var heroRect = heroSectionEl.getBoundingClientRect();
+                var inHero = e.clientY >= heroRect.top && e.clientY <= heroRect.bottom;
+                if (!inHero) { ctaTargetX = 0; ctaTargetY = 0; return; }
+                var rect = heroCta.getBoundingClientRect();
+                var cx = rect.left + rect.width / 2;
+                var cy = rect.top + rect.height / 2;
+                var dx = e.clientX - cx;
+                var dy = e.clientY - cy;
+                var dist = Math.sqrt(dx * dx + dy * dy);
+                var maxDist = 140;
+                var pull = 12;
+                if (dist < maxDist && dist > 0) {
+                    var f = (1 - dist / maxDist) * pull;
+                    ctaTargetX = (dx / dist) * f;
+                    ctaTargetY = (dy / dist) * f;
+                } else {
+                    ctaTargetX = 0;
+                    ctaTargetY = 0;
+                }
+            });
+            heroSectionEl.addEventListener("mouseleave", function() {
+                ctaTargetX = 0;
+                ctaTargetY = 0;
+            });
+            function animateMagnetic() {
+                ctaMagX += (ctaTargetX - ctaMagX) * 0.15;
+                ctaMagY += (ctaTargetY - ctaMagY) * 0.15;
+                heroCta.style.transform = "translate(" + ctaMagX + "px, " + ctaMagY + "px)";
+                requestAnimationFrame(animateMagnetic);
+            }
+            animateMagnetic();
+        }
+
+        // Cursor Following Blob (fine pointer / hover devices only)
+        var cursorBlob = document.getElementById("cursor-blob");
+        var heroSection = document.getElementById("hero");
+        var blobX = 0, blobY = 0;
+        var mouseX = 0, mouseY = 0;
+        var isInHero = false;
+
+        var canHoverFine = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+        if (cursorBlob && heroSection && canHoverFine) {
+            document.addEventListener("mousemove", function(e) {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+
+                var heroRect = heroSection.getBoundingClientRect();
+                isInHero = e.clientY >= heroRect.top && e.clientY <= heroRect.bottom;
+
+                if (isInHero) {
+                    cursorBlob.style.opacity = "1";
+                } else {
+                    cursorBlob.style.opacity = "0";
+                }
+            });
+
+            function animateBlob() {
+                blobX += (mouseX - blobX) * 0.08;
+                blobY += (mouseY - blobY) * 0.08;
+
+                cursorBlob.style.left = (blobX - 150) + "px";
+                cursorBlob.style.top = (blobY - 150) + "px";
+
+                requestAnimationFrame(animateBlob);
+            }
+            animateBlob();
+
+            heroSection.addEventListener("mouseleave", function() {
+                cursorBlob.style.opacity = "0";
+            });
+        } else if (cursorBlob) {
+            cursorBlob.style.display = "none";
+        }
+    });
+</script>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="66.5" height="44.179"><g id="Group_1271" data-name="Group 1271" transform="translate(-295 -95)"><g id="Group_1137" data-name="Group 1137" transform="translate(348.844 125.569)"><path id="Path_129" fill="#2b2e34" d="M-5.894-11.289a6.585 6.585 0 0 1-6.578-6.578 6.586 6.586 0 0 1 6.578-6.578 6.586 6.586 0 0 1 6.578 6.578 6.585 6.585 0 0 1-6.578 6.578Zm0-12.156a5.584 5.584 0 0 0-5.578 5.578 5.584 5.584 0 0 0 5.578 5.578 5.584 5.584 0 0 0 5.578-5.578 5.584 5.584 0 0 0-5.578-5.578Z" data-name="Path 129" transform="translate(11.972 23.945)"/><path id="Path_130" d="M-3.329-6.658A3.432 3.432 0 0 0 .1-10.09a3.432 3.432 0 0 0-3.432-3.433 3.432 3.432 0 0 0-3.429 3.433 3.432 3.432 0 0 0 3.432 3.432" data-name="Path 130" transform="translate(9.406 16.168)"/></g><g id="Group_1140" data-name="Group 1140" transform="translate(295 95)"><g id="Group_1135" data-name="Group 1135" transform="translate(35.153 .127)"><path id="Path_134" fill="#1e78c1" d="m-33.926-86.556-.191-.381-.762-.063c-2.225-.191-2.67-.381-2.67-.89v-41.318l-13.031 3.178-.064.254 1.4.381c2.225.572 2.607 1.081 2.607 4.895v32.483c0 .763-.318.89-2.289 1.017l-.826.064-.254.381Z" data-name="Path 134" transform="translate(50.644 129.209)"/></g><g id="Group_1136" data-name="Group 1136"><path id="Path_135" fill="#2b2e34" d="M-39.6-87.33c-2.1 0-4.64-2.479-6.484-5.721v-15.892c1.462-1.081 2.733-2.161 4.958-2.161 4.322 0 6.929 4.767 6.929 11.378 0 6.8-1.907 12.4-5.4 12.4m-15.065 1.144 5.149-2.479h.064a25.087 25.087 0 0 0 9.217 1.971c7.056 0 15.828-4.831 15.828-15.32 0-7.819-5.085-13.667-11.442-13.667-4 0-7.692 2.8-9.98 5.912l-.254-.19v-20.405l-12.968 3.178-.064.255 1.462.381c2.225.572 2.606 1.081 2.606 4.895v35.471Z" data-name="Path 135" transform="translate(59.117 130.365)"/></g></g></g><script type="text/javascript">//<![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]></script></svg>
