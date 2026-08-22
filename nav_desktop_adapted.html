@@ -1,0 +1,100 @@
+<div id="nav-desktop" class="hidden items-center gap-5 lg:flex lg:gap-6 xl:gap-7">
+                <div id="nav-city-wrap" class="relative flex h-10 shrink-0 items-center">
+                    <select id="nav-city" name="city" class="sr-only" tabindex="-1" aria-hidden="true">
+                        <option value="">City</option>
+                            <option value="Amaravati">Amaravati</option>
+    <option value="Hyderabad">Hyderabad</option>
+    <option value="Ahmedabad">Ahmedabad</option>
+    <option value="Chandigarh">Chandigarh</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Bengaluru">Bengaluru</option>
+    <option value="Jaipur">Jaipur</option>
+    <option value="Pune">Pune</option>
+    <option value="Lucknow">Lucknow</option>
+    <option value="Vijayawada">Vijayawada</option>
+<option value="Other">Other</option>
+
+                    </select>
+                    <button type="button" id="nav-city-trigger" class="inline-flex h-full max-w-[7.25rem] items-center gap-1 wh-label-sm leading-none text-dark transition-colors hover:text-primary sm:max-w-[9rem]" aria-haspopup="listbox" aria-expanded="false" aria-controls="nav-city-menu">
+                        <svg class="h-3.5 w-3.5 shrink-0 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span id="nav-city-label" class="truncate">City</span>
+                        <svg class="h-3.5 w-3.5 shrink-0 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+                    </button>
+                    <div id="nav-city-menu" class="nav-city-menu hidden absolute left-0 top-full z-[60] mt-2 w-44 max-h-64 overflow-y-auto rounded-xl border border-gray-200 bg-white p-1.5 shadow-xl" role="listbox" aria-label="Select your city">
+                        <button type="button" role="option" data-nav-city-value="" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Select city</button>
+    <button type="button" role="option" data-nav-city-value="Amaravati" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Amaravati</button>
+    <button type="button" role="option" data-nav-city-value="Hyderabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Hyderabad</button>
+    <button type="button" role="option" data-nav-city-value="Ahmedabad" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Ahmedabad</button>
+    <button type="button" role="option" data-nav-city-value="Chandigarh" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Chandigarh</button>
+    <button type="button" role="option" data-nav-city-value="Chennai" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Chennai</button>
+    <button type="button" role="option" data-nav-city-value="Bengaluru" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Bengaluru</button>
+    <button type="button" role="option" data-nav-city-value="Jaipur" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Jaipur</button>
+    <button type="button" role="option" data-nav-city-value="Pune" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Pune</button>
+    <button type="button" role="option" data-nav-city-value="Lucknow" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Lucknow</button>
+    <button type="button" role="option" data-nav-city-value="Vijayawada" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Vijayawada</button>
+<button type="button" role="option" data-nav-city-value="Other" class="nav-city-option block w-full rounded-lg px-3 py-2 text-left text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Other</button>
+
+                    </div>
+                </div>
+                <a href="index.html" id="nav-desktop-home" class="wh-label-sm text-dark hover:text-primary transition-colors">Home</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-primary transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-services-menu">
+                        Services
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-services-menu" class="invisible absolute left-0 top-full z-50 w-72 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="service/residential-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.55 5.45 21 6 21H9M19 10L21 12M19 10V20C19 20.55 18.55 21 18 21H15M9 21V15H15V21M9 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Home Construction
+                        </a>
+                        <a href="service/commercial-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 21H21M3 7H21M6 21V7M18 21V7M10 21V17H14V21M10 11H11M13 11H14M10 15H11M13 15H14M10 7V3H14V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Commercial Construction
+                        </a>
+                        <a href="service/architecture-structural.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M2 20H22M4 20V10M20 20V10M12 4L4 10H20L12 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20V15C9 14.45 9.45 14 10 14H14C14.55 14 15 14.45 15 15V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Architecture &amp; Structure
+                        </a>
+                        <a href="service/interior-designing.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                            <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
+                                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21V12H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </span>
+                            Interiors &amp; Smart Homes
+                        </a>
+                    </div>
+                </div>
+                <a href="portfolio.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Projects</a>
+                <a id="nav-packages-link" href="packages.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Quality Assurance</a>
+                <div class="relative group" data-nav-dropdown>
+                    <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-primary transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-more-menu">
+                        More
+                        <svg class="h-4 w-4 transition-transform group-data-[open]:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="nav-more-menu" class="invisible absolute right-0 top-full z-50 w-56 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
+                        <a href="how-it-works.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">How it Works</a>
+                        <a href="faqs.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">FAQs</a>
+                        <a href="glossary.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Glossary</a>
+                        <a href="emonitoring.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">E-Monitoring</a>
+                        <a href="testimonials.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Testimonials</a>
+                        <a href="why-choose-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Why Choose Us</a>
+                        <a href="blog.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Blogs</a>
+                        <a href="media.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Media</a>
+                        <a href="become-a-professional.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Careers</a>
+                        <a href="company/about-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">About Us</a>
+                        <a id="nav-cost-calculator-link" href="planner.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Cost Calculator</a>
+                        <a href="contact-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Contact Us</a>
+                    </div>
+                </div>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25">Let's Build</button>
+            
