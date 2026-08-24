@@ -31,7 +31,7 @@
         <nav class="mx-auto flex max-w-[90rem] items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6 lg:px-8">
             <div class="flex min-w-0 items-center">
                 <a href="index.html" class="relative flex h-10 sm:h-12 md:h-14 shrink-0 items-end gap-[1px] min-h-8 sm:min-h-10" style="padding-bottom: 4px;">
-                    <img src="images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
+                    <img src="images/header-left.png" alt="MAKAAN WALEY" id="header-logo" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
                     <img src="images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
                     <img id="header-logo-white" src="images/header-left.png" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
                 </a>
@@ -1790,61 +1790,53 @@
     <script>
         var BASE = "";
         document.addEventListener("DOMContentLoaded", function() {
-            // Sticky header: solid bg + logo swap on scroll
+            // Sticky header: WeHouse-style .header-scrolled class (match WeHouse exactly)
             var headerEl = document.getElementById("site-header");
+            var headerLogo = document.getElementById("header-logo");
             var headerLogoWhite = document.getElementById("header-logo-white");
-            var headerLogoDefault = headerEl ? headerEl.querySelector("img[alt=\"MAKAAN WALEY\"]") : null;
-            var headerNavLinks = headerEl ? headerEl.querySelectorAll("a, button:not(#nav-toggle):not([data-lead-popup-trigger])") : [];
-            var headerButtons = headerEl ? headerEl.querySelectorAll("button:not(#nav-toggle):not([data-lead-popup-trigger])") : [];
-            
-            function updateHeaderOnScroll() {
-                if (!headerEl) return;
-                var scrollY = window.scrollY;
-                var threshold = 80; // px
-                
-                if (scrollY > threshold) {
-                    headerEl.classList.remove("bg-transparent");
-                    headerEl.classList.add("bg-white", "shadow-md");
-                    if (headerLogoWhite) headerLogoWhite.classList.remove("opacity-0");
-                    if (headerLogoDefault) headerLogoDefault.classList.add("opacity-0");
-                    headerNavLinks.forEach(function(link) {
-                        if (link.classList.contains("text-dark")) {
-                            link.classList.remove("text-dark");
-                            link.classList.add("text-white");
-                        }
-                        if (link.classList.contains("hover:text-primary")) {
-                            link.classList.add("hover:text-primary-light");
-                        }
-                    });
-                    headerButtons.forEach(function(btn) {
-                        if (btn.classList.contains("text-dark")) {
-                            btn.classList.remove("text-dark");
-                            btn.classList.add("text-white");
-                        }
-                    });
-                } else {
-                    headerEl.classList.remove("bg-white", "shadow-md");
-                    headerEl.classList.add("bg-transparent");
-                    if (headerLogoWhite) headerLogoWhite.classList.add("opacity-0");
-                    if (headerLogoDefault) headerLogoDefault.classList.remove("opacity-0");
-                    headerNavLinks.forEach(function(link) {
-                        if (link.classList.contains("text-white")) {
-                            link.classList.remove("text-white");
-                            link.classList.add("text-dark");
-                        }
-                        if (link.classList.contains("hover:text-primary-light")) {
-                            link.classList.remove("hover:text-primary-light");
-                        }
-                    });
-                    headerButtons.forEach(function(btn) {
-                        if (btn.classList.contains("text-white")) {
-                            btn.classList.remove("text-white");
-                            btn.classList.add("text-dark");
-                        }
-                    });
+            var navLinks = headerEl ? headerEl.querySelectorAll("#nav-desktop > a, #nav-desktop > .group > a, #nav-desktop > .group > button") : [];
+            var navToggleBtn = document.getElementById("nav-toggle");
+            var navCityTrigger = document.getElementById("nav-city-trigger");
+            var hasDarkTopHero = !!document.querySelector(".wh-dark-top-hero");
+
+            function applyHeaderTextTheme(useLightText) {
+                navLinks.forEach(function(link) {
+                    link.classList.toggle("text-dark", !useLightText);
+                    link.classList.toggle("text-white/80", useLightText);
+                });
+
+                if (navToggleBtn) {
+                    navToggleBtn.classList.toggle("text-dark", !useLightText);
+                    navToggleBtn.classList.toggle("text-white", useLightText);
+                }
+
+                if (navCityTrigger && window.matchMedia("(min-width: 1024px)").matches) {
+                    navCityTrigger.classList.toggle("text-dark", !useLightText);
+                    navCityTrigger.classList.toggle("text-white/80", useLightText);
+                }
+
+                if (headerLogo) {
+                    headerLogo.classList.toggle("opacity-0", useLightText);
+                }
+                if (headerLogoWhite) {
+                    headerLogoWhite.classList.toggle("opacity-0", !useLightText);
                 }
             }
-            
+
+            function updateHeaderOnScroll() {
+                if (!headerEl) return;
+                var scrolled = window.scrollY > 10; // WeHouse uses 10px threshold
+                if (scrolled) {
+                    headerEl.classList.add("header-scrolled");
+                    headerEl.classList.remove("bg-transparent", "bg-dark/90");
+                    applyHeaderTextTheme(false); // dark text when scrolled
+                } else {
+                    headerEl.classList.remove("header-scrolled", "bg-dark/90");
+                    headerEl.classList.add("bg-transparent");
+                    applyHeaderTextTheme(hasDarkTopHero); // light text at top if dark hero
+                }
+            }
+
             window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
             updateHeaderOnScroll(); // Initial check
 
