@@ -16,12 +16,10 @@
 <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-out">
         <nav class="mx-auto flex max-w-[90rem] items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6 lg:px-8">
             <div class="flex min-w-0 items-center">
-                <a href="index.html" class="relative flex h-14 shrink-0 items-center gap-2">
-                    <div class="flex items-end justify-start gap-[1px] h-full min-h-10" id="header-logo" style="padding-bottom: 4px;">
-                        <img src="images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
-                        <img src="images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
-                    </div>
-                    <img id="header-logo-white" src="images/makaanwaley-logo-whiteorange.svg" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
+                <a href="../index.html" class="relative flex h-10 sm:h-12 md:h-14 shrink-0 items-end gap-[1px] min-h-8 sm:min-h-10" style="padding-bottom: 4px;">
+                    <img src="../images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
+                    <img src="../images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
+                    <img id="header-logo-white" src="../images/header-left.png" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
                 </a>
             </div>
             <div id="nav-desktop" class="hidden items-center gap-5 lg:flex lg:gap-6 xl:gap-7">
@@ -62,7 +60,7 @@
 
                     </div>
                 </div>
-                <a href="index.html" id="nav-desktop-home" class="wh-label-sm text-dark hover:text-primary transition-colors">Home</a>
+                <a href="../index.html" id="nav-desktop-home" class="wh-label-sm text-dark hover:text-primary transition-colors">Home</a>
                 <div class="relative group" data-nav-dropdown>
                     <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-primary transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-services-menu">
                         Services
@@ -71,25 +69,25 @@
                         </svg>
                     </button>
                     <div id="nav-services-menu" class="invisible absolute left-0 top-full z-50 w-72 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
-                        <a href="service/residential-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                        <a href="../service/residential-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
                             <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.55 5.45 21 6 21H9M19 10L21 12M19 10V20C19 20.55 18.55 21 18 21H15M9 21V15H15V21M9 21H15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </span>
                             Home Construction
                         </a>
-                        <a href="service/commercial-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                        <a href="../service/commercial-construction.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
                             <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 21H21M3 7H21M6 21V7M18 21V7M10 21V17H14V21M10 11H11M13 11H14M10 15H11M13 15H14M10 7V3H14V7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </span>
                             Commercial Construction
                         </a>
-                        <a href="service/architecture-structural.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                        <a href="../service/architecture-structural.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
                             <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M2 20H22M4 20V10M20 20V10M12 4L4 10H20L12 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 20V15C9 14.45 9.45 14 10 14H14C14.55 14 15 14.45 15 15V20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </span>
                             Architecture &amp; Structure
                         </a>
-                        <a href="service/interior-designing.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
+                        <a href="../service/interior-designing.html" class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">
                             <span class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-primary-lighter/20 text-primary">
                                 <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V9Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21V12H15V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
                             </span>
@@ -97,9 +95,9 @@
                         </a>
                     </div>
                 </div>
-                <a href="portfolio.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Projects</a>
-                <a id="nav-packages-link" href="packages.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Packages</a>
-                <a href="quality-assurance.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Quality Assurance</a>
+                <a href="../portfolio.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Projects</a>
+                <a id="nav-packages-link" href="../packages.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Packages</a>
+                <a href="../quality-assurance.html" class="wh-label-sm text-dark hover:text-primary transition-colors">Quality Assurance</a>
                 <div class="relative group" data-nav-dropdown>
                     <button type="button" class="inline-flex items-center gap-1 wh-label-sm text-dark hover:text-primary transition-colors cursor-pointer" aria-haspopup="true" aria-expanded="false" aria-controls="nav-more-menu">
                         More
@@ -108,18 +106,18 @@
                         </svg>
                     </button>
                     <div id="nav-more-menu" class="invisible absolute right-0 top-full z-50 w-56 rounded-xl border border-gray-200 bg-white p-2 opacity-0 shadow-xl transition-all duration-150 pointer-events-none group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:visible group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-data-[open]:visible group-data-[open]:opacity-100 group-data-[open]:pointer-events-auto">
-                        <a href="how-it-works.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">How it Works</a>
-                        <a href="faqs.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">FAQs</a>
-                        <a href="glossary.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Glossary</a>
-                        <a href="emonitoring.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">E-Monitoring</a>
-                        <a href="testimonials.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Testimonials</a>
-                        <a href="why-choose-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Why Choose Us</a>
-                        <a href="blog.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Blogs</a>
-                        <a href="media.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Media</a>
-                        <a href="become-a-professional.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Careers</a>
-                        <a href="company/about-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">About Us</a>
-                        <a id="nav-cost-calculator-link" href="planner.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Cost Calculator</a>
-                        <a href="contact-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Contact Us</a>
+                        <a href="../how-it-works.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">How it Works</a>
+                        <a href="../faqs.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">FAQs</a>
+                        <a href="../glossary.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Glossary</a>
+                        <a href="../emonitoring.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">E-Monitoring</a>
+                        <a href="../testimonials.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Testimonials</a>
+                        <a href="../why-choose-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Why Choose Us</a>
+                        <a href="../blog.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Blogs</a>
+                        <a href="../media.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Media</a>
+                        <a href="../become-a-professional.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Careers</a>
+                        <a href="../company/about-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">About Us</a>
+                        <a id="nav-cost-calculator-link" href="../planner.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Cost Calculator</a>
+                        <a href="../contact-us.html" class="block rounded-lg px-3 py-2 text-sm text-gray-700 hover:bg-primary-lighter/20 hover:text-primary-dark">Contact Us</a>
                     </div>
                 </div>
                 <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="rounded-xl bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-primary-dark transition-all duration-300 hover:shadow-lg hover:shadow-primary/25">Let's Build</button>
@@ -133,46 +131,46 @@
                 </svg>
             </button>
         </nav>
-        <div id="nav-mobile" class="hidden border-t border-white/10 bg-black lg:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
+        <div id="nav-mobile" class="hidden border-t border-white/10 bg-dark lg:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
             <div class="flex flex-col gap-1 px-4 py-4">
                 <div id="nav-city-mobile-slot" class="px-1 py-1"></div>
-                <a href="index.html" id="nav-mobile-home" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Home</a>
+                <a href="../index.html" id="nav-mobile-home" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Home</a>
                 <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
-                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-white/5 hover:text-primary [&::-webkit-details-marker]:hidden">
                         Services
                         <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
-                        <a href="service/residential-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Home Construction</a>
-                        <a href="service/commercial-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Commercial Construction</a>
-                        <a href="service/architecture-structural.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Architecture & Structure</a>
-                        <a href="service/interior-designing.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Interiors & Smart Homes</a>
+                        <a href="../service/residential-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Home Construction</a>
+                        <a href="../service/commercial-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Commercial Construction</a>
+                        <a href="../service/architecture-structural.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Architecture &amp; Structure</a>
+                        <a href="../service/interior-designing.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Interiors &amp; Smart Homes</a>
                     </div>
                 </details>
-                <a href="portfolio.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Projects</a>
-                <a id="nav-packages-link-mobile" href="packages.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Packages</a>
-                <a href="quality-assurance.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Quality Assurance</a>
+                <a href="../portfolio.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Projects</a>
+                <a id="nav-packages-link-mobile" href="../packages.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Packages</a>
+                <a href="../quality-assurance.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Quality Assurance</a>
                 <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
-                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-white/5 hover:text-primary [&::-webkit-details-marker]:hidden">
                         More
                         <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
-                        <a href="how-it-works.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">How it Works</a>
-                        <a href="faqs.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">FAQs</a>
-                        <a href="glossary.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Glossary</a>
-                        <a href="emonitoring.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">E-Monitoring</a>
-                        <a href="testimonials.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Testimonials</a>
-                        <a href="why-choose-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Why Choose Us</a>
-                        <a href="blog.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Blogs</a>
-                        <a href="media.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Media</a>
-                        <a href="become-a-professional.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Careers</a>
-                        <a href="company/about-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">About Us</a>
-                        <a id="nav-cost-calculator-link-mobile" href="planner.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Cost Calculator</a>
-                        <a href="contact-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Contact Us</a>
+                        <a href="../how-it-works.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">How it Works</a>
+                        <a href="../faqs.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">FAQs</a>
+                        <a href="../glossary.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Glossary</a>
+                        <a href="../emonitoring.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">E-Monitoring</a>
+                        <a href="../testimonials.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Testimonials</a>
+                        <a href="../why-choose-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Why Choose Us</a>
+                        <a href="../blog.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Blogs</a>
+                        <a href="../media.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Media</a>
+                        <a href="../become-a-professional.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Careers</a>
+                        <a href="../company/about-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">About Us</a>
+                        <a id="nav-cost-calculator-link-mobile" href="../planner.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Cost Calculator</a>
+                        <a href="../contact-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Contact Us</a>
                     </div>
                 </details>
-                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="mt-2 rounded-xl bg-bg0 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-hover">Let's Build</button>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="mt-2 rounded-xl bg-primary-lighter/200 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-dark">Let&apos;s Build</button>
             </div>
         </div>
     </header>
@@ -674,29 +672,29 @@
         <div class="absolute -bottom-40 -left-40 w-[600px] h-[600px] bg-black/5 rounded-full blur-[100px] pointer-events-none"></div>
         <!-- Lottie background on right - plays once when footer enters viewport -->
         <div class="absolute top-0 right-0 bottom-0 w-full max-w-md pointer-events-none overflow-hidden" aria-hidden="true">
-            <dotlottie-player id="footer-lottie" src="images/Prohouse%20Intro%20Animation.zip" loop="false" mode="normal" class="absolute top-1/2 right-0 -translate-y-1/2 opacity-40 w-full min-w-0 max-w-full h-full min-h-[300px] sm:min-w-[400px]"></dotlottie-player>
+            <dotlottie-player id="footer-lottie" src="../images/Prohouse%20Intro%20Animation.zip" loop="false" mode="normal" class="absolute top-1/2 right-0 -translate-y-1/2 opacity-40 w-full min-w-0 max-w-full h-full min-h-[300px] sm:min-w-[400px]"></dotlottie-player>
             <!-- Gradient overlay to blend Lottie into footer bg -->
             <div class="absolute inset-0 bg-gradient-to-r from-black from-0% via-transparent via-70% to-transparent"></div>
         </div>
         <div class="relative z-10 mx-auto max-w-6xl xl:max-w-6xl 2xl:max-w-[90rem] px-4 py-12 sm:px-6 lg:px-8">
             <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <div>
-                    <img src="images/makaan-waley-logo.svg" alt="MAKAAN WALEY" class="h-10 w-auto brightness-0 invert" loading="lazy" decoding="async" />
+                    <img src="../images/makaan-waley-logo.svg" alt="MAKAAN WALEY" class="h-10 w-auto brightness-0 invert" loading="lazy" decoding="async" />
                     <p class="mt-4 text-sm text-gray-300/70">Building excellence since day one. Quality construction for residential and commercial projects.</p>
                 </div>
                 <div>
                     <h3 class="wh-eyebrow text-primary">Quick Links</h3>
                     <ul class="mt-4 grid grid-cols-2 gap-x-4 gap-y-2">
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="index.html">Home</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="company/about-us.html">About</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="service.html">Services</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="portfolio.html">Projects</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="packages.html">Packages</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="quality-assurance.html">Quality Assurance</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="testimonials.html">Testimonials</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="faqs.html">FAQs</a></li>
-                        <li><a href="glossary.html" class="text-gray-300/70 hover:text-gray-300 transition-colors">Glossary</a></li>
-                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="contact-us.html">Contact</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../index.html">Home</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../company/about-us.html">About</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../service.html">Services</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../portfolio.html">Projects</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../packages.html">Packages</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../quality-assurance.html">Quality Assurance</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../testimonials.html">Testimonials</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../faqs.html">FAQs</a></li>
+                        <li><a href="../glossary.html" class="text-gray-300/70 hover:text-gray-300 transition-colors">Glossary</a></li>
+                        <li><a class="text-gray-300/70 hover:text-gray-300 transition-colors" href="../contact-us.html">Contact</a></li>
                     </ul>
                 </div>
                 <div>
@@ -727,7 +725,7 @@
     </footer>
 
     <!-- External Scripts -->
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-2HPW0KC1F0" async></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" async></script>
     <script src="js/privyr-utm3740.js"></script>
     <script src="js/lead-otp27e8.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

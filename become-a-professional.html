@@ -16,12 +16,10 @@
 <header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300 ease-out">
         <nav class="mx-auto flex max-w-[90rem] items-center justify-between gap-3 px-4 py-4 sm:gap-4 sm:px-6 lg:px-8">
             <div class="flex min-w-0 items-center">
-                <a href="index.html" class="relative flex h-14 shrink-0 items-center gap-2">
-                    <div class="flex items-end justify-start gap-[1px] h-full min-h-10" id="header-logo" style="padding-bottom: 4px;">
-                        <img src="images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
-                        <img src="images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
-                    </div>
-                    <img id="header-logo-white" src="images/makaanwaley-logo-whiteorange.svg" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
+                <a href="index.html" class="relative flex h-10 sm:h-12 md:h-14 shrink-0 items-end gap-[1px] min-h-8 sm:min-h-10" style="padding-bottom: 4px;">
+                    <img src="images/header-left.png" alt="MAKAAN WALEY" class="h-10 sm:h-12 md:h-14 w-auto transition-opacity duration-300" fetchpriority="high" />
+                    <img src="images/header-right.png" alt="" class="h-6 sm:h-7 md:h-8 w-auto transition-opacity duration-300" />
+                    <img id="header-logo-white" src="images/header-left.png" alt="MAKAAN WALEY" class="absolute left-0 top-1/2 h-10 w-auto -translate-y-1/2 opacity-0 transition-opacity duration-300" />
                 </a>
             </div>
             <div id="nav-desktop" class="hidden items-center gap-5 lg:flex lg:gap-6 xl:gap-7">
@@ -133,46 +131,46 @@
                 </svg>
             </button>
         </nav>
-        <div id="nav-mobile" class="hidden border-t border-white/10 bg-black lg:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
+        <div id="nav-mobile" class="hidden border-t border-white/10 bg-dark lg:hidden max-h-[calc(100dvh-4.5rem)] overflow-y-auto">
             <div class="flex flex-col gap-1 px-4 py-4">
                 <div id="nav-city-mobile-slot" class="px-1 py-1"></div>
-                <a href="index.html" id="nav-mobile-home" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Home</a>
+                <a href="index.html" id="nav-mobile-home" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Home</a>
                 <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
-                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-white/5 hover:text-primary [&::-webkit-details-marker]:hidden">
                         Services
                         <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
-                        <a href="service/residential-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Home Construction</a>
-                        <a href="service/commercial-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Commercial Construction</a>
-                        <a href="service/architecture-structural.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Architecture & Structure</a>
-                        <a href="service/interior-designing.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Interiors & Smart Homes</a>
+                        <a href="service/residential-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Home Construction</a>
+                        <a href="service/commercial-construction.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Commercial Construction</a>
+                        <a href="service/architecture-structural.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Architecture &amp; Structure</a>
+                        <a href="service/interior-designing.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Interiors &amp; Smart Homes</a>
                     </div>
                 </details>
-                <a href="portfolio.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Projects</a>
-                <a id="nav-packages-link-mobile" href="packages.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Packages</a>
-                <a href="quality-assurance.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-white hover:bg-black/10 transition-colors">Quality Assurance</a>
+                <a href="portfolio.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Projects</a>
+                <a id="nav-packages-link-mobile" href="packages.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Packages</a>
+                <a href="quality-assurance.html" class="rounded-lg px-3 py-2 wh-label-sm text-white/80 hover:text-primary hover:bg-white/5 transition-colors">Quality Assurance</a>
                 <details name="mobile-nav" class="open:[&_summary_svg]:rotate-180">
-                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-black/10 hover:text-white [&::-webkit-details-marker]:hidden">
+                    <summary class="flex cursor-pointer list-none items-center justify-between rounded-lg px-3 py-2 wh-label-sm text-white/80 transition-colors hover:bg-white/5 hover:text-primary [&::-webkit-details-marker]:hidden">
                         More
                         <svg class="h-4 w-4 shrink-0 transition-transform duration-150" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
                     </summary>
                     <div class="mb-1 ml-2 flex flex-col gap-0.5 border-l border-white/10 pl-2">
-                        <a href="how-it-works.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">How it Works</a>
-                        <a href="faqs.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">FAQs</a>
-                        <a href="glossary.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Glossary</a>
-                        <a href="emonitoring.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">E-Monitoring</a>
-                        <a href="testimonials.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Testimonials</a>
-                        <a href="why-choose-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Why Choose Us</a>
-                        <a href="blog.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Blogs</a>
-                        <a href="media.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Media</a>
-                        <a href="become-a-professional.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Careers</a>
-                        <a href="company/about-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">About Us</a>
-                        <a id="nav-cost-calculator-link-mobile" href="planner.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Cost Calculator</a>
-                        <a href="contact-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-black/10 hover:text-white transition-colors">Contact Us</a>
+                        <a href="how-it-works.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">How it Works</a>
+                        <a href="faqs.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">FAQs</a>
+                        <a href="glossary.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Glossary</a>
+                        <a href="emonitoring.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">E-Monitoring</a>
+                        <a href="testimonials.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Testimonials</a>
+                        <a href="why-choose-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Why Choose Us</a>
+                        <a href="blog.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Blogs</a>
+                        <a href="media.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Media</a>
+                        <a href="become-a-professional.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Careers</a>
+                        <a href="company/about-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">About Us</a>
+                        <a id="nav-cost-calculator-link-mobile" href="planner.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Cost Calculator</a>
+                        <a href="contact-us.html" class="rounded-lg px-3 py-2 text-sm text-white/70 hover:bg-white/5 hover:text-primary transition-colors">Contact Us</a>
                     </div>
                 </details>
-                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="mt-2 rounded-xl bg-bg0 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-hover">Let's Build</button>
+                <button type="button" data-lead-popup-trigger data-lead-popup-title="Ready to build your dream home?" data-lead-popup-lede="Let's start with your needs" class="mt-2 rounded-xl bg-primary-lighter/200 px-3 py-2 text-center text-sm font-semibold text-white hover:bg-primary-dark">Let&apos;s Build</button>
             </div>
         </div>
     </header>
@@ -510,7 +508,7 @@
     </footer>
 
     <!-- External Scripts -->
-    <script src="https://www.googletagmanager.com/gtag/js?id=G-2HPW0KC1F0" async></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" async></script>
     <script src="js/privyr-utm3740.js"></script>
     <script src="js/lead-otp27e8.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
