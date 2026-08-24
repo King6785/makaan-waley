@@ -1790,6 +1790,64 @@
     <script>
         var BASE = "";
         document.addEventListener("DOMContentLoaded", function() {
+            // Sticky header: solid bg + logo swap on scroll
+            var headerEl = document.getElementById("site-header");
+            var headerLogoWhite = document.getElementById("header-logo-white");
+            var headerLogoDefault = headerEl ? headerEl.querySelector("img[alt=\"MAKAAN WALEY\"]") : null;
+            var headerNavLinks = headerEl ? headerEl.querySelectorAll("a, button:not(#nav-toggle):not([data-lead-popup-trigger])") : [];
+            var headerButtons = headerEl ? headerEl.querySelectorAll("button:not(#nav-toggle):not([data-lead-popup-trigger])") : [];
+            
+            function updateHeaderOnScroll() {
+                if (!headerEl) return;
+                var scrollY = window.scrollY;
+                var threshold = 80; // px
+                
+                if (scrollY > threshold) {
+                    headerEl.classList.remove("bg-transparent");
+                    headerEl.classList.add("bg-white", "shadow-md");
+                    if (headerLogoWhite) headerLogoWhite.classList.remove("opacity-0");
+                    if (headerLogoDefault) headerLogoDefault.classList.add("opacity-0");
+                    headerNavLinks.forEach(function(link) {
+                        if (link.classList.contains("text-dark")) {
+                            link.classList.remove("text-dark");
+                            link.classList.add("text-white");
+                        }
+                        if (link.classList.contains("hover:text-primary")) {
+                            link.classList.add("hover:text-primary-light");
+                        }
+                    });
+                    headerButtons.forEach(function(btn) {
+                        if (btn.classList.contains("text-dark")) {
+                            btn.classList.remove("text-dark");
+                            btn.classList.add("text-white");
+                        }
+                    });
+                } else {
+                    headerEl.classList.remove("bg-white", "shadow-md");
+                    headerEl.classList.add("bg-transparent");
+                    if (headerLogoWhite) headerLogoWhite.classList.add("opacity-0");
+                    if (headerLogoDefault) headerLogoDefault.classList.remove("opacity-0");
+                    headerNavLinks.forEach(function(link) {
+                        if (link.classList.contains("text-white")) {
+                            link.classList.remove("text-white");
+                            link.classList.add("text-dark");
+                        }
+                        if (link.classList.contains("hover:text-primary-light")) {
+                            link.classList.remove("hover:text-primary-light");
+                        }
+                    });
+                    headerButtons.forEach(function(btn) {
+                        if (btn.classList.contains("text-white")) {
+                            btn.classList.remove("text-white");
+                            btn.classList.add("text-dark");
+                        }
+                    });
+                }
+            }
+            
+            window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
+            updateHeaderOnScroll(); // Initial check
+
             if (typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") return;
             gsap.registerPlugin(ScrollTrigger);
 
