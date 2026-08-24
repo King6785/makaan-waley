@@ -13,19 +13,23 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
 
-    --color-primary: #0D47A1;
-    --color-primary-dark: #0A3D8A;
-    --color-primary-light: #90CAF9;
-    --color-primary-lighter: #E3F2FD;
-    --color-primary-hover: #2196F3;
-    --color-primary-hover-dark: #1E88E5;
-    --color-dark: #0A0A0A;
-    --color-dark-100: #111111;
-    --color-dark-300: #262626;
+    --color-primary: #C69A2B;
+    --color-primary-dark: #8F6A16;
+    --color-primary-light: #DDB84D;
+    --color-primary-lighter: #F5EFE6;
+    --color-primary-hover: #E2C15A;
+    --color-primary-hover-dark: #B58826;
+    --color-dark: #111111;
+    --color-dark-100: #1A1A1A;
+    --color-dark-300: #2D2D2D;
     --color-success: #22C55E;
     --color-info: #3B82F6;
     --color-warning: #F59E0B;
     --color-error: #EF4444;
+    --color-gold-metallic-start: #8F6A16;
+    --color-gold-metallic-mid: #C69A2B;
+    --color-gold-metallic-light: #E2C15A;
+    --color-gold-metallic-end: #8F6A16;
 
     --spacing: 0.25rem;
 
