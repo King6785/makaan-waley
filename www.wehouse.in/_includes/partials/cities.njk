@@ -1,0 +1,19 @@
+<region aria-labelledby="cities-title" class="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute inset-0 bg-[url('images/india-map.svg')] bg-center bg-no-repeat bg-[length:80%_auto] opacity-5"></div>
+  </div>
+  <div class="relative mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <h2 id="cities-title" class="wh-heading-xl text-dark">{{ site.cities.title }}</h2>
+      <p class="mt-4 wh-body-lg text-gray-600">Hover on map or city to explore</p>
+    </div>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+      {% for city in site.cities.cities %}
+      <button type="button" class="group relative rounded-2xl border border-gray-100 bg-white p-5 md:p-6 text-left transition-all duration-300 hover:border-primary-200 hover:shadow-xl hover:shadow-primary-100/50">
+        <h3 class="wh-heading-md text-dark group-hover:text-primary-500 transition-colors">{{ city.name }}</h3>
+        <p class="mt-2 wh-meta text-gray-500 hidden md:block">{{ city.address }}</p>
+      </button>
+      {% endfor %}
+    </div>
+  </div>
+</region>

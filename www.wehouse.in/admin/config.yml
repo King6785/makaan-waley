@@ -1,0 +1,391 @@
+backend:
+  name: github
+  repo: King6785/makaan-waley
+  branch: main
+  base_url: https://api.github.com
+  auth_type: oauth
+  commit_messages:
+    create: 'Create {{collection}} "{{slug}}" via Decap CMS'
+    update: 'Update {{collection}} "{{slug}}" via Decap CMS'
+    delete: 'Delete {{collection}} "{{slug}}" via Decap CMS'
+  squash_merges: true
+
+media_folder: "images"
+public_folder: "/images"
+
+site_url: https://king6785.github.io/makaan-waley/
+logo_url: /images/wehouse-logo.svg
+
+collections:
+  # Global site settings
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "meta"
+        label: "Meta & SEO"
+        file: "content/site-content.json"
+        fields:
+          - {label: "Site Title", name: "meta.title", widget: "string"}
+          - {label: "Meta Description", name: "meta.description", widget: "text"}
+          - {label: "OG Title", name: "meta.og_title", widget: "string"}
+          - {label: "OG Description", name: "meta.og_description", widget: "text"}
+          - {label: "OG Image", name: "meta.og_image", widget: "image"}
+          - {label: "Favicon", name: "meta.favicon", widget: "image"}
+
+      - name: "brand"
+        label: "Branding"
+        file: "content/site-content.json"
+        fields:
+          - {label: "Brand Name", name: "brand.name", widget: "string"}
+          - {label: "Logo (Dark)", name: "brand.logo", widget: "image"}
+          - {label: "Logo (White)", name: "brand.logo_white", widget: "image"}
+          - {label: "Tagline", name: "brand.tagline", widget: "string"}
+
+      - name: "colors"
+        label: "Color Palette"
+        file: "content/site-content.json"
+        fields:
+          - {label: "Primary 500 (Main Brand)", name: "colors.primary_500", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #F97316']}
+          - {label: "Primary 600 (Hover)", name: "colors.primary_600", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #EA580C']}
+          - {label: "Primary 700 (Active)", name: "colors.primary_700", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #C2410C']}
+          - {label: "Dark (Primary Text)", name: "colors.dark", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #0A0A0A']}
+          - {label: "Dark 100", name: "colors.dark_100", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #111111']}
+          - {label: "Dark 300", name: "colors.dark_300", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #262626']}
+          - {label: "Success", name: "colors.success", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #22C55E']}
+          - {label: "Info", name: "colors.info", widget: "string", pattern: ['^#[0-9A-Fa-f]{6}$', 'Must be a hex color like #3B82F6']}
+
+      - name: "navigation"
+        label: "Navigation"
+        file: "content/site-content.json"
+        fields:
+          - {label: "Cities", name: "navigation.cities", widget: "list", field: {label: "City", name: "city", widget: "string"}}
+          - {label: "CTA Button Text", name: "navigation.cta_text", widget: "string"}
+          - {label: "CTA Popup Title", name: "navigation.cta_popup_title", widget: "string"}
+          - {label: "CTA Popup Lede", name: "navigation.cta_popup_lede", widget: "text"}
+          - label: "Navigation Items"
+            name: "navigation.nav_items"
+            widget: "list"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Href", name: "href", widget: "string"}
+              - label: "Dropdown Items"
+                name: "dropdown"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Label", name: "label", widget: "string"}
+                  - {label: "Href", name: "href", widget: "string"}
+                  - {label: "Icon", name: "icon", widget: "string"}
+
+  # Hero Section
+  - name: "hero"
+    label: "Hero Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Kicker/Tagline", name: "hero.kicker", widget: "string"}
+      - {label: "Headline", name: "hero.headline", widget: "string"}
+      - {label: "Subheadline", name: "hero.subheadline", widget: "text"}
+      - {label: "Primary CTA Text", name: "hero.cta_primary", widget: "string"}
+      - {label: "Secondary CTA Text", name: "hero.cta_secondary", widget: "string"}
+      - {label: "Secondary CTA Href", name: "hero.cta_secondary_href", widget: "string"}
+      - label: "Hero Stats"
+        name: "hero.stats"
+        widget: "list"
+        fields:
+          - {label: "Value", name: "value", widget: "string"}
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Icon", name: "icon", widget: "string"}
+      - label: "Hero Images"
+        name: "hero.images"
+        widget: "object"
+        fields:
+          - {label: "Hero Background", name: "hero_bg", widget: "image"}
+          - {label: "Family Image 1", name: "family_1", widget: "image"}
+          - {label: "Family Image 2", name: "family_2", widget: "image"}
+          - {label: "Family Image 3", name: "family_3", widget: "image"}
+          - {label: "Stamp Image", name: "stamp", widget: "image"}
+          - {label: "W Shape SVG", name: "w_shape", widget: "image"}
+      - label: "Form Step 1"
+        name: "hero.form.step1"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: "Fields"
+            name: "fields"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Placeholder", name: "placeholder", widget: "string"}
+              - {label: "Type", name: "type", widget: "select", options: ["text", "email", "select", "tel", "number"]}
+              - {label: "Required", name: "required", widget: "boolean"}
+              - label: "Select Options"
+                name: "options"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Value", name: "value", widget: "string"}
+                  - {label: "Label", name: "label", widget: "string"}
+      - label: "Form Step 2"
+        name: "hero.form.step2"
+        widget: "object"
+        fields:
+          - label: "Fields"
+            name: "fields"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Placeholder", name: "placeholder", widget: "string"}
+              - {label: "Type", name: "type", widget: "select", options: ["text", "email", "select", "tel", "number"]}
+              - {label: "Required", name: "required", widget: "boolean"}
+              - label: "Select Options"
+                name: "options"
+                widget: "list"
+                required: false
+                fields:
+                  - {label: "Value", name: "value", widget: "string"}
+                  - {label: "Label", name: "label", widget: "string"}
+      - label: "Form Step 3"
+        name: "hero.form.step3"
+        widget: "object"
+        fields:
+          - label: "Fields"
+            name: "fields"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Placeholder", name: "placeholder", widget: "string"}
+              - {label: "Type", name: "type", widget: "select", options: ["text", "email", "select", "tel", "number"]}
+              - {label: "Required", name: "required", widget: "boolean"}
+              - {label: "Unit", name: "unit", widget: "string", required: false}
+              - {label: "Min", name: "min", widget: "number", required: false}
+              - {label: "Max", name: "max", widget: "number", required: false}
+              - {label: "Step", name: "step", widget: "number", required: false}
+          - {label: "OTP Text", name: "otp_text", widget: "string"}
+          - {label: "Privacy Text", name: "privacy_text", widget: "string"}
+          - {label: "Submit Text", name: "submit_text", widget: "string"}
+      - label: "Success Step"
+        name: "hero.form.success"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Message", name: "message", widget: "text"}
+
+  # Services Section
+  - name: "services"
+    label: "Services Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "services.section_label", widget: "string"}
+      - {label: "Title", name: "services.title", widget: "string"}
+      - label: "Service Items"
+        name: "services.items"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Href", name: "href", widget: "string"}
+          - {label: "CTA Text", name: "cta", widget: "string"}
+          - {label: "Icon", name: "icon", widget: "string"}
+
+  # Trust/Media Section
+  - name: "trust"
+    label: "Trust & Media Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "trust.section_label", widget: "string"}
+      - {label: "Title", name: "trust.title", widget: "string"}
+      - {label: "Description", name: "trust.description", widget: "text"}
+      - {label: "Media Label", name: "trust.media_label", widget: "string"}
+      - label: "Media Logos"
+        name: "trust.media_logos"
+        widget: "list"
+        fields:
+          - {label: "Image", name: "logo", widget: "image"}
+
+  # Portfolio Section
+  - name: "portfolio"
+    label: "Portfolio Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "portfolio.section_label", widget: "string"}
+      - {label: "Title", name: "portfolio.title", widget: "string"}
+      - {label: "Subtitle", name: "portfolio.subtitle", widget: "string"}
+      - label: "Projects"
+        name: "portfolio.projects"
+        widget: "list"
+        fields:
+          - {label: "Project ID", name: "id", widget: "string"}
+          - {label: "Location", name: "location", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+      - {label: "CTA Text", name: "portfolio.cta_text", widget: "string"}
+      - {label: "CTA Href", name: "portfolio.cta_href", widget: "string"}
+
+  # Why Choose Section
+  - name: "whyChoose"
+    label: "Why Choose Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "whyChoose.section_label", widget: "string"}
+      - {label: "Title", name: "whyChoose.title", widget: "string"}
+      - {label: "Subtitle", name: "whyChoose.subtitle", widget: "text"}
+      - label: "Features"
+        name: "whyChoose.features"
+        widget: "list"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Link Text", name: "link", widget: "string", required: false}
+          - {label: "Link Href", name: "link_href", widget: "string", required: false}
+
+  # Comparison Section
+  - name: "comparison"
+    label: "Comparison Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "comparison.section_label", widget: "string"}
+      - {label: "Title", name: "comparison.title", widget: "string"}
+      - {label: "Subtitle", name: "comparison.subtitle", widget: "text"}
+      - label: "Comparison Rows"
+        name: "comparison.rows"
+        widget: "list"
+        fields:
+          - {label: "WeHouse Value", name: "wehouse", widget: "string"}
+          - {label: "Factor", name: "factor", widget: "string"}
+          - {label: "Contractor Value", name: "contractor", widget: "string"}
+      - {label: "CTA Text", name: "comparison.cta_text", widget: "string"}
+
+  # Achievements Section
+  - name: "achievements"
+    label: "Achievements Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "achievements.section_label", widget: "string"}
+      - {label: "Title", name: "achievements.title", widget: "string"}
+
+  # E-Monitoring Section
+  - name: "emonitoring"
+    label: "E-Monitoring Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "emonitoring.section_label", widget: "string"}
+      - {label: "Title", name: "emonitoring.title", widget: "string"}
+      - {label: "Description", name: "emonitoring.description", widget: "text"}
+      - label: "Features"
+        name: "emonitoring.features"
+        widget: "list"
+        fields:
+          - {label: "Feature", name: "feature", widget: "string"}
+      - {label: "Primary CTA", name: "emonitoring.cta_primary", widget: "string"}
+      - {label: "Secondary CTA", name: "emonitoring.cta_secondary", widget: "string"}
+      - {label: "Image", name: "emonitoring.image", widget: "image"}
+
+  # Testimonials Section
+  - name: "testimonials"
+    label: "Testimonials Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "testimonials.section_label", widget: "string"}
+      - {label: "Title", name: "testimonials.title", widget: "string"}
+      - {label: "Subtitle", name: "testimonials.subtitle", widget: "text"}
+      - label: "Clients"
+        name: "testimonials.clients"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Image", name: "image", widget: "image"}
+      - {label: "CTA Text", name: "testimonials.cta_text", widget: "string"}
+
+  # Cities Section
+  - name: "cities"
+    label: "Cities Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Title", name: "cities.title", widget: "string"}
+      - label: "Cities"
+        name: "cities.cities"
+        widget: "list"
+        fields:
+          - {label: "City Name", name: "name", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+
+  # FAQ Section
+  - name: "faq"
+    label: "FAQ Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "faq.section_label", widget: "string"}
+      - {label: "Title", name: "faq.title", widget: "string"}
+      - {label: "Call CTA", name: "faq.cta_call", widget: "string"}
+      - {label: "WhatsApp CTA", name: "faq.cta_whatsapp", widget: "string"}
+      - label: "Questions"
+        name: "faq.questions"
+        widget: "list"
+        fields:
+          - {label: "Question", name: "question", widget: "string"}
+          - {label: "Answer", name: "answer", widget: "markdown"}
+
+  # Referral Section
+  - name: "referral"
+    label: "Referral Section"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Section Label", name: "referral.section_label", widget: "string"}
+      - {label: "Title", name: "referral.title", widget: "string"}
+      - {label: "Subtitle", name: "referral.subtitle", widget: "text"}
+      - {label: "Earn Label", name: "referral.earn_label", widget: "string"}
+      - label: "Benefits"
+        name: "referral.benefits"
+        widget: "list"
+        fields:
+          - {label: "Benefit", name: "benefit", widget: "string"}
+      - {label: "CTA Text", name: "referral.cta_text", widget: "string"}
+
+  # Footer
+  - name: "footer"
+    label: "Footer"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Description", name: "footer.description", widget: "text"}
+      - label: "Quick Links"
+        name: "footer.quick_links"
+        widget: "list"
+        fields:
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Href", name: "href", widget: "string"}
+      - label: "Service Links"
+        name: "footer.services_links"
+        widget: "list"
+        fields:
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Href", name: "href", widget: "string"}
+      - label: "Cities"
+        name: "footer.cities"
+        widget: "list"
+        fields:
+          - {label: "City Name", name: "name", widget: "string"}
+          - {label: "Address", name: "address", widget: "text"}
+      - label: "Social Links"
+        name: "footer.social"
+        widget: "object"
+        fields:
+          - {label: "Facebook", name: "facebook", widget: "string"}
+          - {label: "Instagram", name: "instagram", widget: "string"}
+          - {label: "LinkedIn", name: "linkedin", widget: "string"}
+          - {label: "YouTube", name: "youtube", widget: "string"}
+      - {label: "Copyright", name: "footer.copyright", widget: "string"}
+
+  # Lead Popup
+  - name: "leadPopup"
+    label: "Lead Popup"
+    file: "content/site-content.json"
+    fields:
+      - {label: "Title", name: "leadPopup.title", widget: "string"}
+      - {label: "Lede", name: "leadPopup.lede", widget: "text"}
+      - label: "Steps"
+        name: "leadPopup.steps"
+        widget: "list"
+        fields:
+          - {label: "Step Title", name: "title", widget: "string"}
+          - {label: "Fields", name: "fields", widget: "list", field: {label: "Field", name: "field", widget: "string"}}

@@ -1,0 +1,31 @@
+<region aria-labelledby="emonitoring-title" class="py-16 md:py-24 lg:py-32 bg-white relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-primary-500/5 rounded-full blur-[120px]"></div>
+  </div>
+  <div class="relative mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12">
+      <div class="lg:w-2/3">
+        <p class="wh-label-sm font-semibold text-primary-500 tracking-wider uppercase mb-3">{{ site.emonitoring.section_label }}</p>
+        <h2 id="emonitoring-title" class="wh-heading-xl text-dark">{{ site.emonitoring.title }}</h2>
+        <p class="mt-4 wh-body-lg text-gray-600">{{ site.emonitoring.description }}</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          {% for feature in site.emonitoring.features %}
+          <span class="inline-flex items-center gap-2 wh-label-sm font-medium text-gray-700 bg-gray-50 px-4 py-2 rounded-xl border border-gray-100">{{ feature }}</span>
+          {% endfor %}
+        </div>
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="#" class="wh-btn-primary wh-btn--lg" data-lead-popup-trigger>
+            {{ site.emonitoring.cta_primary }}
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </a>
+          <a href="#" class="wh-btn-secondary wh-btn--lg">{{ site.emonitoring.cta_secondary }}</a>
+        </div>
+      </div>
+      <div class="lg:w-1/3 shrink-0">
+        <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-100/50">
+          <img src="{{ site.emonitoring.image }}" alt="WeHouse E-Monitoring dashboard preview" class="w-full h-auto" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </div>
+</region>

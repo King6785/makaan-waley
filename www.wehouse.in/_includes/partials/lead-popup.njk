@@ -1,0 +1,101 @@
+<!-- Lead Popup Modal -->
+<div id="lead-popup" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true" aria-labelledby="lead-popup-title">
+  <div class="fixed inset-0 bg-black/50 backdrop-blur-sm" data-lead-popup-close></div>
+  <div class="fixed inset-0 flex items-center justify-center p-4">
+    <div class="relative w-full max-w-md bg-white rounded-2xl shadow-2xl overflow-hidden" data-lead-popup-content>
+      <button type="button" class="absolute top-4 right-4 z-10 rounded-lg p-1.5 text-gray-400 hover:text-gray-600 hover:bg-gray-100" data-lead-popup-close aria-label="Close">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+      <div class="p-6 md:p-8">
+        <div class="text-center mb-6">
+          <h2 id="lead-popup-title" class="wh-heading-lg text-dark">{{ site.leadPopup.title }}</h2>
+          <p class="mt-2 wh-body text-gray-600">{{ site.leadPopup.lede }}</p>
+        </div>
+
+        <!-- Step indicator -->
+        <div class="flex items-center justify-center gap-2 mb-6" aria-label="Form progress">
+          {% for step in site.leadPopup.steps %}
+          <div class="flex items-center gap-1.5">
+            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-gray-100 text-gray-500 text-sm font-semibold" data-lead-step-indicator="{{ loop.index }}">{{ loop.index }}</span>
+            {% if not loop.last %}
+            <span class="h-0.5 w-12 bg-gray-100" data-lead-step-connector="{{ loop.index }}"></span>
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+
+        <form id="lead-popup-form" class="space-y-4" novalidate>
+          {% for step in site.leadPopup.steps %}
+          <div class="lead-popup-step {% if not loop.first %}hidden{% endif %}" data-lead-step="{{ loop.index }}">
+            <h3 class="wh-label-sm font-medium text-primary-500 mb-4">{{ step.title }}</h3>
+            <div class="space-y-4">
+              {% for field in step.fields %}
+              <div>
+                <label class="wh-field-label">{{ field | capitalize }}</label>
+                {% if field == "timeframe" %}
+                <select name="{{ field }}" class="wh-field-input" required>
+                  <option value="">Select timeframe</option>
+                  <option value="0-3">Within 3 months</option>
+                  <option value="3-6">3–6 months</option>
+                  <option value="6-12">6–12 months</option>
+                  <option value="12+">More than 12 months</option>
+                </select>
+                {% elif field == "city" %}
+                <select name="{{ field }}" class="wh-field-input" required>
+                  <option value="">Select your city</option>
+                  {% for city in site.navigation.cities %}
+                  <option value="{{ city }}">{{ city }}</option>
+                  {% endfor %}
+                </select>
+                {% elif field == "plotSize" %}
+                <div class="flex items-center gap-2">
+                  <input name="{{ field }}" type="number" min="100" max="20000" step="50" class="wh-field-input [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none" placeholder="E.g. 1500" required />
+                  <span class="wh-meta font-semibold text-gray-500 px-2 py-1 rounded-lg bg-gray-50 border border-gray-200">SFT</span>
+                </div>
+                {% elif field == "otp" %}
+                <div class="space-y-2">
+                  <p class="wh-label-sm text-gray-800">Verify your mobile number</p>
+                  <div class="rounded-xl border border-primary-200/80 bg-gradient-to-b from-primary-50/70 to-white p-3 space-y-2">
+                    <div class="flex flex-wrap items-center gap-2">
+                      <button type="button" class="inline-flex items-center justify-center rounded-md border border-primary-500 bg-white px-3 py-1.5 wh-label-sm text-primary-800 hover:bg-primary-50">Send OTP</button>
+                    </div>
+                    <div class="flex gap-2">
+                      <input name="{{ field }}" type="text" inputmode="numeric" maxlength="8" autocomplete="one-time-code" class="flex-1 rounded-lg border border-gray-200 px-3 py-2 text-sm" placeholder="6-digit OTP" required />
+                      <button type="button" class="shrink-0 rounded-lg bg-primary-600 px-3 py-2 wh-label-sm text-white hover:bg-primary-700">Verify</button>
+                    </div>
+                  </div>
+                </div>
+                {% else %}
+                <input name="{{ field }}" type="{% if field == 'email' %}email{% elif field == 'phone' %}tel{% else %}text{% endif %}" class="wh-field-input" placeholder="Enter {{ field | capitalize }}" required />
+                {% endif %}
+              </div>
+              {% endfor %}
+            </div>
+            <div class="flex items-center gap-2 pt-2">
+              {% if not loop.first %}
+              <button type="button" class="wh-btn-secondary wh-btn--sm" data-lead-prev-step>Back</button>
+              {% endif %}
+              {% if loop.last %}
+              <button type="submit" class="wh-btn-primary wh-btn--block wh-btn--sm flex-1">Submit</button>
+              {% else %}
+              <button type="button" class="wh-btn-primary wh-btn--block wh-btn--sm flex-1" data-lead-next-step>Continue</button>
+              {% endif %}
+            </div>
+          </div>
+          {% endfor %}
+        </form>
+
+        <!-- Success state -->
+        <div id="lead-popup-success" class="hidden min-h-[200px] flex flex-col items-center justify-center text-center py-6">
+          <div class="w-20 h-20 flex items-center justify-center mb-4 rounded-full bg-green-100">
+            <svg class="w-10 h-10 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/>
+            </svg>
+          </div>
+          <h3 class="wh-heading-md text-dark mb-2">Thank you!</h3>
+          <p class="text-gray-600 max-w-sm">Your details have been received. Our team will contact you within 24 hours with your personalized construction plan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

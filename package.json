@@ -1,0 +1,17 @@
+{
+  "name": "makaan-waley",
+  "version": "1.0.0",
+  "description": "MAKAAN WALEY - Tech-powered construction website with Decap CMS",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "dev": "concurrently \"npx @11ty/eleventy --serve\" \"npx decap-server\"",
+    "cms": "npx decap-server",
+    "preview": "npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-img": "^6.0.0",
+    "concurrently": "^9.2.4",
+    "decap-server": "^3.10.0"
+  }
+}

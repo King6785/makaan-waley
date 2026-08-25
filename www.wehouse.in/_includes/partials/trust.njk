@@ -1,0 +1,17 @@
+<region aria-labelledby="trust-title" class="py-16 md:py-24 lg:py-32 bg-gray-50">
+  <div class="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <p class="wh-label-sm font-semibold text-primary-500 tracking-wider uppercase mb-3">{{ site.trust.section_label }}</p>
+      <h2 id="trust-title" class="wh-heading-xl text-dark">{{ site.trust.title }}</h2>
+      <p class="mt-4 wh-body-lg text-gray-600">{{ site.trust.description }}</p>
+    </div>
+    <div class="flex flex-col items-center gap-8 md:flex-row md:justify-center md:items-start">
+      <p class="wh-label-sm font-semibold text-primary-500 tracking-wider uppercase">{{ site.trust.media_label }}</p>
+      <div class="flex flex-wrap items-center justify-center gap-8 md:gap-12">
+        {% for logo in site.trust.media_logos %}
+        <img src="{{ logo }}" alt="" class="h-10 md:h-12 opacity-60 hover:opacity-100 transition-opacity" loading="lazy" decoding="async" />
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</region>

@@ -1,0 +1,35 @@
+<region aria-labelledby="comparison-title" class="py-16 md:py-24 lg:py-32 bg-white">
+  <div class="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <p class="wh-label-sm font-semibold text-primary-500 tracking-wider uppercase mb-3">{{ site.comparison.section_label }}</p>
+      <h2 id="comparison-title" class="wh-heading-xl text-dark">{{ site.comparison.title }}</h2>
+      <p class="mt-4 wh-body-lg text-gray-600">{{ site.comparison.subtitle }}</p>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full min-w-[720px] text-left">
+        <thead>
+          <tr class="border-b border-gray-200">
+            <th class="wh-label-sm font-semibold text-primary-500 pb-3 pr-6">WEHOUSE</th>
+            <th class="wh-label-sm font-semibold text-gray-500 pb-3 px-6">FACTOR</th>
+            <th class="wh-label-sm font-semibold text-gray-500 pb-3 pl-6">TYPICAL CONTRACTOR</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-gray-100">
+          {% for row in site.comparison.rows %}
+          <tr class="hover:bg-gray-50">
+            <td class="wh-body font-medium text-dark py-4 pr-6">{{ row.wehouse }}</td>
+            <td class="wh-body text-gray-600 py-4 px-6">{{ row.factor }}</td>
+            <td class="wh-body text-gray-500 py-4 pl-6">{{ row.contractor }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-10 text-center">
+      <a href="#" class="wh-btn-primary wh-btn--lg" data-lead-popup-trigger>
+        {{ site.comparison.cta_text }}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+  </div>
+</region>

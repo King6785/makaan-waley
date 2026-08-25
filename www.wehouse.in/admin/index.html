@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>MAKAAN WALEY — Content Manager</title>
+  <link rel="icon" type="image/svg+xml" href="../images/wehouse-iconf5e7.svg" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@decap/cms@3.1.4/dist/styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@decap/cms@3.1.4/dist/decap-cms.js"></script>
+  <style>
+    :root {
+      --nc-primary: #0D47A1;
+      --nc-primary-hover: #1565C0;
+      --nc-primary-light: #E3F2FD;
+      --nc-dark: #0A0A0A;
+      --nc-gray-100: #F5F5F5;
+      --nc-gray-200: #E5E5E5;
+      --nc-gray-700: #404040;
+      --nc-white: #fff;
+    }
+    .nc-header {
+      background: var(--nc-white);
+      border-bottom: 1px solid var(--nc-gray-200);
+    }
+    .nc-header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .nc-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--nc-dark);
+    }
+    .nc-brand img { height: 32px; width: auto; }
+    .nc-brand-text { font-weight: 700; font-size: 1.125rem; }
+    .nc-brand-tagline { font-size: 0.75rem; color: var(--nc-gray-700); margin-top: -2px; }
+    .nc-user-menu { display: flex; align-items: center; gap: 1rem; }
+    .nc-user-name { font-size: 0.875rem; color: var(--nc-gray-700); }
+    .nc-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      border-radius: 0.5rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .nc-btn-primary {
+      background: var(--nc-primary);
+      color: var(--nc-white);
+    }
+    .nc-btn-primary:hover { background: var(--nc-primary-hover); }
+    .nc-btn-ghost {
+      background: transparent;
+      color: var(--nc-gray-700);
+    }
+    .nc-btn-ghost:hover { background: var(--nc-gray-100); }
+    .nc-main { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+    .nc-notice {
+      background: var(--nc-primary-light);
+      border: 1px solid #90CAF9;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .nc-notice-title { font-weight: 700; color: var(--nc-primary); margin-bottom: 0.5rem; }
+    .nc-notice-text { color: var(--nc-gray-700); font-size: 0.9375rem; line-height: 1.6; }
+    .nc-notice-text a { color: var(--nc-primary); text-decoration: underline; }
+    .nc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .nc-card {
+      background: var(--nc-white);
+      border: 1px solid var(--nc-gray-200);
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .nc-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); border-color: var(--nc-primary-light); }
+    .nc-card-title { font-weight: 700; color: var(--nc-dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+    .nc-card-desc { color: var(--nc-gray-700); font-size: 0.875rem; line-height: 1.5; margin-bottom: 1rem; }
+    .nc-card-link { display: inline-flex; align-items: center; gap: 0.375rem; font-size: 0.875rem; font-weight: 600; color: var(--nc-primary); text-decoration: none; }
+    .nc-card-link:hover { text-decoration: underline; }
+    .nc-icon { width: 20px; height: 20px; color: var(--nc-primary); flex-shrink: 0; }
+    @media (max-width: 640px) {
+      .nc-header-content { flex-direction: column; gap: 0.75rem; text-align: center; }
+      .nc-user-menu { flex-wrap: wrap; justify-content: center; }
+    }
+  </style>
+</head>
+<body class="nc-root">
+  <header class="nc-header" role="banner">
+    <div class="nc-header-content">
+      <a href="/" class="nc-brand" target="_blank" rel="noopener">
+        <img src="../images/wehouse-logo.svg" alt="MAKAAN WALEY" />
+        <div>
+          <div class="nc-brand-text">MAKAAN WALEY</div>
+          <div class="nc-brand-tagline">Content Manager</div>
+        </div>
+      </a>
+      <div class="nc-user-menu">
+        <span class="nc-user-name" id="nc-user">Loading…</span>
+        <a href="/" target="_blank" rel="noopener" class="nc-btn nc-btn-ghost">View Site</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="nc-main" role="main">
+    <div class="nc-notice" role="region" aria-label="Important notice">
+      <div class="nc-notice-title">📝 Decap CMS Dashboard</div>
+      <p class="nc-notice-text">
+        This is the content management interface for <strong>MAKAAN WALEY</strong>. Edit content below, then click <strong>"Publish"</strong> to commit changes directly to <code>King6785/makaan-waley</code> on GitHub. GitHub Pages will automatically rebuild and deploy your site.
+      </p>
+      <p class="nc-notice-text" style="margin-top: 0.75rem;">
+        <strong>All content</strong> (text, images, colors, navigation, forms, FAQs, testimonials, footer) is managed from the <a href="#/collections">Collections</a> sidebar on the left.
+      </p>
+    </div>
+
+    <div class="nc-grid" role="list" aria-label="Quick access to content sections">
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg> Site Settings</h3>
+        <p class="nc-card-desc">Meta tags, branding, color palette, navigation menus, and CTA button text.</p>
+        <a href="#/collections/settings" class="nc-card-link">Open Settings →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 18a5 5 0 0 0-10 0"/><path d="M12 2v20"/><path d="M22 18a5 5 0 0 0-10 0"/><path d="M7 18a5 5 0 0 0-10 0"/></svg> Hero Section</h3>
+        <p class="nc-card-desc">Kicker, headline, subheadline, CTA buttons, stats, images, and the 3-step enquiry form.</p>
+        <a href="#/collections/hero" class="nc-card-link">Edit Hero →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Services</h3>
+        <p class="nc-card-desc">Four service cards with titles, links, CTA text, and icons.</p>
+        <a href="#/collections/services" class="nc-card-link">Edit Services →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg> Trust & Media</h3>
+        <p class="nc-card-desc">Investor/media badges, logos, and section copy.</p>
+        <a href="#/collections/trust" class="nc-card-link">Edit Trust →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/></svg> Portfolio</h3>
+        <p class="nc-card-desc">Recently delivered homes with project IDs, locations, and images.</p>
+        <a href="#/collections/portfolio" class="nc-card-link">Edit Portfolio →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Why Choose Us</h3>
+        <p class="nc-card-desc">Nine feature cards with titles, descriptions, and optional learn-more links.</p>
+        <a href="#/collections/whyChoose" class="nc-card-link">Edit Why Choose →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Comparison Table</h3>
+        <p class="nc-card-desc">WeHouse vs Contractor comparison rows and CTA.</p>
+        <a href="#/collections/comparison" class="nc-card-link">Edit Comparison →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> E-Monitoring</h3>
+        <p class="nc-card-desc">Section title, description, feature list, CTAs, and dashboard image.</p>
+        <a href="#/collections/emonitoring" class="nc-card-link">Edit E-Monitoring →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Testimonials</h3>
+        <p class="nc-card-desc">Client testimonials with names and photos.</p>
+        <a href="#/collections/testimonials" class="nc-card-link">Edit Testimonials →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg> Cities</h3>
+        <p class="nc-card-desc">Active cities with office addresses (used in footer and city section).</p>
+        <a href="#/collections/cities" class="nc-card-link">Edit Cities →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg> FAQ</h3>
+        <p class="nc-card-desc">Frequently asked questions with markdown-supported answers.</p>
+        <a href="#/collections/faq" class="nc-card-link">Edit FAQ →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Referral Program</h3>
+        <p class="nc-card-desc">Referral section copy, benefits list, and CTA.</p>
+        <a href="#/collections/referral" class="nc-card-link">Edit Referral →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Footer</h3>
+        <p class="nc-card-desc">Description, quick links, service links, cities, social links, and copyright.</p>
+        <a href="#/collections/footer" class="nc-card-link">Edit Footer →</a>
+      </article>
+      <article class="nc-card" role="listitem">
+        <h3 class="nc-card-title"><svg class="nc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg> Lead Popup</h3>
+        <p class="nc-card-desc">Popup title, lede, and 3-step form field configuration.</p>
+        <a href="#/collections/leadPopup" class="nc-card-link">Edit Lead Popup →</a>
+      </article>
+    </div>
+  </main>
+
+  <script>
+    // Initialize Decap CMS
+    if (window.CMS) {
+      CMS.registerPreviewStyle('../css/sitee1de.css');
+    }
+
+    // Show GitHub username in header
+    document.addEventListener('DOMContentLoaded', () => {
+      const userEl = document.getElementById('nc-user');
+      // Decap CMS sets window.CMS.config.auth when logged in
+      const checkAuth = setInterval(() => {
+        if (window.CMS && window.CMS.config && window.CMS.config.auth) {
+          // User info might be available via the backend
+          clearInterval(checkAuth);
+        }
+      }, 500);
+
+      // Fallback: try to get from Netlify Identity / Decap auth
+      setTimeout(() => {
+        if (userEl.textContent === 'Loading…') {
+          userEl.textContent = 'Admin User';
+        }
+      }, 2000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-W54PTZK');</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2HPW0KC1F0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2HPW0KC1F0');
+</script>
+<!-- HubSpot Embed Code -->
+<script id="hs-script-loader" async defer src="https://js.hs-scripts.com/20348301.js"></script>
+
+<!-- Main site scripts -->
+<script src="js/sited3b9.js?v=DJx7yhG3gmLhjiUkJI8B8e3If2IoKONopqVR4bZj_CY"></script>
+<script src="js/hero-enquiry2f00.js?v=Dn5z8cIDw2oThbustXC4MnDHCTWrk6mZ-AHZz4jSPdo"></script>
+<script src="js/lead-otp27e8.js?v=ec89XvFAUmrIuJJ99NqCq4JLB_4slS4d1DXX-Gmd0bs"></script>
+<script src="js/faqs-page4227.js?v=7JIm5BgcDquQ543GPMy1CtuGVraQGRFvAkxcLQCE-lY"></script>
+<script src="js/privyr-utm3740.js?v=ruQe_FgWB2KvO99uTBxuT6wQTm7-oHR6Aox_-e4HEoA"></script>
+
+<!-- GSAP (loaded from local cdnjs copy) -->
+<script src="cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- Initialize GSAP ScrollTrigger -->
+<script>
+  if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+    gsap.registerPlugin(ScrollTrigger);
+  }
+</script>
+
+<!-- Hero family fades animation -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const fades = document.querySelectorAll('.hero-family-fade');
+    if (fades.length > 1) {
+      let current = 0;
+      function nextFade() {
+        fades[current].classList.remove('is-active');
+        current = (current + 1) % fades.length;
+        fades[current].classList.add('is-active');
+      }
+      setInterval(nextFade, 5000);
+    }
+  });
+</script>
+
+<!-- Cursor blob follow -->
+<script>
+  document.addEventListener('mousemove', function(e) {
+    const blob = document.getElementById('cursor-blob');
+    if (blob) {
+      blob.style.transform = `translate(${e.clientX - 150}px, ${e.clientY - 150}px)`;
+      blob.style.opacity = '1';
+    }
+  });
+</script>
+
+<!-- Scroll progress bar -->
+<script>
+  window.addEventListener('scroll', function() {
+    const progress = document.getElementById('scroll-progress');
+    if (progress) {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercent = scrollTop / docHeight;
+      progress.style.transform = `scaleX(${scrollPercent})`;
+    }
+  });
+</script>
+
+<!-- FAQ accordion -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[aria-controls^="faq-"]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', !expanded);
+        const target = document.getElementById(this.getAttribute('aria-controls'));
+        if (target) {
+          target.classList.toggle('hidden');
+        }
+        this.querySelector('svg')?.classList.toggle('rotate-180');
+      });
+    });
+  });
+</script>
+
+<!-- Dynamic year in footer -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const yearEl = document.getElementById('current-year');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+  });
+</script>

@@ -1,0 +1,293 @@
+{
+  "meta": {
+    "title": "WeHouse | Build your dream home | Tech-powered construction India",
+    "description": "We build your dream home. India's leading tech-powered construction company—end-to-end design, build, and monitoring with transparent milestones.",
+    "og_title": "WeHouse | Build your dream home | Tech-powered construction India",
+    "og_description": "We build your dream home. India's leading tech-powered construction company—end-to-end design, build, and monitoring with transparent milestones.",
+    "og_image": "images/wehouse-og.jpg",
+    "favicon": "images/wehouse-iconf5e7.svg"
+  },
+  "brand": {
+    "name": "WeHouse",
+    "logo": "images/wehouse-logo.svg",
+    "logo_white": "images/wehouse-logo-whiteorange.svg",
+    "tagline": "Build Your Dream House with WeHouse"
+  },
+  "colors": {
+    "primary_500": "#F97316",
+    "primary_600": "#EA580C",
+    "primary_700": "#C2410C",
+    "dark": "#0A0A0A",
+    "dark_100": "#111111",
+    "dark_300": "#262626",
+    "success": "#22C55E",
+    "info": "#3B82F6"
+  },
+  "navigation": {
+    "cities": ["Amaravati", "Hyderabad", "Ahmedabad", "Chandigarh", "Chennai", "Bengaluru", "Jaipur", "Pune", "Lucknow", "Vijayawada", "Other"],
+    "nav_items": [
+      {"label": "Home", "href": "index.html"},
+      {"label": "Services", "href": "#", "dropdown": [
+        {"label": "Home Construction", "href": "service/residential-construction.html", "icon": "home"},
+        {"label": "Commercial Construction", "href": "service/commercial-construction.html", "icon": "building"},
+        {"label": "Architecture & Structure", "href": "service/architecture-structural.html", "icon": "architecture"},
+        {"label": "Interiors & Smart Homes", "href": "service/interior-designing.html", "icon": "interior"}
+      ]},
+      {"label": "Projects", "href": "portfolio.html"},
+      {"label": "Packages", "href": "packages.html"},
+      {"label": "Quality Assurance", "href": "quality-assurance.html"},
+      {"label": "More", "href": "#", "dropdown": [
+        {"label": "How it Works", "href": "how-it-works.html"},
+        {"label": "FAQs", "href": "faqs.html"},
+        {"label": "Glossary", "href": "glossary.html"},
+        {"label": "E-Monitoring", "href": "emonitoring.html"},
+        {"label": "Testimonials", "href": "testimonials.html"},
+        {"label": "Why Choose Us", "href": "why-choose-us.html"},
+        {"label": "Blogs", "href": "blog.html"},
+        {"label": "Media", "href": "media.html"},
+        {"label": "Careers", "href": "become-a-professional.html"},
+        {"label": "About Us", "href": "company/about-us.html"},
+        {"label": "Cost Calculator", "href": "planner.html"},
+        {"label": "Contact Us", "href": "contact-us.html"}
+      ]}
+    ],
+    "cta_text": "Let's Build",
+    "cta_popup_title": "Ready to build your dream home?",
+    "cta_popup_lede": "Let's start with your needs"
+  },
+  "hero": {
+    "kicker": "India's No.1 Tech Powered Home Construction",
+    "headline": "Build Your Dream House with WeHouse",
+    "subheadline": "Share your plot and vision with us and watch it turn into reality. Transparent. Timely. Tech‑Powered.",
+    "cta_primary": "Get a Free Build Estimate",
+    "cta_secondary": "Check our Portfolio",
+    "cta_secondary_href": "portfolio.html",
+    "stats": [
+      {"value": "500+", "label": "Projects", "icon": "projects"},
+      {"value": "25L+", "label": "Sq. Ft. Built", "icon": "area"},
+      {"value": "4.9★", "label": "Avg. Rating", "icon": "rating"},
+      {"value": "100%", "label": "Vasthu", "icon": "vasthu"}
+    ],
+    "images": {
+      "hero_bg": "images/hero-bg-base.webp",
+      "family_1": "images/hero-families/family-1.webp",
+      "family_2": "images/hero-families/family-2.webp",
+      "family_3": "images/hero-families/family-3.webp",
+      "stamp": "images/500plusprojects.png",
+      "w_shape": "images/wshape.svg"
+    },
+    "form": {
+      "step1": {
+        "title": "Start Your Dream Home Journey",
+        "fields": [
+          {"id": "name", "label": "Full Name", "placeholder": "E.g. Rohan Sharma", "type": "text", "required": true},
+          {"id": "email", "label": "Email", "placeholder": "you@example.com", "type": "email", "required": true},
+          {"id": "timeframe", "label": "When do you plan to start?", "type": "select", "required": true, "options": [
+            {"value": "", "label": "Select timeframe"},
+            {"value": "0-3", "label": "Within 3 months"},
+            {"value": "3-6", "label": "3–6 months"},
+            {"value": "6-12", "label": "6–12 months"},
+            {"value": "12+", "label": "More than 12 months"}
+          ]}
+        ]
+      },
+      "step2": {
+        "fields": [
+          {"id": "city", "label": "City", "type": "select", "required": true, "options": [
+            {"value": "", "label": "Select your city"},
+            {"value": "Amaravati", "label": "Amaravati"},
+            {"value": "Hyderabad", "label": "Hyderabad"},
+            {"value": "Ahmedabad", "label": "Ahmedabad"},
+            {"value": "Chandigarh", "label": "Chandigarh"},
+            {"value": "Chennai", "label": "Chennai"},
+            {"value": "Bengaluru", "label": "Bengaluru"},
+            {"value": "Jaipur", "label": "Jaipur"},
+            {"value": "Pune", "label": "Pune"},
+            {"value": "Lucknow", "label": "Lucknow"},
+            {"value": "Vijayawada", "label": "Vijayawada"},
+            {"value": "Other", "label": "Other"}
+          ]},
+          {"id": "phone", "label": "Phone Number", "placeholder": "Mobile number", "type": "tel", "required": true}
+        ]
+      },
+      "step3": {
+        "fields": [
+          {"id": "plotSize", "label": "Plot Size (approx)", "placeholder": "E.g. 1500", "type": "number", "required": true, "unit": "SFT", "min": 100, "max": 20000, "step": 50}
+        ],
+        "otp_text": "Verify your mobile number",
+        "privacy_text": "We respect your privacy. No spam, ever.",
+        "submit_text": "Get My Smart Plan"
+      },
+      "success": {
+        "title": "Thank you!",
+        "message": "Your details have been received. Our team will contact you within 24 hours with your personalized construction plan."
+      }
+    }
+  },
+  "services": {
+    "section_label": "OUR SERVICES",
+    "title": "We Design. We Build. We Transform.",
+    "items": [
+      {"title": "Home Construction", "href": "service/residential-construction.html", "cta": "Book Now", "icon": "home"},
+      {"title": "Commercial Construction", "href": "service/commercial-construction.html", "cta": "Book Now", "icon": "building"},
+      {"title": "Architecture & Structure", "href": "service/architecture-structural.html", "cta": "Book Now", "icon": "architecture"},
+      {"title": "Interiors & Smart Homes", "href": "service/interior-designing.html", "cta": "Book Now", "icon": "interior"}
+    ]
+  },
+  "trust": {
+    "section_label": "TRUSTED & RECOGNISED",
+    "title": "Backed by Investors. Recognised by Media.",
+    "description": "We are a funded construction platform.",
+    "media_label": "AS FEATURED IN",
+    "media_logos": [
+      "images/mediamentions/entreprenureindia.svg",
+      "images/mediamentions/businessline.svg",
+      "images/mediamentions/moneycontrol-logo-vector.svg"
+    ]
+  },
+  "portfolio": {
+    "section_label": "PORTFOLIO",
+    "title": "Recently Delivered Homes",
+    "subtitle": "Ongoing. Completed. Documented.",
+    "projects": [
+      {"id": "AP-01", "location": "Andhra Pradesh", "image": "images/projects/AP-01.webp"},
+      {"id": "CH-05", "location": "Chandigarh", "image": "images/projects/CH-05.webp"},
+      {"id": "TS-135", "location": "Telangana", "image": "images/projects/TS-135.webp"},
+      {"id": "TS-137", "location": "Telangana", "image": "images/projects/TS-137.webp"},
+      {"id": "TS-143", "location": "Telangana", "image": "images/projects/TS-143.webp"},
+      {"id": "TS-72", "location": "Telangana", "image": "images/projects/TS-72.webp"}
+    ],
+    "cta_text": "View All Projects",
+    "cta_href": "portfolio.html"
+  },
+  "whyChoose": {
+    "section_label": "WHY WEHOUSE",
+    "title": "Top reasons to choose WeHouse",
+    "subtitle": "Built on systems, not promises — here's what sets us apart.",
+    "features": [
+      {"title": "Quality checkpoints", "description": "250+ quality checkpoints at every stage", "link": "Learn about 250+ quality checkpoints", "link_href": "#"},
+      {"title": "Work assurance", "description": ""},
+      {"title": "Comfort promise", "description": ""},
+      {"title": "Full transparency", "description": ""},
+      {"title": "Structure warranty", "description": "10-year structure warranty", "link": "Learn about 10-year structure warranty", "link_href": "#"},
+      {"title": "MEP warranty", "description": "2-year MEP warranty", "link": "Learn about 2-year MEP warranty", "link_href": "#"},
+      {"title": "Vasthu construction", "description": ""},
+      {"title": "Digital tracking", "description": "Live digital tracking", "link": "Learn about live digital tracking", "link_href": "#"},
+      {"title": "Cost overruns", "description": ""}
+    ]
+  },
+  "comparison": {
+    "section_label": "WEHOUSE VS OTHERS",
+    "title": "Where Does ₹8–10 Lakhs Disappear With Contractors?",
+    "subtitle": "In small variations that add up. It's not about price per SFT. It's about total cost certainty.",
+    "rows": [
+      {"wehouse": "24 Milestone-based", "factor": "Execution Model", "contractor": "Phase-based"},
+      {"wehouse": "Defined BOQ clarity", "factor": "Cost Structure", "contractor": "Market fluctuation risk"},
+      {"wehouse": "Structured norms", "factor": "Steel & Cement", "contractor": "Rate manipulation"},
+      {"wehouse": "Digital monitoring", "factor": "Tracking", "contractor": "Phone updates"},
+      {"wehouse": "Zero surprise billing", "factor": "Hidden Charges", "contractor": "Common"},
+      {"wehouse": "Rent-back commitment", "factor": "Timeline", "contractor": "Flexible"}
+    ],
+    "cta_text": "Get Free Consultation"
+  },
+  "achievements": {
+    "section_label": "ACHIEVEMENTS",
+    "title": "This scale is not accidental. It is system-driven.",
+    "stats": []
+  },
+  "emonitoring": {
+    "section_label": "SMART CONSTRUCTION INTELLIGENCE",
+    "title": "E-Monitoring — clarity at every milestone.",
+    "description": "Track every milestone, quality check, and site event in real time from your phone. Build with clarity from excavation to handover.",
+    "features": ["Real-Time Updates", "24x7 CCTV", "Quality Checks", "Cost Transparency"],
+    "cta_primary": "Get a Quote",
+    "cta_secondary": "How it works",
+    "image": "images/e-monitoringfb66.webp"
+  },
+  "testimonials": {
+    "section_label": "TESTIMONIALS",
+    "title": "Real Homes. Real Families.",
+    "subtitle": "Because trust is built through proof.",
+    "clients": [
+      {"name": "Shafi", "image": "images/testimonial-01.jpg"},
+      {"name": "Client 2", "image": "images/testimonial-02.jpg"},
+      {"name": "Client 3", "image": "images/testimonial-03.jpg"}
+    ],
+    "cta_text": "Talk to an Expert"
+  },
+  "cities": {
+    "title": "Active in 8 Cities. Powered by One System.",
+    "cities": [
+      {"name": "Hyderabad", "address": "252/A, Road No. 12, MLA Colony, Banjara Hills, Hyderabad, Telangana 500034"},
+      {"name": "Vijayawada", "address": "FLAT NO : 405 5th floor, Anjanadri Musunuri Apartment, Ippatam Road, Mangalagiri, Vijayawada, Andhra Pradesh 522302"},
+      {"name": "Chennai", "address": "3rd & 4th Floor, 74, 5th Ave, V Block, Anna Nagar, Chennai, Greater Chennai, Tamil Nadu 600040"},
+      {"name": "Pune", "address": "401, Trimurti Honey Gold, Ashok Nagar, Range Hill Rd, above Axis Bank, Shivajinagar, Pune, Maharashtra 411016"},
+      {"name": "Chandigarh", "address": "199, 1st Floor, SCO No. 198, Shopping Plaza, 17C, Sector 17, Chandigarh, 160002"},
+      {"name": "Jaipur", "address": "CCWVN (Plot No. 100, Vaishali Marg, Nemi Nagar Extension, Block A, Vaishali Nagar, Jaipur, Rajasthan)"}
+    ]
+  },
+  "faq": {
+    "section_label": "FAQ",
+    "title": "Frequently Asked Questions",
+    "cta_call": "Call Us",
+    "cta_whatsapp": "Chat on WhatsApp",
+    "questions": [
+      {"question": "How do I find the best home builders near me?", "answer": ""},
+      {"question": "What are the steps involved in home construction?", "answer": ""},
+      {"question": "How long does it take to complete a home?", "answer": ""},
+      {"question": "How do you ensure the quality of construction?", "answer": ""},
+      {"question": "How do I build a home on a tight budget?", "answer": ""},
+      {"question": "Do you help with home loan approvals?", "answer": ""}
+    ]
+  },
+  "referral": {
+    "section_label": "REFERRAL PROGRAM",
+    "title": "Convinced but not building now?",
+    "subtitle": "Refer someone who is. Share the certainty — and get rewarded when they start with WeHouse.",
+    "earn_label": "WHAT YOU EARN",
+    "benefits": ["Benefit 1", "Benefit 2", "Benefit 3"],
+    "cta_text": "Refer & Earn"
+  },
+  "footer": {
+    "description": "Building excellence since day one. Quality construction for residential and commercial projects.",
+    "quick_links": [
+      {"label": "Home", "href": "index.html"},
+      {"label": "Services", "href": "#"},
+      {"label": "Projects", "href": "portfolio.html"},
+      {"label": "Packages", "href": "packages.html"},
+      {"label": "Quality Assurance", "href": "quality-assurance.html"},
+      {"label": "About Us", "href": "company/about-us.html"},
+      {"label": "Contact Us", "href": "contact-us.html"}
+    ],
+    "services_links": [
+      {"label": "Home Construction", "href": "service/residential-construction.html"},
+      {"label": "Commercial Construction", "href": "service/commercial-construction.html"},
+      {"label": "Architecture & Structure", "href": "service/architecture-structural.html"},
+      {"label": "Interiors & Smart Homes", "href": "service/interior-designing.html"}
+    ],
+    "cities": [
+      {"name": "Hyderabad", "address": "252/A, Road No. 12, MLA Colony, Banjara Hills, Hyderabad, Telangana 500034"},
+      {"name": "Vijayawada", "address": "FLAT NO : 405 5th floor, Anjanadri Musunuri Apartment, Ippatam Road, Mangalagiri, Vijayawada, Andhra Pradesh 522302"},
+      {"name": "Chennai", "address": "3rd & 4th Floor, 74, 5th Ave, V Block, Anna Nagar, Chennai, Greater Chennai, Tamil Nadu 600040"},
+      {"name": "Pune", "address": "401, Trimurti Honey Gold, Ashok Nagar, Range Hill Rd, above Axis Bank, Shivajinagar, Pune, Maharashtra 411016"},
+      {"name": "Chandigarh", "address": "199, 1st Floor, SCO No. 198, Shopping Plaza, 17C, Sector 17, Chandigarh, 160002"},
+      {"name": "Jaipur", "address": "CCWVN (Plot No. 100, Vaishali Marg, Nemi Nagar Extension, Block A, Vaishali Nagar, Jaipur, Rajasthan)"}
+    ],
+    "social": {
+      "facebook": "#",
+      "instagram": "#",
+      "linkedin": "#",
+      "youtube": "#"
+    },
+    "copyright": "© 2024 WeHouse. All rights reserved."
+  },
+  "leadPopup": {
+    "title": "Get Your Free Construction Plan",
+    "lede": "Share your details and our team will reach out within 24 hours with a personalised plan.",
+    "steps": [
+      {"title": "Your Details", "fields": ["name", "email", "timeframe"]},
+      {"title": "Location & Contact", "fields": ["city", "phone"]},
+      {"title": "Project Details", "fields": ["plotSize", "otp"]}
+    ]
+  }
+}

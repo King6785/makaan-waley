@@ -1,0 +1,31 @@
+<region aria-labelledby="referral-title" class="py-16 md:py-24 lg:py-32 bg-primary-50 relative overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
+    <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-primary-500/10 rounded-full blur-[120px]"></div>
+  </div>
+  <div class="relative mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+      <p class="wh-label-sm font-semibold text-primary-500 tracking-wider uppercase mb-3">{{ site.referral.section_label }}</p>
+      <h2 id="referral-title" class="wh-heading-xl text-dark">{{ site.referral.title }}</h2>
+      <p class="mt-4 wh-body-lg text-gray-600">{{ site.referral.subtitle }}</p>
+    </div>
+    <div class="bg-white rounded-2xl border border-primary-100 p-8 md:p-12 shadow-lg shadow-primary-100/50">
+      <h3 class="wh-heading-md text-dark text-center mb-6">{{ site.referral.earn_label }}</h3>
+      <ul class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+        {% for benefit in site.referral.benefits %}
+        <li class="flex flex-col items-center gap-2">
+          <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary-100 text-primary-600">
+            <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="wh-body font-medium text-gray-700">{{ benefit }}</span>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="mt-10 text-center">
+        <a href="#" class="wh-btn-primary wh-btn--lg" data-lead-popup-trigger>
+          {{ site.referral.cta_text }}
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</region>

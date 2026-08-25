@@ -1,0 +1,21 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 21 Aug 2026 11:39:33 at https://www.wehouse.in/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://www.wehouse.in/ -O1 "D:\FunPlus\wehouse" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:39:53	Error: 	"Bad Request" (400) at link https://www.googletagmanager.com/gtm.js?id= (from https://www.wehouse.in/)
+11:39:53	Error: 	"Gone" (410) at link https://js.hs-scripts.com/20348301.js (from https://www.wehouse.in/)
+11:41:09	Error: 	"Not Found" (404) at link https://www.wehouse.in/projects.php (from https://www.wehouse.in/)
+11:41:09	Error: 	"Not Found" (404) at link https://www.wehouse.in/images/hero-bg/@Model.HeroBgImage (from https://www.wehouse.in/css/site.css?v=DLqZOEuko_-hdN2ivZISYjAD6kN4K1JMQdaqtcHVusE)
+11:41:16	Error: 	"Not Found" (404) at link https://www.wehouse.in/portfolio/CH-09/10— (from https://www.wehouse.in/portfolio)
+11:41:24	Error: 	"Not Found" (404) at link https://www.wehouse.in/portfolio/TS-208/209/210 (from https://www.wehouse.in/portfolio)
+11:41:25	Error: 	"Not Found" (404) at link https://www.wehouse.in/home-construction (from https://www.wehouse.in/packages)
+11:41:25	Error: 	"Not Found" (404) at link https://www.wehouse.in/projects (from https://www.wehouse.in/packages)
+11:41:50	Error: 	"Not Found" (404) at link https://www.wehouse.in/blog-details/a-guide-to-residential-construction-permits (from https://www.wehouse.in/blog-details/mastering-plot-design-with-wehouse-home-construction)
+11:41:50	Error: 	"Not Found" (404) at link https://www.wehouse.in/blog-details/” (from https://www.wehouse.in/blog-details/residential-construction-contractors-construction-hyderabad-wehouse)
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 18 seconds : 533 links scanned, 522 files written (104439059 bytes overall) [87157951 bytes received at 631579 bytes/sec], 21241534 bytes transferred using HTTP compression in 259 files, ratio 17%, 106.8 requests per connection
+(10 errors, 0 warnings, 0 messages)

@@ -1,0 +1,33 @@
+<region aria-labelledby="faq-title" class="py-16 md:py-24 lg:py-32 bg-gray-50">
+  <div class="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
+      <div>
+        <p class="wh-label-sm font-semibold text-primary-500 tracking-wider uppercase mb-3">{{ site.faq.section_label }}</p>
+        <h2 id="faq-title" class="wh-heading-xl text-dark">{{ site.faq.title }}</h2>
+      </div>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="#" class="wh-btn-primary wh-btn--lg" data-lead-popup-trigger>{{ site.faq.cta_call }}</a>
+        <a href="#" class="wh-btn-secondary wh-btn--lg">{{ site.faq.cta_whatsapp }}</a>
+      </div>
+    </div>
+    <dl class="max-w-3xl mx-auto divide-y divide-gray-100">
+      {% for item in site.faq.questions %}
+      <div class="py-6">
+        <dt>
+          <button type="button" class="flex w-full items-center justify-between gap-4 text-left wh-heading-md text-dark focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false" aria-controls="faq-{{ loop.index }}">
+            {{ item.question }}
+            <svg class="h-5 w-5 shrink-0 text-gray-400 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+        </dt>
+        <dd id="faq-{{ loop.index }}" class="hidden mt-4 wh-body text-gray-600">
+          {% if item.answer %}
+          {{ item.answer | markdown }}
+          {% else %}
+          <p>Answer coming soon.</p>
+          {% endif %}
+        </dd>
+      </div>
+      {% endfor %}
+    </dl>
+  </div>
+</region>

@@ -1,0 +1,28 @@
+<region aria-labelledby="portfolio-title" class="py-16 md:py-24 lg:py-32 bg-white">
+  <div class="mx-auto max-w-[90rem] px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12 md:mb-16">
+      <div>
+        <p class="wh-label-sm font-semibold text-primary-500 tracking-wider uppercase mb-3">{{ site.portfolio.section_label }}</p>
+        <h2 id="portfolio-title" class="wh-heading-xl text-dark">{{ site.portfolio.title }}</h2>
+        <p class="mt-2 wh-body-lg text-gray-600">{{ site.portfolio.subtitle }}</p>
+      </div>
+      <a href="{{ site.portfolio.cta_href }}" class="wh-btn-primary wh-btn--lg shrink-0">
+        {{ site.portfolio.cta_text }}
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </a>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {% for project in site.portfolio.projects %}
+      <article class="group relative overflow-hidden rounded-2xl border border-gray-100 bg-white transition-all duration-300 hover:shadow-xl hover:shadow-primary-100/50">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="{{ project.image }}" alt="Project {{ project.id }}, {{ project.location }}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" decoding="async" />
+          <span class="property-badge absolute top-3 left-3 z-10 bg-primary-500 text-white wh-meta font-bold px-3 py-2 tracking-tight">{{ project.id }}</span>
+        </div>
+        <div class="p-5">
+          <h3 class="wh-heading-md text-dark">{{ project.location }}</h3>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</region>

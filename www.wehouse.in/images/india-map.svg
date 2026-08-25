@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 881 1001" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+<g transform="matrix(1,0,0,1,-24.156266,0.275028)">
+        <g id="Background" transform="matrix(1,0,0,1,24.156266,-0.275028)">
+            <use xlink:href="#_Image1" x="0" y="0" width="881px" height="1001px"/>
+        </g>
+    </g>    
+    <g id="hyderabad" transform="matrix(0.694115,0,0,0.694115,-105.84236,602.532427)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>
+    <g id="pune" transform="matrix(0.694115,0,0,0.694115,-250.731253,560.754678)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>
+    <g id="ahmedabad" transform="matrix(0.694115,0,0,0.694115,-280.064585,417.643577)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>
+    <g id="jaipur" transform="matrix(0.694115,0,0,0.694115,-188.509025,292.310246)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>
+    <g id="chennai" transform="matrix(0.694115,0,0,0.694115,-57.842361,739.42134)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>
+    <g id="bengaluru" transform="matrix(0.694115,0,0,0.694115,-137.013575,739.781679)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>    
+    <g id="chandigarh" transform="matrix(0.694115,0,0,0.694115,-170.658566,159.118192)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>
+    <g id="amaravati" transform="matrix(0.694115,0,0,0.694115,-40.953486,630.976885)">
+        <circle cx="602.437" cy="99.308" r="9.808"/>
+    </g>
+    <defs>
+        <image id="_Image1" width="881px" height="1001px" xlink:href="india-map.webp"/>
+    </defs>
+</svg>
